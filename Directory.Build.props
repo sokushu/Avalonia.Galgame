@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <IsPackable>false</IsPackable>
+    <Version>0.1.0</Version>
+    <Authors>MonoGalGame contributors</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <!-- Keep regular runs and tests on the same generated JSON path as Native AOT. -->
+    <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,96 @@
+name: Desktop framework
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: desktop-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DOTNET_NOLOGO: 'true'
+  DOTNET_CLI_TELEMETRY_OPTOUT: 'true'
+  # Exercise real OpenAL Soft mixing without requiring a speaker on CI workers.
+  ALSOFT_DRIVERS: 'null'
+  ALSOFT_LOGLEVEL: '1'
+
+jobs:
+  desktop:
+    name: Build, test and publish (${{ matrix.runtime }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            runtime: win-x64
+          - os: ubuntu-24.04
+            runtime: linux-x64
+          - os: macos-15
+            runtime: osx-arm64
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+      - name: Install Native AOT compiler prerequisites (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes clang zlib1g-dev
+      - name: Restore
+        run: dotnet restore MonoGalGame.slnx
+      - name: Build
+        run: dotnet build MonoGalGame.slnx --configuration Release --no-restore -m:1
+      - name: Story, save, Unicode and Chinese rasterization tests
+        run: >-
+          dotnet test MonoGalGame.Tests/MonoGalGame.Tests.csproj
+          --configuration Release --no-build
+          --logger 'trx;LogFileName=desktop.trx'
+          --results-directory artifacts/test-results/${{ matrix.runtime }}
+      - name: Create framework packages
+        run: |
+          dotnet pack MonoGalGame.Core/MonoGalGame.Core.csproj --configuration Release --no-build --output artifacts/packages
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          dotnet pack MonoGalGame.Framework/MonoGalGame.Framework.csproj --configuration Release --no-build --output artifacts/packages
+      - name: Publish Native AOT desktop demo
+        run: >-
+          dotnet publish examples/MonoGalGame.Demo/MonoGalGame.Demo.csproj
+          --configuration Release --runtime '${{ matrix.runtime }}'
+          --self-contained true -p:PublishAot=true -m:1
+          --output artifacts/publish/${{ matrix.runtime }}
+      - name: Validate Native AOT runtime, story, font and assets
+        run: |
+          ./scripts/Verify-NativeAot.ps1 `
+            -PublishDirectory 'artifacts/publish/${{ matrix.runtime }}' `
+            -ResultsDirectory 'artifacts/test-results/${{ matrix.runtime }}/aot'
+      - name: Upload desktop build
+        uses: actions/upload-artifact@v7
+        with:
+          name: desktop-${{ matrix.runtime }}
+          path: artifacts/publish/${{ matrix.runtime }}
+          if-no-files-found: error
+          compression-level: 6
+      - name: Upload framework packages
+        if: matrix.runtime == 'linux-x64'
+        uses: actions/upload-artifact@v7
+        with:
+          name: framework-packages
+          path: artifacts/packages/*.nupkg
+          if-no-files-found: error
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: test-results-${{ matrix.runtime }}
+          path: artifacts/test-results/${{ matrix.runtime }}
+          if-no-files-found: ignore

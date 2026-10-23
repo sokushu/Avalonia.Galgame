@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <IsAotCompatible>true</IsAotCompatible>
+    <Description>MonoGame visual novel hosting, Chinese text rendering, UI and media services.</Description>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../MonoGalGame.Core/MonoGalGame.Core.csproj" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.6" />
+    <PackageReference Include="StbTrueTypeSharp" Version="1.26.13" />
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <None Include="../THIRD-PARTY-NOTICES.md" Pack="true" PackagePath="/" />
+    <None Include="../licenses/*" Pack="true" PackagePath="licenses/" />
+  </ItemGroup>
+
+</Project>

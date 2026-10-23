@@ -1,0 +1,17 @@
+{
+  "id": "spring-letters",
+  "title": "春日来信",
+  "subtitle": "写给那个，还没说出口的春天。",
+  "titleCaption": "Spring Letters",
+  "story": "Stories/main.json",
+  "font": "Fonts/NotoSansSC-Regular.otf",
+  "titleBackground": "title",
+  "textures": {
+    "title": "Art/spring-key-visual.png",
+    "campus": "Art/campus-spring.png",
+    "library": "Art/library-afternoon.png",
+    "river": "Art/river-sunset.png",
+    "aoi": "Art/aoi-spring.png"
+  },
+  "audio": { "spring": "Audio/spring.wav" }
+}

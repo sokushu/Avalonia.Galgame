@@ -1,0 +1,98 @@
+{
+  "id": "spring-letters-chapter-1",
+  "title": "第一章 · 樱花开的时候",
+  "start": "arrival",
+  "nodes": {
+    "arrival": {
+      "text": "四月的风，把一片樱花送进了我的课本。\n新学期的第一天，我在校门口收到了一封没有署名的信。",
+      "scene": { "background": "campus", "portrait": "", "music": "spring" },
+      "next": "meet"
+    },
+    "meet": {
+      "speaker": "小葵",
+      "text": "你也在看那封信吗？\n别紧张。我只是……恰好路过这里。",
+      "scene": { "portrait": "aoi" },
+      "next": "narration"
+    },
+    "narration": {
+      "text": "她把手里的书抱得更紧了一些。信封上的字迹，和她笔记本上的字有一点像。\n我想起我们第一次说话时，也是这样一个有风的午后。",
+      "next": "question"
+    },
+    "question": {
+      "speaker": "小葵",
+      "text": "如果放学以后你有空，要不要一起走走？\n图书馆的新书到了，河边的樱花应该也开了。",
+      "next": "destination"
+    },
+    "destination": {
+      "kind": "Choice",
+      "speaker": "我",
+      "text": "放学后，去哪里呢？",
+      "choices": [
+        { "text": "去图书馆，看看她喜欢的书", "next": "library-arrival", "effects": [{ "variable": "affection", "value": 1, "operation": "Add" }] },
+        { "text": "去河边，听听她想说的话", "next": "river-arrival", "effects": [{ "variable": "affection", "value": 2, "operation": "Add" }] }
+      ]
+    },
+    "library-arrival": {
+      "text": "图书馆安静得能听见翻页的声音。阳光穿过窗帘，把一排排书脊照得发亮。",
+      "scene": { "background": "library", "portrait": "" },
+      "next": "library-talk"
+    },
+    "library-talk": {
+      "speaker": "小葵",
+      "text": "我喜欢书里的那些相遇。\n有时候，一句话还没说出口，故事就已经开始了。",
+      "scene": { "portrait": "aoi" },
+      "next": "library-letter"
+    },
+    "library-letter": {
+      "speaker": "我",
+      "text": "所以，这封信也是一个故事的开始吗？",
+      "next": "reply"
+    },
+    "river-arrival": {
+      "text": "夕阳慢慢落进河里。我们沿着堤岸走了很久，谁都没有先开口。\n直到她停在了那棵最早开花的树下。",
+      "scene": { "background": "river", "portrait": "" },
+      "next": "river-talk"
+    },
+    "river-talk": {
+      "speaker": "小葵",
+      "text": "其实，那封信……我写了很久。\n但如果不在春天交给你，我大概又要等一年了。",
+      "scene": { "portrait": "aoi" },
+      "next": "reply"
+    },
+    "reply": {
+      "kind": "Choice",
+      "speaker": "我",
+      "text": "这一次，我想认真地回答她。",
+      "choices": [
+        { "text": "谢谢你。我也有话想对你说", "next": "answer", "effects": [{ "variable": "affection", "value": 2, "operation": "Add" }] },
+        { "text": "明年的樱花，也一起看吧", "next": "promise", "effects": [{ "variable": "promise", "value": 1 }] }
+      ]
+    },
+    "answer": {
+      "speaker": "小葵",
+      "text": "那我这次，一定会好好听完。\n不管你说得多慢，我都会等着。",
+      "next": "ending-check"
+    },
+    "promise": {
+      "speaker": "小葵",
+      "text": "嗯，说好了。\n你可不能到了明年，又装作忘记的样子。",
+      "next": "ending-check"
+    },
+    "ending-check": {
+      "kind": "Branch",
+      "condition": { "variable": "affection", "comparison": "GreaterOrEqual", "value": 3 },
+      "then": "close",
+      "else": "gentle"
+    },
+    "close": {
+      "text": "风又吹了起来。这一次，她没有把话藏进信封。\n而我，也终于接住了那个迟到的春天。",
+      "next": "ending-letter"
+    },
+    "gentle": {
+      "text": "我们把那封信夹进了书页，约好来年再读。\n有些故事不用急着写完，因为明天还会继续。",
+      "next": "ending-promise"
+    },
+    "ending-letter": { "kind": "End", "text": "结局一 · 寄到心里的信" },
+    "ending-promise": { "kind": "End", "text": "结局二 · 明年的樱花" }
+  }
+}
