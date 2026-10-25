@@ -1,0 +1,209 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.10 winter shop and alley, four-year reunion costumes with carried/worn new coat, solitary grief and returned old coat action continuity",
+  "images": [
+    {
+      "file": "bg03-boutique-reunion.png",
+      "prompt": "Use case: precise-object-edit. Asset type: 2033 winter reunion variation of EXACT bridal boutique for 玫瑰与旧婚纱. Preserve exact camera, architecture, three bridal mannequins LEFT, big old mirror, counter CENTER, cabinet, stairs RIGHT and old door curtain. It is same shop four years later, maintained and used normally. Visible winter afternoon outside, bare branches and same old tiled roofs, cold clear light, no summer blooms or thick green outdoor vines, no new snowstorm. Change the SMALL tea table at lower left into a modest replacement wooden table of slightly different shape (subtle square/rectangular rounded-by-wood edges are furniture, game UI remains separate), same two ordinary cups on it; curtain remains same with subtly reinforced thicker edge stitching, no new decor style or luxury renovation. Preserve old wedding photograph safely in cabinet as tiny indistinct image, do not invent or enlarge faces. Two preserved roses remain normal shop keepsakes, no shrine. All other familiar furniture/item locations and painterly adult anime ivory/walnut style unchanged. No people, legible text or UI, exact 1672x941 wide background, no watermark.",
+      "references": [
+        "bg03-boutique.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg04-workroom-winter.png",
+      "prompt": "Use case: lighting-weather. Asset type: winter day variant of exact tailor workroom for 玫瑰与旧婚纱. Preserve exact reference camera, foreground cutting table with cloth/tools/paper, sewing machine and shelves LEFT, window RIGHT, chair, curtains and all interior object positions. Change outside to cold December-January-February/2033 winter afternoon: same neighboring tiled roofs and courtyard, dormant climbing rose vines with sparse brown leaves and NO red/pink outdoor blooms or dense green outdoor foliage; no new heavy snow. Cool pale winter daylight mixed with existing modest interior warm lamp, readable detail. The familiar amber bottle on rear sewing table holds EXACTLY TWO preserved faded dark-red dried rose stems (not fresh replacement flowers), still kept safely. Keep other ordinary interior decorations natural, business continues, not abandoned or a mourning shrine. No people, new coat, new phone or modern furniture. Fine painterly anime textures and familiar ivory/walnut palette, 1672x941 exact wide frame, no legible writing, UI or watermark.",
+      "references": [
+        "bg04-workroom.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg05-alley-winter.png",
+      "prompt": "Use case: lighting-weather. Asset type: winter daytime variant of exact shopfront alley for 玫瑰与旧婚纱. Preserve exact camera, narrow old stone lane to LEFT, bridal shop wooden door/windows RIGHT, same steps and little outdoor table/stools, overhead wires and rooftops. Winter cold clear afternoon, same architecture. Outdoor climbing rose vines now dormant woody stems with sparse dry leaves, NO lush green foliage and no pink flowers outdoors. Interior wedding displays through glass stay intact. Put away the small portable summer fan from the outdoor table completely; keep ordinary modest table and stools, do not add new props. Dry slightly weathered cobblestones, no dramatic snowstorm, no crowd, no people, no closed shop implication. Cool daylight with subtle warmth from shop interior, fine painterly adult anime background matching reference, ivory/old wood/stone palette, exact 1672x941 wide framing, no readable signs, UI or watermark.",
+      "references": [
+        "bg05-alley-day.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "ye-zhao-reunion-carrying-coat.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent Ye Zhao 2033 reunion sprite BEFORE putting on the new coat for visual novel 玫瑰与旧婚纱. Ye is exact short-haired woman LEFT in reference, now 32-year-old Chinese photographer, familiar asymmetric dark bob/amber-brown eyes, subtly mature face with mild under-eye work fatigue, no dramatic ageing. Wear the SAME cream ribbed knit top, dark charcoal straight trousers and sensible brown shoes as reference. She is NOT wearing the coat yet: her NEW chocolate-brown tailored wool coat from reference is neatly folded over one forearm at WAIST/chest height, compact enough for visible coat/lapel above dialogue box. Clean new coat, no chalk marks, no lens cap or old right-inner pocket shown; it is a different coat from the old dark-brown one in storage. Other hand rests naturally on folded coat, calm restrained professional-friendly smile, no romance or tears. No camera strapped on body, no book always held in hands. Full figure head to shoes with margins 1024x1536, same game sprite body proportions and neutral painterly anime lighting, only one woman. True transparent alpha, no background/floor/outside shadow or glow, no text or watermark.",
+      "references": [
+        "cg10b-fitting-again.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-jianyue-reunion.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent Tang Jianyue 2033 reunion sprite for adult visual novel 玫瑰与旧婚纱. Exact woman RIGHT of reference, now 36-year-old Chinese tailor, recognizable same warm adult face, brown eyes, natural tiny work lines but no dramatic ageing. Her dark hair is cut a LITTLE shorter than 2029, loose ends around jaw/neck and a SMALLER familiar low loose knot, not a new short pixie or a different face. Same moss-green rolled-sleeve shirt, long brown skirt and brown lace-up shoes as reference; no apron, no needle box, no scissors, no wedding ring, no measuring tape hanging in random positions. Both hands EMPTY, one lightly rests near other wrist at waist; calm modest professional smile and attentive eyes, friendly with familiar restraint, no romantic blushing or tears. Full head-to-shoes figure, natural adult proportions and same centered sprite scale, 1024x1536 canvas with margins, painterly anime textures/neutral composite light matching reference. Single woman only; no other hand or coat, room, furniture, external shadow/glow, text or watermark.",
+      "references": [
+        "cg10b-fitting-again.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-jianyue-late-cardigan.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent Tang Jianyue 2033 quiet workroom sprite for 玫瑰与旧婚纱. Exact adult Chinese woman in reference, now 36, recognizable warm brown eyes, low loose dark bun, slightly mature face without dramatic ageing. Match EXACT reference clothing: cream knit cardigan worn OPEN over moss-green collared shirt, long brown skirt and brown lace-up shoes; no apron or neck tape. Unlike reference close-up, she stands with both hands EMPTY loosely together near waist: no coat, lens cap, needle box or tools held. Expression serious and reflective, lips level, eyes attentive but tired, no smile, no crying, no tears. This calm version is used BEFORE discovering the pocket and AFTER washing her face to keep working; do not pre-empt her later crying. Full-body centered sprite 1024x1536, same adult proportions and head placement as game, fine painterly anime cloth/neutral light. Actual transparent alpha, single woman, no room or furniture, floor/outside shadow, halo, text or watermark.",
+      "references": [
+        "cg10c-undelivered-coat.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "ye-zhao-returned-coat-crying-v2.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame sprite. Image 1 is the edit target. Keep this exact Ye Zhao identity, short dark bob, age 32, sorrowful face and tears, full-body scale, gray sweater, green trousers, old dark coarse wool coat with unfinished shoulder chalk marks and all colors unchanged. Correct ONLY the coat opening and hand action: the script says HER RIGHT inner chest pocket, which is on the VIEWER'S LEFT side of this front-facing woman. Open the coat on VIEWER LEFT (her right), show the small densely stitched inner pocket there, with the black spare camera lens cap still INSIDE the pocket. Her left hand reaches across toward that pocket while her right hand draws back the lapel at VIEWER LEFT. On VIEWER RIGHT the coat lapel is closed normally with NO visible inner pocket or lens cap. Keep the pocket and both hands near mid chest so they remain above a dialogue panel. Clearly retain small tear tracks down her cheeks, no smile. Clean actual RGBA transparency, no opaque backdrop or glow, no text, no new props, no external floating cap. Do not mirror the entire character or change her face.",
+      "references": [
+        "ye-zhao-returned-coat-crying.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "revisions": [
+        {
+          "file": "artifacts/rose/v10-art-drafts/ye-zhao-returned-coat-crying.png",
+          "prompt": "Use case: identity-preserve. Asset type: full-body transparent emotional action sprite for C08 in visual novel 玫瑰与旧婚纱. Reference 1 is EXACT Ye Zhao identity, asymmetric dark short bob, amber-brown eyes, gray knit top/green trousers/brown shoes, now age 32 with slight work fatigue. Reference 2 is ONLY the OLD dark brown coarse wool coat and its unfinished shoulder/chalk seam marks. Ye has received this OLD coat from Yanting in winter 2033, not the new coat of B route. Wear that exact old textured deep brown coat OPEN over her gray knit top. Shoulder fit looks subtly too tight/unsettled, no magically completed tailoring; keep faint old white chalk/seam marks at shoulder. Pose clearly ABOVE waist/dialogue line: open HER ANATOMICAL RIGHT coat panel (viewer LEFT) and place a hand into the finished RIGHT INNER chest pocket (viewer LEFT), touching a lens cap INSIDE pocket, do not pull cap out or place it in a left pocket. Other hand lightly holds coat edge open, natural two-hand anatomy. Expression genuinely crying after recognising the stitches: wet eyes and a few clear tear tracks down cheeks, brows drawn with grief, lips slightly trembling/closed, no smile, no theatrical screaming. Full head to shoes with margins, 1024x1536, same painterly adult anime detail and neutral light. No other woman, ghost, phone, suitcase or letter; no room/floor/external shadow/glow, text or watermark.",
+          "references": [
+            "ye-zhao-residency.png",
+            "cg10c-undelivered-coat.png"
+          ],
+          "reason": "Corrected inner pocket from viewer right to the character right / viewer left, preserving the lens cap inside."
+        }
+      ]
+    },
+    {
+      "file": "ye-zhao-reunion-wearing-coat.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame character sprite for Rose and Old Wedding Dress. Image 1 is the edit target: keep this exact 32-year-old Ye Zhao face, short dark bob, amber eyes, body scale, cream ribbed knit sweater, dark charcoal trousers and brown loafers. Image 2 is wardrobe reference only: Ye is the woman on its LEFT, wearing her NEW neatly finished chocolate-brown wool overcoat. Change Image 1 from carrying the folded coat to WEARING that same new overcoat as in Image 2, comfortably open over the same cream sweater. Hands now empty and relaxed, one resting lightly beside hip, the other loosely near coat front without hiding face. Small calm friendly smile after a successful fitting, mature and at ease, no tears. NEW coat has clean finished shoulders with NO chalk lines, no unfinished seams, no old lens cap pocket displayed, no camera, no bag, no book. Preserve exact clean painterly anime visual-novel style, full body feet visible, head near upper 4% margin, natural standing three-quarter pose, centered. Actual RGBA transparent background, no room, no opaque backdrop, no cast shadow, no halo, no text or watermark.",
+      "references": [
+        "ye-zhao-reunion-carrying-coat.png",
+        "cg10b-fitting-again.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "ye-zhao-returned-coat-message.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame sprite. Image 1 is the edit target. Preserve this exact Ye Zhao identity, 32-year-old face, short dark bob, body proportions, gray knit sweater, green trousers, brown loafers, OLD dark coarse brown overcoat and unfinished shoulders with faded white chalk stitches. This is the next moment after she cried: close both coat lapels normally, the lens cap stays INSIDE her RIGHT inner pocket and is not visible or held. Change both hands to holding a plain dark smartphone at MID CHEST, well above the waist, reading or writing a short message with one thumb. Phone is normal single rectangular phone, no visible readable text on screen. Eyes a little red and damp, tears mostly wiped dry, no fresh flowing tear tracks, quiet grateful grief, relaxed closed lips without smiling. Keep exact full-body framing and painterly anime Galgame rendering. No new props, camera, bags, background, speech bubbles, words or watermark. Genuine RGBA alpha transparency with clean edges, no opaque glow.",
+      "references": [
+        "ye-zhao-returned-coat-crying-v2.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg04-workroom-winter-night.png",
+      "prompt": "Use case: lighting-weather. Asset type: 16:9 Galgame winter workroom NIGHT background. Image 1 is the edit target. Preserve its exact camera, perspective, furniture, cutting table, sewing machine, shelves, fabrics, white lace curtains, paper and sewing tools in exactly the same places. Preserve the EXACT TWO dried dark burgundy rose stems in the amber bottle left of center, with identical faded flowers and leaves: they must not become fresh roses or change number. Change ONLY daylight to quiet winter evening: outside the right window is dark cold navy winter sky and the same bare dormant vines and tiled roofs. Warm practical light from the existing small right desk lamp and subtle warm room illumination, credible soft shadows, no bright sunbeams or daytime window stripes across the cutting table. Empty room, no people, no person reflections, no ghosts, no new furniture, no text. Keep the same detailed painterly visual novel illustration, wide 16:9, without vignette or UI.",
+      "references": [
+        "bg04-workroom-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg15-alone-worktable-crying.png",
+      "prompt": "Use case: illustration-story. Asset type: new 16:9 emotional Galgame CG, Rose and Old Wedding Dress, C-route 2033 winter afternoon. Input 1: identity, wardrobe, old coat and emotional continuity reference; Tang Jianyue is the ONLY woman, preserve her exact adult face and low tied dark hair. Input 2: precise wardrobe reference for 36-year-old Tang, cream open knit cardigan OVER olive-green collared shirt and long brown skirt. Input 3: winter workroom environment reference, keep window on right, sewing tools and a bottle with EXACTLY TWO faded preserved dark burgundy rose stems in the rear. Show Tang ALONE seated next to the cutting table, finally allowing herself to cry after years of unfinished longing: clearly visible glistening tears flowing down BOTH cheeks, brows drawn with genuine quiet grief, lips pressed and faintly trembling, no smile. One hand loosely covers the corner of her mouth while the other rests beside the folded OLD coarse dark-brown coat on the table, where its unfinished shoulder chalk marks remain; the lens cap has been put BACK in its right inner pocket and is NOT held outside. Slightly bent shoulders, believable quiet seated pose, hands and head in upper 70% of canvas, strong readable facial expression above a bottom dialogue overlay. The folded coat is secondary, do not show a body wearing it. Cool winter window light mixed with soft warm interior light. Match existing detailed, mature painterly anime romance visual-novel style, restrained cinematic composition. No other people, no Ye Zhao, no younger duplicate, no ghost or flashback collage, no embrace, no new story events, no smartphone, no text, no watermark, no UI. Wide 16:9 illustration.",
+      "references": [
+        "cg10c-undelivered-coat.png",
+        "tang-jianyue-late-cardigan.png",
+        "bg04-workroom-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "ye-zhao-reunion-pocket.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame sprite, final B-route winter departure. Image 1 is the edit target. Keep EXACT same 32-year-old Ye Zhao face identity, short dark bob, cream ribbed sweater, dark charcoal trousers, loafers, NEW neatly finished chocolate-brown overcoat, complete-body height and head placement. Change ONLY arm action and a small facial expression: she has stepped outside into winter, her RIGHT hand placed fully inside the coat's RIGHT OUTER hip pocket (on VIEWER LEFT), elbow gently bent and the pocket opening clearly visible near high hip/waist level. Her LEFT arm hangs relaxed at her side with an empty hand. Neither hand holds the collar. The new overcoat fits comfortably; no unfinished chalk lines, no lens cap, no old coat's inner-pocket reveal, no camera or book. Expression quietly composed after parting, soft closed lips without a large smile, no tears. Keep hand/pocket action above the waist-to-hip region so it reads above a lower dialogue box. Same standing three-quarter pose and painterly anime visual novel linework, natural anatomy, full feet visible, centered on same 1024x1536 canvas. Genuine RGBA transparent background, no room, snow effects, opaque halo, text or watermark.",
+      "references": [
+        "ye-zhao-reunion-wearing-coat.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.12 empty-handed work poses, C05a ironing/message/solitary sewing, S06 cucumber preparation, B06 late-night parting and winter walk",
+  "images": [
+    {
+      "file": "tang-jianyue-empty.png",
+      "prompt": "Use case: precise-object-edit. Asset type: transparent full-body Galgame character sprite for Rose and Old Wedding Dress. Image 1 is the exact edit target. Preserve the EXACT 32-year-old Tang Jianyue face, adult identity, low dark hair bun, gentle small smile, olive-green rolled-sleeve collared shirt, ivory apron, brown skirt, brown lace shoes, soft tape resting around neck, full-body proportions, head and feet placement and painterly anime rendering. Remove ONLY the closed wooden sewing box completely. Change her hands to a natural EMPTY relaxed pose near waist, one hand loosely resting over the other wrist, no holding gesture around an invisible box, no extra fingers. This is ordinary conversation after putting down work tools: no needle, scissors, cloth, ruler or phone in hands. Keep torso and original clothing folds as unchanged as possible, same 1024x1536 full-body framing. Genuine RGBA alpha transparency with clean edges, no room, no opaque backdrop or glow, no text or watermark.",
+      "references": [
+        "tang-jianyue.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "cg17-say-goodbye-tears.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW 16:9 emotional Galgame CG for B06, Rose and Old Wedding Dress, February 2030 late at night. Input 1 is Ye Zhao identity/wardrobe reference: 28-year-old woman with short dark bob, ivory rolled-sleeve blouse and olive-green trousers, no camera. Input 2 is Tang Jianyue identity/wardrobe reference: 32-year-old low dark bun, soft cream cardigan over pale top, long brown skirt. Input 3 is the EXACT sorted upstairs WINTER NIGHT home: old CLOSED wardrobe and wedding-dress storage bag safely on top LEFT, small dining table, narrow kitchen, empty cleared window table RIGHT, dark navy winter sky and bare vines outside. Show ONLY these two women seated close on separate ordinary chairs beside the dining table, leaning into a quiet long embrace as they accept parting. BOTH have clearly visible tear tracks and red moist eyes; brows draw with grief, no smile, no cheerful reunion or romantic reassurance. Their faces remain readable three-quarter views above the lower dialogue overlay; one gently holds the other's upper arm while the other clutches a small plain tissue. A nearly-used packet of white tissues on the table and a small ordinary wastebasket with a few crumpled used tissues below the table, not strewn dramatically everywhere. No kissing, no wedding or reunion, no other person, ghost, apparition or death imagery. Retain old possessions safely closed and the window desk empty. Restrained warm pendant light with cool winter window light, mature detailed painterly anime VN style, main faces and embrace above bottom 25%, wide 16:9, no text, captions, logos, UI or watermark.",
+      "references": [
+        "ye-zhao-home.png",
+        "tang-jianyue-home.png",
+        "bg07-upstairs-sorted-winter-night.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "tang-jianyue-empty-thoughtful.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame serious expression variant. Image 1 is the EXACT edit target; Image 2 is facial expression reference ONLY. Keep Image 1's precise 32-year-old Tang face identity, hair bun, EMPTY hands resting at waist, green collared shirt, ivory apron, brown skirt, shoes, neck tape and all body framing unchanged. Change ONLY face to the quiet thoughtful concern of Image 2: brows slightly drawn inward, focused less-soft eyes, closed lips, mouth corners not lifted, no smile. No flowing tears, shouting or caricatured anger. Do NOT restore the wooden box from Image 2, no tools, fabric, phone or any held prop. Preserve painterly adult anime rendering and same 1024x1536 head/feet placement. Actual transparent RGBA background, no opaque backdrop, glow, text or watermark.",
+      "references": [
+        "tang-jianyue-empty.png",
+        "tang-jianyue-thoughtful.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-jianyue-work-message.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame message-typing action. Image 1 is the edit target. Preserve EXACT 32-year-old Tang Jianyue face, low dark bun, olive-green shirt with rolled sleeves, ivory apron, brown skirt, neck measuring tape, brown shoes, full-body scale and head placement. Change her empty hands to holding ONE ordinary dark smartphone at MID CHEST, one thumb over screen as she types then hesitates. No readable screen text. Face stays quietly troubled and hesitant, eyes slightly lowered toward phone, lips closed without smiling, no tears. This is June 2030 after an argument with her aunt, not a phone call: phone must be in front of chest, never against ear. No wooden sewing box, needle, scissors, iron or cloth in hands. Same painterly adult anime VN style and 1024x1536 full-body framing; keep phone and fingers above lower dialogue overlay. Genuine RGBA alpha transparency, no background, glow, text or watermark.",
+      "references": [
+        "tang-jianyue-empty-thoughtful.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "cg20-alone-sewing-at-door.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW 16:9 Galgame CG for the FINAL existing paragraph of C05a, Rose and Old Wedding Dress, June 2030. Input 1 is exact adult 32-year-old Tang Jianyue identity and clothing: low dark bun, green rolled-sleeve collared shirt, ivory apron, brown skirt, neck tape. Input 2 is exact summer boutique layout and portable ironing board. Tang is now ALONE, seated on an ordinary chair near counter, continuing careful small hand stitches on a modest customer's garment in her lap/at table height. A small open sewing tray on the nearby surface is fine, but she is not hugging a closed wooden box. One hand holds the garment, other guides a fine needle safely. While hands continue work, her face turns slightly toward the OPEN shop door as if listening for a bell: quietly unsettled and wistful, NO crying, no smile of triumph, no staring directly at viewer. The aunt has LEFT, Ye Zhao is NOT present. The gray iron is unplugged and parked upright on the board LEFT; its earlier pale skirt is now neatly hanging from an existing rail behind counter after being put away, consistent with completed ironing. Keep the original round tea table, three mannequins, mirror, old counter, right stairs, summer greenery and warm afternoon light. Main face and sewing fingers above lower 25% dialogue overlay, believable seated posture. No new event, partner, customer, ghost, letter, phone in hands, readable text, UI or watermark. Detailed painterly adult anime Galgame illustration, wide 16:9. Composition requirement on 1672x941: her seated torso is shown in a close medium view and she raises the small garment naturally in front of her waist; sewing fingertips, needle and worked fabric edge must all be around y440-590, fully ABOVE a dialogue panel starting y675. Do not leave the sewing action hidden in a low lap at the bottom.",
+      "references": [
+        "tang-jianyue.png",
+        "bg03-boutique-ironing-v2.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg05-alley-winter-night.png",
+      "prompt": "Use case: lighting-weather. Asset type: WINTER NIGHT variant of the exact shop-front alley from Rose and Old Wedding Dress. Image 1 is the exact edit target. Keep architecture, camera, paved lane receding LEFT, old wooden boutique facade RIGHT, original outdoor table and stools, winter-dormant bare vines, pots and every object position unchanged. Change ONLY winter daylight to a calm February evening: dark navy sky, cool blue distance and bare branches, warm practical shop window and doorway light falling gently on nearby stones and steps. No bright sun, no daylight shadows, no daytime sky. Keep outdoor vines mostly bare with a few brown leaves, absolutely NO fresh outdoor roses or lush green summer foliage. No summer fan. Quiet ordinary night, no heavy storm, new snowstorm, crowds or holiday decorations. No people, human reflections or ghost images, no words, logos, UI or watermark. Same refined detailed painterly anime VN background, exact wide 1672x941 framing.",
+      "references": [
+        "bg05-alley-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "tang-jianyue-winter-empty.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body winter evening Galgame sprite. Image 1 is the exact edit target: preserve 32-year-old Tang Jianyue's face identity, dark low bun, NAVY-blue wool overcoat, gray knit top, brown skirt, shoes, full-body proportions and head/feet placement. Remove ONLY the wooden sewing box and measuring tools if any are in hand. Empty hands rest naturally low near waist, one gently over the other wrist; bare fingers visible, no gloves or pockets hiding both hands. Change smile to quiet affectionate sadness: focused soft eyes, slightly drawn brows, relaxed closed lips without lifted corners, no tears or anger. This is a private last winter walk after accepting separation, not going to work: no sewing kit, suitcase, bag, phone, scissors or food. Do not change the navy coat into camel/cream or add a scarf. Same painterly adult anime VN style, full body 1024x1536 with original margins. Genuine RGBA transparency, no room, shadow/glow backdrop, text or watermark.",
+      "references": [
+        "tang-jianyue-work.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "ye-zhao-old-coat-tearful.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame tearful expression variant for B06 last winter walk. Image 1 is the exact edit target. Keep EXACT same 28-year-old Ye Zhao identity, short dark bob, FINISHED coarse brown old overcoat without chalk marks, ivory blouse, olive-green trousers, loafers, black camera hanging on its repaired brown strap at VIEWER LEFT hip, full-body scale and pose. Change ONLY facial expression: she has just smiled faintly while remembering an earlier day, and tears slip from both eyes; a tiny strained closed-lip smile with sadness in brows and moist red eyes, clear small tear tracks but no dramatic sobbing. Preserve empty hands: one lightly holds strap at chest and the other stays relaxed at side, no tissue, NO suitcase, no smartphone, no loose lens cap. This is a quiet walk before packing for departure, not the later luggage scene. Keep body and clothes unchanged, same mature painterly anime style and 1024x1536 frame. Actual transparent RGBA alpha, no backdrop, glow, text or watermark.",
+      "references": [
+        "ye-zhao-old-coat.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "cg21-warming-cold-hands.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW 16:9 close-up Galgame CG for B06 final paragraph, Rose and Old Wedding Dress, February 2030 winter night. Input 1 supplies Ye Zhao's old coarse dark-BROWN overcoat and ivory blouse cuffs; Input 2 supplies Tang Jianyue's NAVY wool coat and gray knit cuffs; Input 3 supplies the exact winter NIGHT alley and warm shop light, dormant bare vines, no flowers. Intimate close composition of EXACTLY TWO adult women's pairs of hands, FOUR hands total: on LEFT, Ye's two warm hands gently CUP and enclose Tang's BOTH bare cold hands together; on RIGHT Tang's pale fingers rest inside that careful hold. Clearly show natural wrists emerging from the correct sleeves, natural fingers, no extra limbs or fused hands. This is comforting cold hands during their final walk after agreeing to part, no wedding vow or proposal, no romantic kiss, no new ring or jewelry. Faces may be cropped out entirely; focus is the small concrete action, with old brown and navy coat torsos partially framing hands. Keep the hand gesture centered in upper-middle 65%, fully ABOVE the bottom quarter dialogue overlay; softly recognizable shopfront and winter night lane in the background, warm amber practical light against cool blue winter. No suitcase, sewing tools, phone, lens cap, ghost, text, UI or watermark. Detailed painterly adult anime visual-novel style, wide 16:9.",
+      "references": [
+        "ye-zhao-old-coat.png",
+        "tang-jianyue-winter-empty.png",
+        "bg05-alley-winter-night.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg03-boutique-ironing-v2.png",
+      "prompt": "Use case: precise-object-edit. Asset type: Galgame background staging correction. Image 1 is the exact edit target. Keep every room feature, architecture, colors, furniture, flowers, summer outside view and EXACT portable ironing board position and padded cover unchanged. Correct ONLY two work props: move the SAME upright gray iron from the RIGHT end of the board to the LEFT end, near the open-door/mirror side, around x680 on this 1672px-wide canvas. Its silhouette should remain around y400-500, clearly to the LEFT of where a standing character will be (character center x1070). Let its cord naturally lead toward the counter without dangling in the walking path. Remove the draped pale customer's skirt COMPLETELY from the board and from this frame; it has been set aside off-screen while she pauses, so the padded ironing board top is now empty except for parked iron and its small heat-resistant rest. Do not add a replacement cloth, hanger, second iron, board or garment. Keep iron safely UPRIGHT, no steam, lights or readable labels. Leave the right-of-center character space clear so the iron is not hidden behind a portrait. No people or human reflections, no new furniture, no text, logo, UI or watermark. Same exact 16:9 painterly Galgame background and all unchanged objects.",
+      "references": [
+        "bg03-boutique-ironing.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v12-art-drafts/bg03-boutique-ironing.png",
+          "prompt": "Use case: precise-object-edit. Asset type: 16:9 daytime Galgame background for C05a, June 2030, Rose and Old Wedding Dress. Image 1 is the exact boutique interior edit target. Preserve architecture, old ROUND tea table, THREE dress mannequins LEFT, ornate mirror, center wooden counter, open door left of center, summer GREEN branches outdoors, stairs RIGHT, curtains, flowers and furniture. Add ONE practical portable ironing board near the counter toward the LEFT/center foreground, in perspective, at ordinary waist height. A simple gray domestic iron is safely PARKED UPRIGHT on its heat-resistant rest at one end, with a natural cord leading away toward the counter, no readable labels, no steam, no glowing-hot graphics. A modest pale customer's skirt lies partly folded over the board, not a bridal gown. Board and parked iron must have their important upper shape in middle 60% of the canvas, above the bottom dialogue overlay. Make it a temporary shop work setup, not a remodeled sewing workshop. Keep center-right space clear for the standing character, no new desk hiding the staircase, no people or human reflections, no phone, no word or watermark. Exact warm ivory/walnut painterly anime visual-novel style, wide 1672x941 framing.",
+          "references": [
+            "bg03-boutique-summer.png"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "cg18-cucumber-kitchen-v3.png",
+      "prompt": "Use case: precise-object-edit. Asset type: final Galgame CG action placement correction. Image 1 is exact edit target. Preserve BOTH faces, identities, expressions, hairstyles, outfits, room, perspective and lighting EXACTLY. The cucumber and board are still too low for the actual game. Move ONLY the COMPLETE cutting action group UP a further 100 pixels: both forearms with realistic bent elbows, knife, cucumber with slices, wooden board and supporting counter must now be at a HIGHER realistic waist-level position. On 1672x941 canvas place entire cucumber and knife between y490 and y590, board top near y575, board FRONT edge NO LOWER THAN y625. This is an explicit composition constraint: image below y675 is entirely covered by dialogue, so leave at least 50px clear space between the front board edge and y675. The counter is raised to her actual waist, not a floating table; keep its vertical support connected below. Natural safe two-hand chopping, no additional hands, fingers or knife. Tang still watches from outside narrow doorway; do not change any face/body identity or add another person. No camera repositioning, no image-wide vertical shift, no crop of heads, no text, drawn UI, rulers or watermarks. Same painterly adult anime VN style.",
+      "references": [
+        "cg18-cucumber-kitchen-v2.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v12-art-drafts/cg18-cucumber-kitchen.png",
+          "prompt": "Use case: illustration-story. Asset type: NEW 16:9 ordinary domestic Galgame CG for common S06, July 2029 morning, Rose and Old Wedding Dress. Input 1: exact Ye Zhao identity, 28-year-old short dark bob, ivory blouse with sleeves rolled, green trousers, no camera or strap. Input 2: exact Tang Jianyue identity, age 32, low dark bun, light cream cardigan over pale top and brown skirt. Input 3: exact upstairs home and its narrow kitchen in the BACK CENTER, old closed wardrobe LEFT, sunny window RIGHT, summer green vines and pink roses outside, original small table. Show Ye safely cutting ONE fresh cucumber into simple slices on a wooden board at the kitchen counter, carefully holding a normal kitchen knife pointed DOWN toward the board, fingers safely curled away, no violence or injury. Tang stands just OUTSIDE the narrow kitchen entrance, watching with a small fond, slightly concerned expression, because only one person can fit inside. Warm ordinary intimacy before the aunt's visit: the aunt is NOT yet visible, no third person. Realistic hands and recognizable green cucumber, face, knife and board actions all in middle/upper 70% so they remain visible above bottom dialogue panel. Preserve familiar home layout and original un-sorted window desk, no extra spacious kitchen or island. Soft summer morning light, mature painterly anime Galgame illustration, both familiar adult faces, no threat, blood, labels, text, UI or watermark, wide 16:9.",
+          "references": [
+            "ye-zhao-home.png",
+            "tang-jianyue-home.png",
+            "bg07-upstairs.png"
+          ]
+        },
+        {
+          "file": "artifacts/rose/v12-art-drafts/cg18-cucumber-kitchen-v2.png",
+          "prompt": "Use case: precise-object-edit. Asset type: Galgame CG action visibility correction. Image 1 is the exact edit target. Keep both women's EXACT identities, recognizable faces, expressions, hairstyles, outfits, the narrow kitchen, summer sunlight, closed old wardrobe and background room entirely unchanged. Correct ONLY Ye Zhao's working forearms, knife/cucumber/cutting board and nearby counter height: RAISE the cutting task into the middle of the frame. On this 1672x941 canvas, the entire important knife blade, both hands, cucumber and top of board must lie between y480 and y640, and the front edge of the board near y650, NOT around y770 as currently. A game dialogue panel covers everything below y675, so absolutely none of the main cutting action should be below that line. Use a natural slightly bent-elbow cutting pose at a realistically higher waist-height counter; preserve two hands only with safe curled fingers away from the cutting edge, normal kitchen knife cutting the cucumber DOWN against the board. Do not move or crop the faces, do not create a floating board or extra table, do not change the aunt's absence or Tang watching just outside the narrow doorway. Peripheral lower props may naturally adjust to the raised counter. Same detailed painterly adult anime Galgame style, exact 16:9 composition, no text, UI, labels, blood, injury or watermark.",
+          "references": [
+            "cg18-cucumber-kitchen.png"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "cg19-ironing-and-answer-v2.png",
+      "prompt": "Use case: precise-object-edit. Final VN CG action placement edit. Image 1 is the exact target. Preserve BOTH adult faces, hairstyles, body identities, clothing, aunt's seated pose, shop and lighting exactly. The standing woman's iron and outstretched hand are too low and will be covered by dialogue. Move ONLY her two forearms, the complete ironing board, iron, skirt working surface UP by 100 pixels into her actual waist level. Bend her elbows naturally and keep her right hand gripping iron safely FLAT, left hand flattening far edge. On the 1672x941 canvas the entire iron soleplate and ALL fingertips must finish ABOVE y610; the board working edge should be near y610, not y710. Keep iron and standing woman's hands entirely inside y440..610, at least 65px above dialogue region starting y675. Apron body may be occluded by raised board naturally. Do NOT change her face, head scale, camera, other person's pose, or image-wide crop. Keep continuous physical board and supporting legs, not floating objects. Same exact customer skirt, correct hands, no additional limbs or people, no tools held up threateningly, no text or UI. Mature painterly anime VN, 16:9.",
+      "references": [
+        "cg19-ironing-and-answer.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v12-art-drafts/cg19-ironing-and-answer.png",
+          "prompt": "Use case: illustration-story. Asset type: NEW 16:9 Galgame CG for C05a, June 2030, Rose and Old Wedding Dress. Input 1 defines exact adult 32-year-old Tang Jianyue face and wardrobe: low dark bun, olive-green rolled-sleeve collared shirt, ivory apron, brown skirt, neck tape; put her wooden sewing box on a shelf off-screen, NEVER held. Input 2 defines Aunt Tang Yufen: 56-year-old short wavy dark-gray hair, muted mauve patterned blouse, dark trousers, small black handbag. Input 3 is the exact summer boutique environment and portable ironing board placement: three dress mannequins and mirror LEFT, round tea table, center counter, stairs RIGHT, green foliage through open door and windows, no snow. Tang stands at the board ironing a modest pale customer's skirt, one hand safely operating the gray iron FLAT on the fabric, her other hand flattening the far edge clear of the hot soleplate. She has just stopped looking at her work and faces her aunt with restrained resolve and nervous earnestness, no smiling or tears. Aunt is seated on an ordinary chair to the LEFT of Tang, handbag on her lap, brows furrowed and lips pressed, watching and questioning, no shouting. These are the ONLY two women, Ye Zhao is far away and absent. Compose both recognizable faces, ironing hand, iron and skirt in upper/middle 70% above dialogue panel. No raised threatening iron, injury, new bride or wedding ceremony, no third person, ghost, inset collage, readable text, speech bubbles, UI or watermark. Mature detailed painterly anime visual novel style, warm summer shop light, wide 16:9. Composition requirement on 1672x941: use a close medium view, faces in upper third, iron plus BOTH working hands and the skirt's upper working surface entirely between y400 and y600, at least 75 pixels ABOVE a dialogue panel that starts y675. Do not put ironing hands at the bottom of the canvas.",
+          "references": [
+            "tang-jianyue.png",
+            "tang-yufen-stern.png",
+            "bg03-boutique-ironing-v2.png"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "bg08-shared-studio-winter.png",
+      "prompt": "Use case: lighting-weather. Asset type: exact WINTER daylight variant of the EMPTY shared studio from Rose and Old Wedding Dress. Image 1 is the edit target. Preserve the exact camera, room dimensions, peeling cream walls, worn bare wooden floor, large LEFT window bank, support column, RIGHT small sink alcove with old exposed pipes, ceiling lights, doorframe, and town rooftops outside. Keep the room EMPTY before moving work tables in; no furniture, boxes, curtains, people or props. It is FEBRUARY, not autumn: remove all green/yellow foliage from the same outdoor branches and vines and all fallen leaves on window sill; show bare dormant branches with the same neighboring old roofs and pale cold blue-gray sky. No flowers or new trees. Cold clear winter afternoon daylight, gentle pale amber sunlight retains readable indoor wood and wall detail with natural fine BARE BRANCH shadows. Remove the leafy shadow pattern on floor and wall; replace it with the same windows' geometric light and sparse bare-twig shadows. A trace of distant frost is acceptable but do not put snow or wetness indoors or a blizzard outside. Keep exact original composition and painterly mature anime Galgame background style, 1672x941, no writing, logos, UI or watermark.",
+      "references": [
+        "bg08-shared-studio.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    }
+  ]
+}

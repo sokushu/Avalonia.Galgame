@@ -1,16 +1,17 @@
 using Microsoft.Xna.Framework;
 using MonoGalGame.Core.Stories;
 using MonoGalGame.Core.Text;
+using MonoGalGame.Framework.Rendering;
 
 namespace MonoGalGame.Framework.Hosting;
 
 public partial class GalgameGame
 {
-    private static readonly Color Ink = new(49, 65, 72);
-    private static readonly Color Muted = new(123, 133, 137);
-    private static readonly Color Accent = new(171, 94, 116);
-    private static readonly Color Paper = new(255, 252, 247);
-    private static readonly Color Border = new(222, 210, 205);
+    private Color Ink => Options.Theme.Ink;
+    private Color Muted => Options.Theme.Muted;
+    private Color Accent => Options.Theme.Accent;
+    private Color Paper => Options.Theme.Paper;
+    private Color Border => Options.Theme.Border;
     private const float DialogueSize = 24;
     private const float DialogueWidth = 1108;
     private const float DialogueLineHeight = 37;
@@ -18,15 +19,41 @@ public partial class GalgameGame
     private void DrawScene()
     {
         var background = Screen == GameScreen.Title || !_hasSession ? Options.Project.TitleBackground : Player.Scene.Background;
-        if (_textures.Get(background) is { } texture) _ui.Cover(texture, new(0, 0, DesignWidth, DesignHeight), Color.White);
+        var fading = _hasSession && Screen != GameScreen.Title && _previousBackground is not null && _backgroundFade < 1;
+        if (fading && _textures.Get(_previousBackground!.Background) is { } previous)
+            _ui.Cover(previous, new(0, 0, DesignWidth, DesignHeight), Color.White);
+        if (_textures.Get(background) is { } texture)
+            _ui.Cover(texture, new(0, 0, DesignWidth, DesignHeight), Color.White * (fading ? _backgroundFade : 1));
         else _ui.Gradient(new(0, 0, DesignWidth, DesignHeight), new(221, 235, 232), new(250, 233, 225));
 
-        if (_hasSession && Screen != GameScreen.Title && _textures.Get(Player.Scene.Portrait) is { } portrait)
+        var tone = _hasSession && Screen != GameScreen.Title ? Player.Scene.Tone : "day";
+        var lighting = SceneLighting.For(tone, Paper);
+        if (fading) lighting = SceneLighting.Lerp(SceneLighting.For(_previousBackground!.Tone, Paper), lighting, _backgroundFade);
+        _ui.Fill(new(0, 0, DesignWidth, DesignHeight), lighting.Overlay);
+        if (lighting.Rain > 0)
+            for (var i = 0; i < 48; i++)
+            {
+                var x = (float)((i * 131 + _time * 36) % 1360) - 40;
+                var y = (float)((i * 89 + _time * 290) % 800) - 40;
+                _ui.Line(new(x, y), new(x - 9, y + 27), new Color(218, 230, 240) * (.16f * lighting.Rain));
+            }
+
+        void Portrait(PortraitFrame frame)
         {
-            const int height = 710;
+            if (_textures.Get(frame.Texture) is not { } portrait) return;
+            var height = (int)(Options.Theme.PortraitHeight * frame.Scale);
             var width = (int)(height * portrait.Width / (float)portrait.Height);
             var breathing = (int)(Math.Sin(_time * 1.5) * 1.2);
-            _ui.Image(portrait, new(818 - width / 2, 32 + breathing + (int)((1 - _transition) * 12), width, height), Color.White * _transition);
+            var speaker = Player.CurrentNode.Speaker;
+            var knownSpeaker = _portraitStage.Frames.Any(actor => speaker.StartsWith(actor.Character, StringComparison.Ordinal));
+            var listening = knownSpeaker && !speaker.StartsWith(frame.Character, StringComparison.Ordinal);
+            var y = 22 + (int)((1 - frame.Scale) * 300) + breathing + (int)frame.OffsetY;
+            _ui.Image(portrait, new((int)frame.Center - width / 2, y, width, height),
+                (listening ? Color.Lerp(lighting.PortraitTint, new Color(190, 186, 183), .15f) : lighting.PortraitTint) * frame.Opacity);
+        }
+        if (_hasSession && Screen != GameScreen.Title)
+        {
+            foreach (var frame in _portraitStage.Frames) Portrait(frame);
         }
 
         // Organic scenery stays in the artwork; floating petals are small, straight-edged accents.
@@ -34,44 +61,69 @@ public partial class GalgameGame
         {
             var x = (float)((i * 173 + _time * (9 + i % 4)) % 1360) - 40;
             var y = (float)((i * 89 + _time * (12 + i % 3)) % 790) - 35;
-            _ui.Diamond(new(x, y), 2 + i % 3, new Color(255, 231, 233) * .62f, (float)_time * .2f + i);
+            if (Options.Theme.AmbientDust)
+                _ui.Fill(new((int)x, (int)y, 1 + i % 2, 1 + i % 2), new Color(255, 240, 207) * .32f);
+            else _ui.Diamond(new(x, y), 2 + i % 3, new Color(255, 231, 233) * .62f, (float)_time * .2f + i);
         }
     }
 
     private void DrawTitle()
     {
-        _ui.Gradient(new(0, 0, 620, DesignHeight), Paper * .82f, Color.Transparent, horizontal: true);
-        _ui.Gradient(new(940, 0, 340, DesignHeight), Color.Transparent, Paper * .46f, horizontal: true);
+        var stacked = Options.Theme.TitleLines.Length > 0;
+        _ui.Gradient(new(0, 0, stacked ? 680 : 620, DesignHeight), Paper * (stacked ? .96f : .82f), Color.Transparent, horizontal: true);
+        _ui.Gradient(new(940, 0, 340, DesignHeight), Color.Transparent, Paper * (stacked ? .2f : .46f), horizontal: true);
         _ui.Gradient(new(0, 560, DesignWidth, 160), Color.Transparent, Paper * .72f);
         _ui.Outline(new(28, 26, 1224, 668), Color.White * .7f);
         Corner(new(28, 26), 1, 1);
         Corner(new(1252, 694), -1, -1);
 
         Envelope(new(63, 49, 24, 17), Accent * .9f);
-        _ui.TrackedText("A LETTER FOR YOU", 100, 47, 12, 2.5f, Ink * .72f);
+        _ui.TrackedText(Options.Theme.BrandCaption, 100, 47, 12, 2.5f, Ink * .72f);
         _ui.TrackedText("VISUAL NOVEL", 1083, 47, 10, 2, Ink * .65f);
 
         _ui.Fill(new(80, 160, 2, 31), Accent);
-        _ui.TrackedText("序章  /  在春天，与你相遇", 96, 167, 13, 1.5f, Ink * .78f);
-        var titleSize = 78f;
-        while (titleSize > 36 && _font.Measure(Options.Project.Title, titleSize) > 414) titleSize -= 2;
-        _ui.Text(Options.Project.Title, 75, 213, titleSize, Ink);
-        _ui.Fill(new(81, 325, 42, 2), Accent);
-        if (!string.IsNullOrWhiteSpace(Options.Project.TitleCaption))
-            _ui.TrackedText(Options.Project.TitleCaption.ToUpperInvariant(), 139, 319, 12, 3.3f, Accent);
-        _ui.Ellipsis(Options.Project.Subtitle, 82, 369, 18, Ink * .82f, 400);
-        _ui.Text("致  /  那个还没说出口的春天", 83, 414, 12, Muted);
+        _ui.TrackedText(Options.Theme.OpeningCaption, 96, 167, 13, 1.5f, Ink * .78f);
+        if (stacked)
+        {
+            var y = 206f;
+            foreach (var line in Options.Theme.TitleLines)
+            {
+                var size = 76f;
+                while (size > 32 && _font.Measure(line, size) > 420) size -= 2;
+                _ui.TrackedText(line, 75, y, size, 4, Ink);
+                y += 100;
+            }
+            _ui.Fill(new(81, 418, 39, 2), Accent);
+            _ui.TrackedText(Options.Project.TitleCaption.ToUpperInvariant(), 82, 443, 10, 1.9f, Accent);
+            _ui.Ellipsis(Options.Project.Subtitle, 82, 483, 17, Ink * .85f, 410);
+            _ui.Text(Options.Theme.Dedication, 83, 523, 13, Ink * .68f);
+        }
+        else
+        {
+            var titleSize = 78f;
+            while (titleSize > 36 && _font.Measure(Options.Project.Title, titleSize) > 414) titleSize -= 2;
+            _ui.Text(Options.Project.Title, 75, 213, titleSize, Ink);
+            _ui.Fill(new(81, 325, 42, 2), Accent);
+            if (!string.IsNullOrWhiteSpace(Options.Project.TitleCaption))
+                _ui.TrackedText(Options.Project.TitleCaption.ToUpperInvariant(), 139, 319, 12, 3.3f, Accent);
+            _ui.Ellipsis(Options.Project.Subtitle, 82, 369, 18, Ink * .82f, 400);
+            _ui.Text(Options.Theme.Dedication, 83, 414, 12, Muted);
+        }
 
-        TitleMenu(new(927, 353, 49, 249), "开始故事", "START", "01", StartNewGame);
-        TitleMenu(new(987, 353, 49, 249), "继续阅读", "RESUME", "02",
-            () => { ChangeToReading(); _audio.PlayMusic(Player.Scene.Music); }, enabled: _hasSession);
-        TitleMenu(new(1047, 353, 49, 249), "读取存档", "LOAD", "03", () => OpenScreen(GameScreen.Load));
-        TitleMenu(new(1107, 353, 49, 249), "环境设置", "CONFIG", "04", () => OpenScreen(GameScreen.Settings));
-        TitleMenu(new(1167, 353, 49, 249), "离开故事", "EXIT", "05", Exit);
+        var gallery = Options.Theme.Artwork.Count > 0;
+        var menuX = gallery ? 863 : 927;
+        var menuY = stacked ? 367 : 353;
+        TitleMenu(new(menuX, menuY, 49, 249), "开始故事", "START", "01", StartNewGame);
+        TitleMenu(new(menuX + 60, menuY, 49, 249), "继续阅读", "RESUME", "02",
+            ResumeStory, enabled: _hasSession || _continueSave is not null);
+        TitleMenu(new(menuX + 120, menuY, 49, 249), "读取存档", "LOAD", "03", () => OpenScreen(GameScreen.Load));
+        TitleMenu(new(menuX + 180, menuY, 49, 249), "环境设置", "CONFIG", "04", () => OpenScreen(GameScreen.Settings));
+        if (gallery) TitleMenu(new(menuX + 240, menuY, 49, 249), "作品画廊", "GALLERY", "05", () => OpenScreen(GameScreen.Gallery));
+        TitleMenu(new(menuX + (gallery ? 300 : 240), menuY, 49, 249), "离开故事", "EXIT", gallery ? "06" : "05", Exit);
 
         _ui.Fill(new(81, 602, 32, 1), Accent * .8f);
-        _ui.Text("每个选择，都会成为故事的一部分。", 81, 618, 14, Ink * .8f);
-        _ui.TrackedText("CLICK TO BEGIN YOUR STORY", 81, 651, 10, 1.7f, Muted);
+        _ui.Text(Options.Theme.Footer, 81, 618, 14, Ink * .8f);
+        _ui.TrackedText(Options.Theme.FooterCaption, 81, 651, 10, 1.7f, Muted);
         _ui.Text("← → / Tab 选择    Enter 确认", 1005, 655, 11, Ink * .72f);
     }
 
@@ -107,13 +159,31 @@ public partial class GalgameGame
     private void DrawReading()
     {
         if (_hidden) return;
-        if (Player.IsEnded) { DrawEnding(); return; }
+        if (Player.IsEnded)
+        {
+            if (_time < _endingUntil) _ui.Fill(new(0, 0, DesignWidth, DesignHeight), Color.Black);
+            else DrawEnding();
+            return;
+        }
 
-        var chapterWidth = Math.Min(450, (int)_font.Measure(Options.Story.Title, 16) + 50);
+        var chapter = string.IsNullOrEmpty(Player.Scene.Chapter) ? Options.Story.Title : Player.Scene.Chapter;
+        var chapterWidth = Math.Min(708, (int)_font.Measure(chapter, 16) + 50);
         _ui.Fill(new(40, 28, chapterWidth, 35), Paper * .88f);
         _ui.Fill(new(40, 28, 3, 35), Accent);
-        _ui.Ellipsis(Options.Story.Title, 56, 33, 16, Ink, chapterWidth - 31);
-        _ui.Text("STORY / 01", 1127, 37, 11, Ink * .8f);
+        _ui.Ellipsis(chapter, 56, 33, 16, Ink, chapterWidth - 31);
+        if (!string.IsNullOrEmpty(Player.Scene.Location))
+        {
+            var location = Player.Scene.Time + "  /  " + Player.Scene.Location;
+            var locationWidth = Math.Min(700, (int)_font.Measure(location, 12) + 32);
+            _ui.Fill(new(40, 68, locationWidth, 29), Paper * .86f);
+            _ui.Ellipsis(location, 56, 73, 12, Ink * .8f, locationWidth - 28);
+        }
+        if (!string.IsNullOrEmpty(Player.Scene.Viewpoint))
+        {
+            _ui.Fill(new(1062, 28, 178, 35), Ink * .82f);
+            _ui.Centered("视角 / " + Player.Scene.Viewpoint, new(1062, 28, 178, 35), 13, Paper);
+        }
+        else _ui.Text("STORY / 01", 1127, 37, 11, Ink * .8f);
 
         var dialogue = new Rectangle(40, 516, 1200, 159);
         _ui.Fill(dialogue, Paper * .96f);
@@ -168,7 +238,9 @@ public partial class GalgameGame
             Button(bounds, "", () => SelectChoice(index), primary: selected, keyboard: false);
             _ui.Text($"{i + 1:00}", bounds.X + 19, bounds.Y + 15, 17, selected ? Color.White * .8f : Accent);
             _ui.Fill(new(bounds.X + 60, bounds.Y + 17, 1, 23), selected ? Color.White * .35f : Border);
-            _ui.Ellipsis(choices[i].Text, bounds.X + 84, bounds.Y + 11, 22, selected ? Color.White : Ink, bounds.Width - 130);
+        var choiceSize = 22f;
+        while (choiceSize > 15 && _font.Measure(choices[i].Text, choiceSize) > bounds.Width - 130) choiceSize--;
+        _ui.Ellipsis(choices[i].Text, bounds.X + 84, bounds.Center.Y - choiceSize * .78f, choiceSize, selected ? Color.White : Ink, bounds.Width - 130);
             _ui.Diamond(new(bounds.Right - 23, bounds.Center.Y), 4, selected ? Color.White : Accent * .7f);
         }
     }
@@ -191,10 +263,10 @@ public partial class GalgameGame
         _ui.Fill(new(282, 140, 716, 444), Paper * .95f);
         _ui.Outline(new(290, 148, 700, 428), Border);
         Envelope(new(621, 185, 38, 26), Accent);
-        _ui.Centered("E N D I N G  /  春 日 终 章", new(300, 236, 680, 30), 14, Accent);
+        _ui.Centered(Options.Theme.EndingCaption, new(300, 236, 680, 30), 14, Accent);
         _ui.Centered(string.IsNullOrEmpty(Player.CurrentNode.Text) ? "故事，未完待续。" : Player.CurrentNode.Text,
             new(300, 294, 680, 58), 32, Ink);
-        _ui.Centered("感谢你，走进这个春天。", new(300, 373, 680, 35), 18, Muted);
+        _ui.Centered(Options.Theme.EndingThanks, new(300, 373, 680, 35), 18, Muted);
         Button(new(438, 446, 404, 45), "回到标题", ReturnToTitle, primary: true);
         Button(new(438, 507, 194, 38), "回看上一段", Rollback, compact: true, enabled: Player.CanRollback);
         Button(new(648, 507, 194, 38), "重新开始", StartNewGame, compact: true);
@@ -206,7 +278,7 @@ public partial class GalgameGame
         _ui.Outline(new(424, 80, 432, 560), Border);
         _ui.TrackedText("STORY MENU", 463, 106, 12, 2.5f, Accent);
         _ui.Text("故事暂停在这里", 460, 138, 27, Ink);
-        _ui.Text("不用着急，我们还有整个春天。", 463, 184, 15, Muted);
+        _ui.Ellipsis(Options.Theme.PauseDescription, 463, 184, 15, Muted, 360);
         Button(new(460, 232, 360, 43), "继续阅读", CloseScreen, primary: true);
         Button(new(460, 287, 172, 43), "保存进度", () => OpenScreen(GameScreen.Save));
         Button(new(648, 287, 172, 43), "读取存档", () => OpenScreen(GameScreen.Load));

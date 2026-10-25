@@ -9,5 +9,7 @@
     <PackageReference Include="xunit" Version="2.9.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" PrivateAssets="all" />
     <None Include="../examples/MonoGalGame.Demo/Game/**/*" Link="Game/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../examples/MonoGalGame.Rose/Game/Stories/*.json" Link="Rose/Stories/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../docs/玫瑰与旧婚纱/设计稿/剧情设计/*.txt" Link="Rose/Scripts/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

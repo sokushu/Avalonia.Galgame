@@ -6,4 +6,5 @@ namespace MonoGalGame.Framework.Hosting;
 [JsonSourceGenerationOptions(PropertyNamingPolicy = JsonKnownNamingPolicy.CamelCase,
     PropertyNameCaseInsensitive = true, WriteIndented = true)]
 [JsonSerializable(typeof(UserSettings))]
+[JsonSerializable(typeof(ReadingProgress))]
 internal sealed partial class FrameworkJsonContext : JsonSerializerContext;

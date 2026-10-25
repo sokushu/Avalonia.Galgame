@@ -37,8 +37,12 @@ public sealed record StoryChoice
 }
 
 /// <summary>Null scene fields inherit the previous value; empty strings clear that layer.</summary>
-public sealed record SceneChange(string? Background = null, string? Portrait = null, string? Music = null);
-public sealed record SceneState(string Background = "", string Portrait = "", string Music = "");
+public sealed record SceneChange(string? Background = null, string? Portrait = null, string? Music = null,
+    string? SecondaryPortrait = null, string? Chapter = null, string? Location = null,
+    string? Time = null, string? Viewpoint = null, string? Tone = null, string? TertiaryPortrait = null);
+public sealed record SceneState(string Background = "", string Portrait = "", string Music = "",
+    string SecondaryPortrait = "", string Chapter = "", string Location = "",
+    string Time = "", string Viewpoint = "", string Tone = "", string TertiaryPortrait = "");
 
 public sealed record StoryNode
 {

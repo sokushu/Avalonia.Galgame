@@ -1,0 +1,112 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.3 domestic poses and emotions, measurement action, temporary photography studio",
+  "images": [
+    {
+      "file": "ye-zhao-home.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent visual novel sprite for 玫瑰与旧婚纱. Input image is the identity, proportions and rendering reference for 28-year-old adult photographer Ye Zhao. Create her off-duty, empty-handed pose for a quiet domestic conversation. Keep the exact recognizable short tousled dark bob, amber eyes, subtle freckles, mature face, slim athletic adult proportions and fine painterly anime rendering. Keep her ivory rolled-sleeve shirt, forest-green straight trousers and brown loafers, same head size, head-to-toe framing and canvas 1024x1536. Remove the camera, camera strap, camera bag and all work equipment completely. Both hands are relaxed and visible: one rests lightly over the opposite forearm around waist height, the other relaxed open hand. Calm closed lips, attentive and slightly vulnerable eyes, neutral eyebrows, no broad smile, no tears, suitable for serious but tender home conversations. She stands naturally facing slightly right, entire hair and shoes visible with margins. True alpha-transparent background, clean silhouette, no room, no floor, no halo, no shadow outside the character, no text, no watermark. Preserve the character design and clothing silhouette.",
+      "references": [
+        "ye-zhao.png"
+      ],
+      "transparentBackground": true,
+      "requestedDimensions": "1024x1536",
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-jianyue-home.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent visual novel sprite for 玫瑰与旧婚纱. Input image is the identity, adult proportions and rendering reference for 32-year-old tailor Tang Jianyue. Create her at-home pose after work. Preserve exactly the mature gentle face, dark brown eyes, black low bun, loose wisps framing the ears, adult body proportions, brown long skirt and dark brown lace-up shoes. Replace the work blouse/apron with a modest soft oatmeal long-sleeve knit cardigan worn over a plain ivory top. REMOVE the apron, measuring tape, sewing box, needles and every tool completely. Empty hands naturally rest loosely together at waist height, fingers relaxed and anatomically clear, shoulders lowered. Quiet closed-mouth expression, thoughtful slightly tired eyes with restrained warmth, no broad smile, no tears. Same polished fine painterly anime style as reference, same 1024x1536 full-body canvas, head and shoes fully visible with margins, same head size. True alpha-transparent background; no room, no floor, no cast shadow, no colored halo, no text or watermark. Keep her recognizable as the same adult woman.",
+      "references": [
+        "tang-jianyue.png"
+      ],
+      "transparentBackground": true,
+      "requestedDimensions": "1024x1536",
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-jianyue-measuring-left.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent visual novel action sprite for 玫瑰与旧婚纱. Input image is the adult character design reference for tailor Tang Jianyue, age 32. Preserve her exact recognizable mature face, dark eyes, black low bun with wisps, moss-green rolled-sleeve blouse, ivory work apron, brown long skirt, brown lace-up shoes, adult body proportions, same head size and full-body scale on 1024x1536. Change her pose and held object: remove the closed wooden sewing box COMPLETELY. She is ready to take a client's shoulder measurements, standing slightly turned to her left, holding one single soft ivory measuring tape between two visible hands. One hand raises one end gently to chest height toward a client just outside the canvas; her other hand holds the remaining tape naturally at her waist. Tape hangs in a believable gentle curve; no extra arms, no other person. Focused attentive gaze to her left and soft closed-mouth professional expression, no flirty smile or blush. Both hands and all fingertips clear, no cut limbs. Fine painterly anime style and soft neutral light matching reference. True alpha-transparent backdrop, clean silhouette, head and shoes complete with margins, no halo, no external shadow, no scenery, no typography or watermark.",
+      "revision": "Change only the direction of this action sprite: the raised hand and BOTH eyes must face the LEFT EDGE OF THE IMAGE, because the client stands on image-left. Reverse the pose horizontally while retaining the same character identity, head size, body scale, exact clothing, anatomy and painterly detail. Keep the same complete head-to-shoes silhouette and true transparent background. Do not add props or people. All other visual details remain the same.",
+      "references": [
+        "tang-jianyue.png"
+      ],
+      "transparentBackground": true,
+      "requestedDimensions": "1024x1536",
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg06-photo-studio-temporary.png",
+      "prompt": "Use case: precise-object-edit. Asset type: 16:9 visual novel background variant for 玫瑰与旧婚纱. Input image is the exact photography studio location. Preserve its camera angle, architecture, left window and city rooftops, wooden floor, left computer desk and camera/lens equipment, rear shelving, curtains and overall painterly anime rendering. The story is January 2030: a tailor temporarily borrows half the photographer's existing studio while her own shop is repaired. Create ONLY this temporary working arrangement: roll the grey photographic backdrop up part-way, shift the softbox slightly back, and place one practical folding wooden cutting table on the right half, with an ivory unadorned cloth, a folded paper pattern, small iron on a safe stand, a wooden needle box and three fabric rolls leaning nearby. Leave enough clear floor for sprites in front. It must clearly remain the SAME photographer's room, with her desk and photographic equipment still active, modest and slightly crowded. Do not turn it into the separate new shared studio, do not add a bed or living space, no new windows, no people, no legible text, no logo, no watermark. Soft overcast winter daylight through the SAME left window, warm wood and ivory with moss-green accents, 16:9 wide composition.",
+      "references": [
+        "bg06-photo-studio.png"
+      ],
+      "transparentBackground": false,
+      "requestedDimensions": "16:9",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "ye-zhao-home-thoughtful.png",
+      "prompt": "Use case: identity-preserve. Edit target is the full-body transparent Ye Zhao at-home sprite. Change ONLY her facial expression for a difficult domestic conversation: remove her smile completely, lips pressed gently together with corners level or faintly lowered, brows slightly drawn with inner ends raised, amber eyes serious and vulnerable, eyes a little glossy but no falling tears. Mature 28-year-old adult face, restrained emotion. Preserve the EXACT head orientation, body pose, empty hands, ivory rolled-sleeve shirt, forest-green trousers, shoes, body proportions, painterly rendering and all visible silhouette pixels outside the face. Same 1024x1536 canvas, exact placement, true alpha transparent background with no added halo, scenery or text.",
+      "references": [
+        "ye-zhao-home.png"
+      ],
+      "transparentBackground": true,
+      "requestedDimensions": "1024x1536",
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-jianyue-home-thoughtful.png",
+      "prompt": "Use case: identity-preserve. Edit target is the full-body transparent Tang Jianyue at-home sprite. Change ONLY her facial expression for a difficult domestic conversation and grief: remove her smile completely, closed lips with faintly lowered corners, brows subtly drawn and inner ends raised, eyes serious and tired with restrained sadness, a little glossy but no falling tears. She is the same mature 32-year-old adult woman. Preserve the EXACT head orientation, body pose, empty relaxed hands, oatmeal cardigan and ivory top, brown skirt, shoes, adult proportions, painterly rendering and complete silhouette outside the face. Same 1024x1536 canvas and exact placement. Preserve true alpha-transparent background; no added halo, props, scenery, text or watermark.",
+      "references": [
+        "tang-jianyue-home.png"
+      ],
+      "transparentBackground": true,
+      "requestedDimensions": "1024x1536",
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    }
+  ]
+}

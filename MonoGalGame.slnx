@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/examples/">
     <Project Path="examples/MonoGalGame.Demo/MonoGalGame.Demo.csproj" />
+    <Project Path="examples/MonoGalGame.Rose/MonoGalGame.Rose.csproj" />
   </Folder>
   <Project Path="MonoGalGame.Core/MonoGalGame.Core.csproj" />
   <Project Path="MonoGalGame.Framework/MonoGalGame.Framework.csproj" />

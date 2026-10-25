@@ -1,0 +1,144 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.6 preserved keepsakes and cleared desk, coherent storm-night/dawn room, landlord and professional project director, separate shared work area",
+  "images": [
+    {
+      "file": "bg07-upstairs-sorted.png",
+      "prompt": "Use case: precise-object-edit. Asset type: organized-state visual novel background for 玫瑰与旧婚纱. Edit target is this EXACT upstairs room, not a new room. Preserve exact camera, stairs foreground, kitchen in back, dark wooden wardrobe/cabinet on LEFT, two-person dining table center-left, large window and small work desk on RIGHT, all room architecture, textures and warm painterly anime style. Show the state AFTER Tang Jianyue has carefully stored old belongings and made space for current life. Keep the old cabinet, existing light garment storage bag and brown wooden keepsake box; nothing is destroyed, thrown away or locked. Clear MOST of the RIGHT window-side desk into a genuinely usable bare wooden work surface, move the folded cloth to the far right edge and store loose keepsakes safely. Keep the lamp at right. No shrine, no ghost, no new portraits, no new couple photos filling the desk; the free space is the important visible change. The dining table and kitchen remain normally lived in with their same bowls and cups. Preserve existing soft daylight and exact wide 16:9 framing, original interior layout and visual identity. No people, no added bed, no writing, no logo or watermark.",
+      "references": [
+        "bg07-upstairs.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "liu-qing.png",
+      "prompt": "Use case: illustration-story. Asset type: full-body transparent supporting-character sprite for adult Chinese visual novel 玫瑰与旧婚纱. Reference image is setting and painterly palette ONLY; draw a new person. Liu Qing is a DISTINCT 52-year-old Chinese MAN, 171cm, slightly overweight with a modest rounded belly, short salt-and-pepper dark hair, ordinary square mature face, natural wrinkles at eyes, no glamour model look. Practical light khaki jacket over muted charcoal casual shirt, dark grey straight trousers, plain brown walking shoes. Natural standing stance turned slightly toward image-right. One visible hand holds a small ordinary keyring with two keys near waist, the other holds a slim plain blank rental-information folder; no readable contract writing or legal seals. Face calmly explains the room, level closed lips with modest professional warmth; no exaggerated grin, no aggression. Match game's fine painterly anime rendering, adult realistic body proportions, detailed cloth and warm neutral skin, ivory/walnut/moss palette. 1024x1536 complete head-to-shoes frame with margins, centered sprite at same relative full-body scale as other characters. True transparent alpha background, no room, no floor, no shadow outside silhouette, no halo, no words or watermark. One adult male only.",
+      "references": [
+        "bg08-shared-studio.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "qin-jia.png",
+      "prompt": "Use case: illustration-story. Asset type: full-body transparent supporting-character sprite for adult Chinese visual novel 玫瑰与旧婚纱. Reference image is fine painterly STYLE and sprite scale ONLY, not identity or clothing. Draw a DISTINCT 40-year-old Chinese woman Qin Jia, photography residency project director, 169cm. SHORT straight chestnut-brown hair in a neat practical cropped bob above the nape, NO bun, mature narrow dark eyes, natural skin with subtle adult expression lines, calm competent face visibly older than the 28-year-old heroine. Pale blue cotton button shirt with modest collar and rolled cuffs, khaki straight trousers, dark sensible low shoes. Holds a plain exhibition-planning folder against one forearm, other empty hand lightly rests on it; no apron, tape, camera, sewing box or handbag. Slightly turned toward image-right, attentive professional closed-mouth expression with restrained encouragement, no flirting or blushing. Adult realistic proportions, clean full-body silhouette from head to shoes on 1024x1536 with margins, same relative head size and painterly rendering as reference. Genuine transparent alpha background, no floor or cast shadow, no halo, no scenery, no readable writing or logos, no watermark. One woman only.",
+      "references": [
+        "tang-jianyue-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg09-residency-work-area.png",
+      "prompt": "Use case: illustration-story. Asset type: new professional shared work-area background in the SAME photography residency building as reference, for 玫瑰与旧婚纱. The reference supplies the exterior city, window style, restrained ivory/wood palette and fine painterly anime rendering; this is the common work area used for discussing photographs, separate from the private guest bedroom. Wide 16:9 view with a large window on the LEFT showing the same ordinary city street and autumn trees, a practical long wooden review table with TWO simple chairs, a few unlabelled photographic prints and a plain project folder, a modest shared camera-equipment shelf and neutral wall at the back. Soft ordinary daytime light, professional and lived in, not a luxury boardroom. Leave clear foreground for two standing character sprites; keep the layout open and simple. NO bed, no suitcase, no intimate bedroom props, no romantic decorations, no extra room occupants. No legible writing, no logos, no watermark.",
+      "references": [
+        "bg09-residency.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg07-upstairs-rain-night.png",
+      "prompt": "Use case: lighting-weather and precise-object-edit. Asset type: September storm-night state of the EXACT upstairs room in 玫瑰与旧婚纱, BEFORE the October sorting. Preserve EXACT camera, LEFT old wooden wardrobe with its existing garment storage bag, back kitchen, dining table, RIGHT window and work desk, furniture positions and painterly anime detail. Night outside all windows, heavy rain visible on window glass and dark rooftops, no sunlight. A small leak at the right window has left wet wooden floor reflections and exactly TWO ordinary shallow wash basins catching water near the wardrobe base, as in the script. A loosely folded practical waterproof photography backdrop cloth rests beside the basins, not covering the cabinet or changing the furniture. Keep all old keepsakes safely present and NO discarded or cut wedding dress. Warm small lamps inside, damp cold-blue exterior, worried but believable domestic atmosphere, not horror. Leave open foreground for two sprites. No people, no bed, no ghosts, no writing or watermark, same wide 16:9 framing.",
+      "references": [
+        "bg07-upstairs-night.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg07-upstairs-sorted-night.png",
+      "prompt": "Use case: lighting-weather. Edit this EXACT organized-state upstairs room into quiet NIGHT. Preserve its camera, architecture, LEFT old wooden cabinet with garment storage bag and keepsake box, same dining table and kitchen, and especially the newly CLEARED window-side RIGHT work desk with its large free wooden surface and folded cloth only at far right. Do not fill the cleared desk again and do not remove the old cabinet or keepsakes. All windows show dark indigo night and the same tiled roofs with a few dim warm windows. Remove direct sunlight and every bright sunlight patch from floor and furniture. Existing small desk lamp and kitchen pendant create modest warm local light, dark readable room edges. Same fine painterly anime textures and wide 16:9 framing. No people, no shrine, no ghosts, no bed, no new writing, no watermark.",
+      "references": [
+        "bg07-upstairs-sorted.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "liu-qing-confirming.png",
+      "prompt": "Use case: identity-preserve. Create a confirmation/listening pose variant of this EXACT 52-year-old male landlord Liu Qing. Keep exact mature face, short salt-and-pepper hair, slightly overweight adult build, khaki jacket, charcoal shirt, grey trousers, brown shoes, full-body placement and scale on 1024x1536, and painterly rendering. REMOVE the dangling keys completely because they have been put away during the contract confirmation. One hand still holds a slim plain blank rental-information folder against his torso, the other empty hand opens naturally near waist in a modest asking-for-confirmation gesture, no pointing or aggression. Expression attentive and neutral, level closed lips with restrained professional warmth, no forced grin. No readable contract writing, no signature seal. Preserve genuine alpha-transparent background, no halo or scene, no extra people, no external shadow, no lettering or watermark.",
+      "references": [
+        "liu-qing.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "qin-jia-thinking.png",
+      "prompt": "Use case: identity-preserve. Change ONLY facial expression of the EXACT 40-year-old professional Qin Jia sprite for thoughtful photo critique and project planning. Slightly draw brows together, narrow focused mature dark eyes gently, keep lips closed and level without a smile, attentive and analytic rather than angry or romantic. Keep exact short straight brown bob, mature facial identity and subtle expression lines, blue cotton shirt, khaki trousers, shoes, folder held at torso, both hands, adult proportions, head orientation, exact 1024x1536 full-body placement and fine painterly rendering. Preserve actual alpha transparency. No extra props, no added halo, floor shadow, background, lettering or watermark. Everything outside the face remains identical.",
+      "references": [
+        "qin-jia.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg07-upstairs-rain-dawn.png",
+      "prompt": "Use case: lighting-weather. Convert this EXACT storm-night upstairs-room state to the grey early morning AFTER the storm has eased. Preserve the EXACT camera, left wardrobe and its safe garment bag/keepsake box, back kitchen, dining table, RIGHT desk, TWO wash basins by the wardrobe, folded dark waterproof backdrop cloth, all objects and their positions. Keep the wet floor and gentle reflections; do not magically remove the basins or puddles. Outside all windows is now soft overcast dawn grey-blue with the SAME roofs and damp plants, lighter than night but absolutely NO hard sunlight, no sunny floor patches. Rain on glass is lighter. Existing warm lamp can remain dimly on, balanced with cool diffused morning light, readable calm aftermath. Same painterly anime finish and exact wide 16:9 composition. No people, no added bed or clutter, no altered furniture, no ghost, no readable text, no watermark.",
+      "references": [
+        "bg07-upstairs-rain-night.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    }
+  ]
+}

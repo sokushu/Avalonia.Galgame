@@ -1,0 +1,168 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.8 wedding venue supporting cast and hallway, visitor arrival and seated handcraft, winter residency and private night/departure continuity",
+  "images": [
+    {
+      "file": "bg02-wedding-hallway.png",
+      "prompt": "Use case: illustration-story. Asset type: same-venue corridor/banquet entrance background variant for visual novel 玫瑰与旧婚纱. Reference image supplies EXACT wedding venue architectural identity, walnut woodwork, cream plaster, winter warm-white lamps and ivory/blush rose decorations. Draw the separate SECOND FLOOR HALLWAY immediately outside that bridal preparation room, not another bedroom. Wide 16:9 eye-level composition: a modest old wooden storage-room door on LEFT side wall, a lit preparation-room doorway on RIGHT showing a subtle glimpse of the reference vanity/mirror without any person, and bright banquet entrance with pale floral arch deeper in the middle distance. Clear practical walkway, old wood floor and lamps, ordinary venue service details discreetly at edges, no giant ballroom, no new city, no stairs needing elaborate geography. January afternoon light and warm winter lamps, positive busy-wedding atmosphere but completely NO PEOPLE. Storage door intact, conventional handle, no lock close-up or mechanism diagram. No bridal mannequin or spare wedding dress in hallway. Preserve painterly anime visual-novel realism and cream/walnut/dusty rose palette from reference. Empty foreground for independent character sprites, 1672x941, no legible signage, text, UI or watermark.",
+      "references": [
+        "bg02-bridal-room.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "luo-xiaoan.png",
+      "prompt": "Use case: illustration-story. Asset type: full-body supporting character sprite for 玫瑰与旧婚纱. Reference image is only painterly visual style and proportions, draw a DISTINCT 24-year-old Chinese woman Luo Xiaoan, 162cm, black hair in a neat HIGH PONYTAIL (not either heroine's haircut), practical black-and-white venue staff uniform: white collared shirt with sleeves neat, black fitted waistcoat, black straight trousers and comfortable black flats, simple blank staff badge. Young adult face with earnest slightly anxious brow, attentive brown eyes, lips gently parted as she explains the situation, no grin, no cartoon panic. Body leans slightly forward toward image-right as though about to guide a photographer. One hand holds a plain wedding running-order clipboard with blank/unreadable paper at waist, other hand gestures naturally toward image-right. Anatomically natural hands. Complete head to shoes, centered figure at same full-body scale as reference, 1024x1536, fine painterly adult anime style, warm neutral composite-friendly lighting. Actual transparent alpha background; no room, floor, outside shadow, halo, text or watermark. She is a diligent newcomer, never a scheming matchmaker; no voyeur pose.",
+      "references": [
+        "ye-zhao-work.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "pan-cheng.png",
+      "prompt": "Use case: illustration-story. Asset type: full-body transparent supporting-character sprite for Chinese adult visual novel 玫瑰与旧婚纱. Reference is style/palette only. New DISTINCT 42-year-old Chinese MAN Pan Cheng, 173cm, dark short hair combed back, ordinary mature face, subtle forehead lines, clean-shaven. Charcoal gray suit over pale shirt with plain muted tie, simple blank work badge and sensible black dress shoes. Holds a small ordinary walkie-talkie near waist in one hand; other hand slightly open in a frank apologetic gesture. Slight concerned furrow and regret in eyes, mouth naturally open a little as if apologizing after discovering a venue mistake. Not villainous, not comically terrified, not romantic lead. Natural medium build, realistic adult anatomy and clear hands, standing turned a little toward image-left. Full head-to-shoes framing at same centered full-body scale as game sprites, 1024x1536, refined painterly anime textures with warm neutral light. True transparent alpha background, no venue, floor, external shadow, halo, readable writing, captions or watermark.",
+      "references": [
+        "bg02-bridal-room.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "he-qing-worried.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent bride sprite for adult Chinese visual novel 玫瑰与旧婚纱. Use bride at BACK CENTER of reference as exact identity and dress reference, NOT either foreground heroine. He Qing is 27-year-old Chinese woman, 166cm, soft expressive features, dark eyes, black bridal updo with small ivory floral hairpins and a thin veil, natural wedding makeup. Reproduce her reference elegant ivory-white high lace collar, long fine lace sleeves, delicate sheer lace yoke and layered full wedding skirt. Full-body single person stands turned slightly to image-left, gently gripping skirt edges safely. Before repair expression: anxious and listening intently, slightly raised inner brows, lips tight/parted a little, moist eyes but not dramatic sobbing. On HER ANATOMICAL LEFT lower skirt edge (viewer right) show only a small modest snag and bunched torn hem, not exposure, not a big gash, no flower patch yet. Dress must remain complete and modest with realistic fabric. No bouquet so hands are free to handle hem. Same fine painterly anime finish as reference, warm neutral sprite light, complete head/veil to skirt hem with margins, 1024x1536 and transparent alpha. No other person, chair, background, floor shadow, glow, text, logo or watermark.",
+      "references": [
+        "cg02-lace-flower.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg09-residency-winter.png",
+      "prompt": "Use case: lighting-weather. Asset type: winter daytime guest-room background variant for adult visual novel 玫瑰与旧婚纱. Edit EXACT reference residency room. Preserve exact camera and all furniture/item positions: window LEFT with same city outside, bed left foreground, camera shelves center, small brown suitcase under window, old equipment bag lower center, RIGHT wooden work desk and upholstered editing chair with brown scarf over chair back, desk papers/phone/calendar and lamp, pictures on wall. Change ONLY season/light to late December/January/February cold winter day. SAME city and trees seen outside but trees now bare dark branches with just a few dry leaves, no dense golden autumn foliage and no flowers; no heavy snow or new landmarks. Cool pale winter daylight with soft low sun, quiet ordinary lived-in room; indoor plants remain healthy and green, familiar objects intact. No added visitor, no added luggage, no new meal/food visible, no renovation. Painterly anime warm wood texture and ivory/brown palette, neutral enough for soft dialogue, 1672x941 exact wide frame. No people, text, legible calendar marks, UI or watermark.",
+      "references": [
+        "bg09-residency.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "tang-jianyue-travel-v2.png",
+      "prompt": "Use case: identity-preserve. Asset type: practical pose correction for the SAME full-body transparent Tang Jianyue visit sprite, so the small suitcase remains visible above a visual-novel dialogue panel. Edit EXACT woman in reference. Preserve her exact 32-year-old Chinese face, dark loose low bun, warm small smile, cream cardigan/ivory top, long brown skirt, shoes, body/head placement, food container wrapped in cloth in her arm on viewer RIGHT, original full-body 1024x1536 framing and neutral light. CHANGE ONLY her suitcase-carrying arm on viewer LEFT and suitcase position. Bend that elbow naturally about 90 degrees, raising the hand holding the SMALL light overnight suitcase handle to WAIST height; the suitcase hangs immediately beside her left waist/upper hip, not down by knee. In 1536px full-body canvas the suitcase HANDLE should be at y about 560-620, bag top around 620 and bottom no lower than 950, so both handle and most of its compact rectangular brown body are visible in a waist-up game view. Keep suitcase modest and narrow, held beside rather than blocking torso, no wheel trolley and no duplicate bags; believable light suitcase and relaxed grip, anatomically correct bent arm and five-finger hand. Preserve lunch container and other arm exactly. Do not shrink or move the whole woman, do not change face or clothes, no second figure or room. Fine painterly anime texture, actual transparent alpha background, no external glow/shadow, text or watermark.",
+      "references": [
+        "../../../../artifacts/rose/v8-art-drafts/tang-jianyue-travel-v1.png"
+      ],
+      "transparentBackground": true,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v8-art-drafts/tang-jianyue-travel-v1.png",
+          "prompt": "Use case: identity-preserve. Asset type: full-body transparent arrival/visit action sprite for visual novel 玫瑰与旧婚纱. Edit EXACT Tang Jianyue in reference, 32-year-old Chinese woman with amber-brown eyes, dark loose LOW bun, mature warm face. Preserve identity, proportions, existing cream knit cardigan over ivory top, brown long skirt and brown lace-up shoes, same sprite head placement and full-body scale. She has just arrived for a four-day winter visit: one hand grips handle of a SMALL plain brown overnight suitcase at her side (not huge airport luggage); other forearm supports one modest tightly wrapped food/lunch container against waist, wrapped in folded pale cloth in a simple carrying bag, natural visible fingers. Gentle slightly shy happy smile looking toward image-left, no tears, not exuberant. Keep suitcase and lunch container clearly distinct, no duplicate hands or floating objects. Entire figure with all luggage and shoes inside 1024x1536 canvas and margins. Fine painterly adult anime texture and warm neutral lighting matching existing sprite. True transparent alpha background, no station, room, floor, halo, outside shadow, lettering or watermark.",
+          "references": [
+            "tang-jianyue-home.png"
+          ],
+          "reason": "Suitcase was obscured by dialogue panel in actual native game capture; raise carrying hand and compact bag to waist."
+        }
+      ],
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "he-qing-relieved-v2.png",
+      "prompt": "Use case: identity-preserve. Asset type: expression-only refinement of the SAME full-body transparent bride sprite. Edit target is EXACT He Qing in attached reference. Change ONLY her facial EXPRESSION so relief is unmistakable at visual novel portrait size. Lower the tense INNER ends of both eyebrows into relaxed natural arches, soften the worried eyelids into warm attentive eyes, lift BOTH mouth corners into a clear sincere grateful smile with a little natural parted-lip smile. Cheeks relaxed, no fear, no sorrow, no tears, no distressed V-shaped brow, no forced grin. She has just learned the wedding dress repair worked and is thanking the tailor. Keep EXACT face identity/age 27, hair/updo/veil and floral pins unchanged. Keep EVERYTHING below the neck unchanged: same repaired ivory lace dress including the already closed lower viewer-right snag and small matching flower patch, identical hands, posture, body proportions and silhouette, no new props. Do not redraw or damage the skirt. True transparent alpha background and original full-body 1024x1536 canvas, fine painterly anime rendering, no new lighting, background, halo, text or watermark.",
+      "references": [
+        "../../../../artifacts/rose/v8-art-drafts/he-qing-relieved-v1.png"
+      ],
+      "transparentBackground": true,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v8-art-drafts/he-qing-relieved-v1.png",
+          "prompt": "Use case: identity-preserve. Asset type: repaired-gown relief expression variant, transparent full-body visual-novel sprite. Edit EXACT He Qing bride from reference, preserving identical 27-year-old Chinese face identity, black bridal updo, ivory flower pins and veil, lace high collar/long sleeves and complete ivory wedding dress, pose, hands gently lifting same skirt edges, body scale, head placement and 1024x1536 full-body framing. Change ONLY expression and the small lower-hem repair: anxious brows ease, eyes now relieved and attentive, mouth in a small sincere grateful smile; no tears, no exaggerated grin. Repair the small snag on HER LEFT lower skirt edge (viewer RIGHT, same place as source reference near lower right): no exposed tear or fraying remains, replaced by ONE modest tone-on-tone ivory lace flower applique matching the dress, subtle enough to hide in layered lace but visible on full sprite. Do not alter the whole dress, silhouette, hairstyle or hand positions; no new bouquet, jewelry or props. Same painterly adult anime texture and neutral sprite light, no cast shadow or glow outside silhouette, true transparent alpha, no text or watermark.",
+          "references": [
+            "he-qing-worried.png"
+          ],
+          "reason": "Expression remained too close to worried version; kept as draft, excluded from release."
+        }
+      ],
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg09-residency-winter-night.png",
+      "prompt": "Use case: lighting-weather. Asset type: winter nighttime residency-room background for 玫瑰与旧婚纱. Edit EXACT reference winter room. Change ONLY daylight into late December quiet night. Preserve exact camera and architecture, left bed and blankets, same suitcase, camera shelf and bag, RIGHT work desk and editing chair with same brown scarf, papers and lamps, all room items in identical positions. Through the SAME left window show dark blue winter city with sparse warm window lights and same BARE branches with very few dry leaves; no dense autumn foliage, no snowstorm, no new skyline. No sunlight stripes on bed or floor. Existing desk lamp emits a low warm pool of light, dim enough for quiet night thoughts, room readable with soft deep shadows. Bed remains ordinary empty drawn bed, no figures or human silhouettes, no added romance props, no new visitor luggage or meal. Indoor plant stays green, familiar photographs unchanged. Fine painterly adult anime texture and walnut/ivory palette, 1672x941 exact wide frame. No people, readable text, screens with messages, captions, logo or watermark.",
+      "references": [
+        "bg09-residency-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg14-visitor-handwork.png",
+      "prompt": "Use case: illustration-story. Asset type: supplemental plot-action CG for adult Chinese visual novel 玫瑰与旧婚纱, B03 visiting second morning. Reference 1 is exact Tang Jianyue identity and home/travel clothes: 32-year-old Chinese woman, mature amber-brown eyes, dark loose LOW bun, cream knit cardigan over ivory top, brown long skirt, brown lace-up shoes. Reference 2 is EXACT winter residency room and right-side wooden photo-editing desk/chair. Depict Tang seated naturally on that upholstered photo-editing chair at the RIGHT desk, doing a small ordinary customer's garment hem BY HAND with a fine needle and short thread; no sewing machine. View from left diagonal inside same room, camera at seated eye-height with a quiet intimate wide 16:9 composition. Her face and working hands clearly visible ABOVE bottom 25% reserved for dialogue. She concentrates with lowered eyes, relaxed but attentive mouth, neither smiling at camera nor crying. Left hand supports a folded piece of pale beige cotton garment, right hand safely draws tiny stitch through its hem, correct anatomy with clear fingers. The garment is a normal clothing hem, not bridal gown, not Ye's brown coat, no summer pale-blue-shirt mistake. Work desk still has Ye's ordinary camera references/papers pushed safely aside, the same brown scarf over chair back, winter bare branches/city beyond left window, camera equipment shelves and left bed in same layout. Ye is watching from the camera/viewer's side before going to work, so draw ONLY Tang in picture: no awake second heroine, no extra face, no kiss being depicted, no stranger. Preserve exact adult identity, real seated weight, no giant head, no tiny body, natural clothing drape. Soft cool late-December morning daylight with warm wooden room, fine painterly anime rendering matching game palette. No new plot event, no food, no phone text, no UI, readable writing, logo or watermark.",
+      "references": [
+        "tang-jianyue-home.png",
+        "bg09-residency-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    }
+  ]
+}

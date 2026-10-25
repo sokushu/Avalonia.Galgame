@@ -1,0 +1,152 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.4 family portraits and emotions, empty-handed dinner poses, three location-preserving night backgrounds",
+  "images": [
+    {
+      "file": "zhou-suqin.png",
+      "prompt": "Use case: illustration-story. Asset type: full-body transparent supporting-character sprite for a mature Chinese visual novel, 玫瑰与旧婚纱. Reference image is STYLE ONLY, not the identity to copy. Draw a DISTINCT 61-year-old Chinese woman, Zhou Suqin, 155cm, slim with a long narrow face, short naturally grey-white hair, realistic fine age lines, tired dark brown eyes, modest dark navy knitted cardigan over pale grey blouse, straight grey trousers and practical dark flat shoes. She holds one worn plain cloth grocery bag at her waist, fingers lightly pinching the bag edge, shoulders slightly drawn. Expression worried and reserved, closed unsmiling lips, vulnerable grief rather than hostility, natural mature dignity. She has lost her adult son and is trying to listen to his widow; no exaggerated villain face, no youthful face, no caricature. Same fine painterly anime rendering, delicate fabric texture and warm ivory/walnut palette as reference. Full body from head to shoes, neutral standing pose turned slightly to image-right, soft neutral illumination. 1024x1536 portrait canvas, top and shoes margins, centered silhouette, character occupies same proportional height as reference for consistent sprite scaling. Truly alpha-transparent background, clean edges with no halo, no room, no floor or external shadow, no text, no watermark. One person only.",
+      "references": [
+        "tang-jianyue-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-yufen-v2.png",
+      "prompt": "Use case: illustration-story. Asset type: full-body transparent supporting-character sprite for mature Chinese visual novel 玫瑰与旧婚纱. Reference image is STYLE ONLY, not an identity to copy. Draw a DISTINCT 56-year-old Chinese woman Tang Yufen, 160cm, chestnut-black short curled hair, slightly raised outer eyebrows, neat subtle makeup, visible mature age lines and middle-aged proportions. Modest dark purple patterned blouse tucked into plain black straight trousers, black low-heeled practical shoes. One hand carries a plain dark handbag at her hip, the other hand raised gently at chest height as she starts speaking; five natural fingers, no aggressive pointing. Expression initially concerned and socially confident with level closed lips, restrained warmth and expectation, not smiling broadly. Recognizable aunt, not young heroine and not a villain caricature. Match reference's fine painterly anime style, warm natural skin and realistic fabric detail. Neutral standing pose slightly facing image-right, complete head-to-shoes silhouette on 1024x1536 with margins and same proportional body height as reference. True alpha-transparent background, no colored halo, no room, no floor or external shadow, no extra people, no letters, no logos, no watermark.",
+      "revision": "Use case: identity-preserve. Edit this exact supporting sprite. Change ONLY hair and facial age. She must clearly be Tang Yufen, a 56-year-old Chinese aunt: SHORT chestnut-black CURLY HAIR ending ABOVE the nape and at jaw level, absolutely NO bun, NO braid, NO ponytail, no hair gathered behind the head. Short softly curled silhouette around ears, slightly raised outer eyebrows, neat modest makeup, visible mature crow's feet and nasolabial folds, slight eye bags, naturally middle-aged jaw. Keep a poised reserved closed-mouth expression, not a youthful beauty face. Preserve EXACT purple patterned blouse, black trousers, handbag, raised-hand pose, other hand, full adult body proportions, shoes, placement on 1024x1536 canvas, painterly rendering and true transparent background. No scenery, no halo, no text.",
+      "draftReference": "artifacts/rose/v4-art-drafts/tang-yufen-initial.png",
+      "references": [
+        "tang-jianyue-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg07-upstairs-night.png",
+      "prompt": "Use case: lighting-weather. Edit target is the exact upstairs living-room background for visual novel 玫瑰与旧婚纱. Change ONLY time and lighting to a believable quiet late night. Preserve EXACT camera, architecture, stairs foreground, dark wooden cabinet on LEFT, dining table center-left, small kitchen in back, desk and large window on RIGHT, all existing objects and room layout. Outside ALL windows is dark blue night, a few dim warm neighborhood windows and silhouettes of the same Chinese tiled roofs; no blue daytime sky, no direct sun, no daytime exterior. Remove every sunlight beam and bright sun patch from floor. Turn on warm modest desk lamp on the right and the small warm kitchen/dining pendant, soft local pools of amber light, dim gentle cool reflected light at window, darker room edges but furniture remains readable. Keep all same painterly anime textures, intimate lived-in feeling, ivory and walnut palette with subdued night blue, original wide 16:9 composition. No people, no bed added, no changed furniture, no ghosts, no text or watermark.",
+      "references": [
+        "bg07-upstairs.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg06-photo-studio-night.png",
+      "prompt": "Use case: lighting-weather. Edit target is the exact photography studio of Ye Zhao in 玫瑰与旧婚纱. Change ONLY time and illumination to a late working night. Preserve exact camera, architecture, LEFT window, computer and wooden desk, camera/lenses, shelving, backdrop and softbox on RIGHT, all existing objects and original room identity. Every window shows a dark blue night sky and dim silhouettes of the SAME tiled rooftops, no daytime sky. Remove all sunlight beams and all hard bright daylight patches from the wooden floor. Computer monitor now has a soft cool glow with no legible text, desk lamp gives a restrained warm pool on keyboard and photographs, studio softbox switched OFF. Dim believable ambient night illumination, preserve readable room shapes and warm wood, do not make the room abandoned. Match fine painterly anime rendering and exact wide 16:9 framing of reference. No people, no new furniture, no extra sewing table, no logos, no words, no watermark.",
+      "references": [
+        "bg06-photo-studio.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg09-residency-night.png",
+      "prompt": "Use case: lighting-weather. Edit target is the exact out-of-town artist residency room in 玫瑰与旧婚纱. Change ONLY lighting/time to a quiet late night. Keep EXACT camera, architecture, desk location, window, papers, suitcase, camera and all furniture in their same positions. All windows show a genuinely dark indigo night, subtle distant city lights, no daylight sky and no sunlight patches. Illuminate the writing surface with the existing small warm desk lamp; soft blue reflected night at the window, dark but readable room, restrained loneliness rather than horror. Preserve the original fine painterly anime rendering, subdued ivory/wood/dusty-rose color palette and wide 16:9 composition. No people, no unreadable text pretending to be letters, no ghost or imagined partner, no extra furniture, no logos or watermark.",
+      "references": [
+        "bg09-residency.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "zhou-suqin-listening.png",
+      "prompt": "Use case: identity-preserve. Change ONLY the facial expression of this EXACT 61-year-old Zhou Suqin sprite. She is making an effort to listen after a difficult conversation: lower and relax the worried brows a little, gaze steady and tired, closed unsmiling lips with corners level, fine age lines visible, a trace of restrained softness. This is limited listening, NOT cheerful approval of the relationship, no grin, no tears running. Preserve exact grey-white short hair, mature long narrow face and all identity features, navy cardigan, grey blouse/trousers, plain cloth grocery bag held in both hands, full-body pose, head placement and scale, shoes, 1024x1536 framing and fine painterly anime rendering. True alpha transparency, no added background, shadow, halo, words or watermark. Do not change anything outside her face.",
+      "references": [
+        "zhou-suqin.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-yufen-stern.png",
+      "prompt": "Use case: identity-preserve. Edit ONLY facial expression of this exact 56-year-old Tang Yufen supporting sprite. She is hurtfully disapproving after her niece rejects an arranged date: eyebrows draw slightly inward and upward at their outer ends, gaze intent and narrow, lips closed and pressed into a firm flat line, a restrained rigid expression. Keep natural mature age lines. No shouting, no bared teeth, no caricature villain grin, no exaggerated rage. Preserve EXACT short chestnut-black curled hair with no bun, mature face identity, purple patterned blouse, black trousers, handbag, one raised speaking hand, complete body pose, scale and head placement, shoes, 1024x1536 canvas and painterly anime detail. Keep true alpha transparent background, no added halo, room, props, words or watermark. Everything outside the face stays the same.",
+      "references": [
+        "tang-yufen-v2.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "zhou-suqin-empty-handed.png",
+      "prompt": "Use case: identity-preserve. Create a precise empty-handed pose variant of this exact 61-year-old Zhou Suqin transparent sprite for a quiet family conversation after she has put her grocery bag down. REMOVE the cloth shopping bag completely. Change ONLY her hands and forearms: both empty hands relax lightly together near her lower waist, natural fingers gently clasped, no held object and no new prop. Keep her EXACT recognizable grey-white short hair, worried mature face and expression with fine age lines, navy cardigan, pale blouse, grey straight trousers, practical shoes, adult body proportions, head orientation and placement, full-body standing scale on 1024x1536, and painterly rendering. True alpha-transparent background, no bag, no chair, no room, no halo, no floor shadow, no words or watermark. Preserve all other details.",
+      "references": [
+        "zhou-suqin.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "zhou-suqin-listening-empty.png",
+      "prompt": "Use case: identity-preserve. Create a precise EMPTY-HANDED pose variant of this exact 61-year-old Zhou Suqin listening sprite. She has put her grocery bag down and is listening at the small family dinner table. REMOVE the cloth grocery bag completely. Change ONLY hands and forearms so both EMPTY hands rest naturally together near lower waist, fingers loosely clasped, no object. Keep EXACT grey-white short hair, long mature face, tired but softer attentive closed-mouth expression, visible age lines, navy cardigan, pale blouse, grey trousers, black practical shoes, same head orientation and placement, full adult body proportions and standing full-body scale on 1024x1536. Same fine painterly anime rendering. True transparent alpha background, no new prop, no chair, no bag, no room, no halo, no external shadow, no lettering or watermark. Everything else unchanged.",
+      "references": [
+        "zhou-suqin-listening.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    }
+  ]
+}

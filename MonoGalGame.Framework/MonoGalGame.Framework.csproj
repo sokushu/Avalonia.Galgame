@@ -8,6 +8,10 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="../MonoGalGame.Core/MonoGalGame.Core.csproj" />
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.6" />

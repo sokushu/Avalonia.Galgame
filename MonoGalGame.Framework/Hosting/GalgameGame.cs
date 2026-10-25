@@ -12,7 +12,7 @@ using MonoGalGame.Framework.Rendering;
 
 namespace MonoGalGame.Framework.Hosting;
 
-public enum GameScreen { Title, Reading, Pause, Save, Load, History, Settings }
+public enum GameScreen { Title, Reading, Pause, Save, Load, History, Settings, Gallery }
 
 /// <summary>A reusable desktop visual novel host. Game-specific content and assets live outside this assembly.</summary>
 public partial class GalgameGame : Game
@@ -24,6 +24,9 @@ public partial class GalgameGame : Game
     private readonly List<UiButton> _buttons = [];
     private readonly Typewriter _writer = new();
     private readonly string _settingsPath;
+    private readonly string _progressPath;
+    private readonly ReadingProgress _readingProgress;
+    private SaveSlotInfo? _continueSave;
     private SpriteBatch _batch = null!;
     private UiPainter _ui = null!;
     private IGameFont _font = null!;
@@ -41,14 +44,19 @@ public partial class GalgameGame : Game
     private IReadOnlyList<TextPage> _pages = [];
     private IReadOnlyList<SaveSlotInfo> _slots = [];
     private int _page, _focus, _choiceFocus, _historyOffset;
+    private int _artworkIndex;
     private int? _overwriteSlot;
     private long _shownRevision = -1;
     private SceneState? _shownScene;
+    private SceneState? _previousBackground;
+    private float _backgroundFade = 1;
+    private double _endingUntil;
+    private bool _endingMusicPending;
     private bool _hasSession, _hidden;
     private double _time, _autoElapsed, _skipElapsed, _toastUntil;
     private string _toast = "";
     private string? _lastAudioError;
-    private float _transition;
+    private readonly PortraitStage _portraitStage = new();
 
     protected GalgameOptions Options { get; }
     public StoryPlayer Player { get; }
@@ -75,6 +83,17 @@ public partial class GalgameGame : Game
             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MonoGalGame", options.Project.Id);
         Saves = new(DataDirectory, options.Project.Id);
         _settingsPath = Path.Combine(DataDirectory, "settings.json");
+        _progressPath = Path.Combine(DataDirectory, "reading-progress.json");
+        _readingProgress = ReadingProgress.Load(_progressPath, options.Story.Id);
+        _continueSave = Saves.FindLatest(options.Story);
+        // Carry discoveries forward from saves created before the gallery tracked progress.
+        var priorSaves = Saves.ListSlots().AsEnumerable();
+        if (_continueSave is { } continuation) priorSaves = priorSaves.Append(continuation);
+        foreach (var slot in priorSaves)
+            if (slot.Save?.Snapshot.StoryId == options.Story.Id && slot.Save.Snapshot.ReadNodes is { } readNodes)
+                foreach (var id in readNodes)
+                    if (id is not null && options.Story.Nodes.TryGetValue(id, out var node) && node.Scene is { } scene)
+                        _readingProgress.ObserveScene(scene.Background, scene.Portrait, scene.SecondaryPortrait, scene.TertiaryPortrait);
         Settings = UserSettings.Load(_settingsPath);
         _windowedSize = SdlWindowMetrics.InitialWindowSize(Window.Handle, new(options.WindowWidth, options.WindowHeight), options.ScaleWindowToDpi);
         _graphics = new(this)
@@ -116,6 +135,7 @@ public partial class GalgameGame : Game
         UpdateViewport();
         RefreshNativeTitle();
         SyncPresentation();
+        _audio.PlayMusic(Options.Theme.TitleMusic);
         base.LoadContent();
     }
 
@@ -128,6 +148,18 @@ public partial class GalgameGame : Game
         ChangeToReading();
         SyncPresentation();
     }
+
+    public void ResumeStory()
+    {
+        if (_hasSession)
+        {
+            ChangeToReading();
+            _audio.PlayMusic(Player.Scene.Music);
+        }
+        else if (_continueSave is { } save) LoadFromSlot(save.Slot);
+    }
+
+    protected virtual StorySnapshot PrepareLoadedSnapshot(StorySnapshot snapshot) => snapshot;
 
     public void AdvanceDialogue()
     {
@@ -200,7 +232,7 @@ public partial class GalgameGame : Game
     {
         TryStorage(() =>
         {
-            Player.Restore(Saves.Load(slot).Snapshot);
+            Player.Restore(PrepareLoadedSnapshot(Saves.Load(slot).Snapshot));
             _hasSession = true;
             AutoAdvance = false;
             ChangeToReading();
@@ -220,19 +252,27 @@ public partial class GalgameGame : Game
 
     private void ReturnToTitle()
     {
+        _endingMusicPending = false;
+        _endingUntil = 0;
         Screen = GameScreen.Title;
         _navigation.Clear();
         _buttons.Clear();
         _focus = 0;
         AutoAdvance = false;
-        _audio.PlayMusic("");
+        _audio.PlayMusic(Options.Theme.TitleMusic);
         _audio.StopVoice();
     }
 
     protected override void Update(GameTime gameTime)
     {
         _time += gameTime.ElapsedGameTime.TotalSeconds;
-        _transition = Math.Min(1, _transition + (float)gameTime.ElapsedGameTime.TotalSeconds * 2.5f);
+        _portraitStage.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+        _backgroundFade = Math.Min(1, _backgroundFade + (float)gameTime.ElapsedGameTime.TotalSeconds * 2.5f);
+        if (_endingMusicPending && _time >= _endingUntil)
+        {
+            _endingMusicPending = false;
+            _audio.PlayMusic(Player.Scene.Music);
+        }
         var keyboard = PollKeyboard();
         var mouse = PollMouse();
         RefreshNativeTitle();
@@ -354,12 +394,34 @@ public partial class GalgameGame : Game
         _writer.Reset(_pages[0].ElementCount);
         if (Player.CurrentNode.Kind != NodeKind.Dialogue) _writer.RevealAll();
         _autoElapsed = 0;
-        if (_shownScene != Player.Scene) _transition = 0;
+        if (_shownScene is { } previous && (previous.Background != Player.Scene.Background || previous.Tone != Player.Scene.Tone))
+        {
+            _previousBackground = previous;
+            _backgroundFade = 0;
+        }
+        var targets = new List<PortraitTarget>();
+        void Target(string texture, int center, float scale = 1)
+        {
+            if (texture.Length == 0) return;
+            var character = Options.Theme.PortraitCharacters.GetValueOrDefault(texture, texture);
+            targets.Add(new(character, texture, center, scale * Options.Theme.CharacterScales.GetValueOrDefault(character, 1)));
+        }
+        var triple = Player.Scene.TertiaryPortrait.Length > 0;
+        Target(Player.Scene.SecondaryPortrait, triple ? 285 : 420, triple ? .9f : 1);
+        Target(Player.Scene.TertiaryPortrait, 640, .9f);
+        Target(Player.Scene.Portrait, triple ? 995 : Player.Scene.SecondaryPortrait.Length > 0 ? 878 : 818, triple ? .9f : 1);
+        _portraitStage.Set(targets);
         _shownScene = Player.Scene;
         if (_hasSession)
         {
-            _audio.PlayMusic(Player.Scene.Music);
+            _endingMusicPending = Player.IsEnded && Options.Theme.EndingPauseSeconds > 0;
+            _endingUntil = _endingMusicPending ? _time + Options.Theme.EndingPauseSeconds : 0;
+            _audio.PlayMusic(_endingMusicPending ? "" : Player.Scene.Music);
             _audio.PlayVoice(Player.CurrentNode.Voice);
+            var ending = Player.IsEnded ? Player.CurrentNodeId : null;
+            if (_readingProgress.ObserveScene(Player.Scene.Background, Player.Scene.Portrait,
+                Player.Scene.SecondaryPortrait, Player.Scene.TertiaryPortrait, ending))
+                TryStorage(() => _readingProgress.Save(_progressPath));
         }
     }
 
@@ -427,10 +489,11 @@ public partial class GalgameGame : Game
                 case GameScreen.Load: DrawSaves(); break;
                 case GameScreen.Settings: DrawSettings(); break;
                 case GameScreen.History: DrawHistory(); break;
+                case GameScreen.Gallery: DrawGallery(); break;
             }
         }
         if (_overwriteSlot is { } slot) DrawOverwrite(slot);
-        if (_time < _toastUntil)
+        if (_time < _toastUntil && !(_endingMusicPending && Screen == GameScreen.Reading))
         {
             var width = (int)_font.Measure(_toast, 19) + 52;
             var bounds = new Rectangle((DesignWidth - width) / 2, 22, width, 46);

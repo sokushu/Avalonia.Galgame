@@ -110,6 +110,8 @@ public sealed class StoryPlayer
             node.Kind is not (NodeKind.Dialogue or NodeKind.Choice or NodeKind.End) ||
             snapshot.Variables is null || snapshot.Scene is null || snapshot.History is null || snapshot.ReadNodes is null ||
             snapshot.Scene.Background is null || snapshot.Scene.Portrait is null || snapshot.Scene.Music is null ||
+            snapshot.Scene.SecondaryPortrait is null || snapshot.Scene.Chapter is null || snapshot.Scene.Location is null ||
+            snapshot.Scene.Time is null || snapshot.Scene.Viewpoint is null || snapshot.Scene.Tone is null || snapshot.Scene.TertiaryPortrait is null ||
             snapshot.History.Count > MaxHistory || snapshot.History.Any(entry => entry is null ||
                 !Story.Nodes.ContainsKey(entry.NodeId ?? "") || entry.Text is null || entry.Speaker is null) ||
             snapshot.ReadNodes.Any(id => !Story.Nodes.ContainsKey(id)))
@@ -142,7 +144,10 @@ public sealed class StoryPlayer
             var node = CurrentNode;
             Apply(node.Effects);
             if (node.Scene is { } scene)
-                Scene = new(scene.Background ?? Scene.Background, scene.Portrait ?? Scene.Portrait, scene.Music ?? Scene.Music);
+                Scene = new(scene.Background ?? Scene.Background, scene.Portrait ?? Scene.Portrait, scene.Music ?? Scene.Music,
+                    scene.SecondaryPortrait ?? Scene.SecondaryPortrait, scene.Chapter ?? Scene.Chapter,
+                    scene.Location ?? Scene.Location, scene.Time ?? Scene.Time, scene.Viewpoint ?? Scene.Viewpoint,
+                    scene.Tone ?? Scene.Tone, scene.TertiaryPortrait ?? Scene.TertiaryPortrait);
             switch (node.Kind)
             {
                 case NodeKind.Dialogue:

@@ -11,6 +11,7 @@ public sealed record GalgameOptions(GameProject Project, StoryDocument Story)
     public int WindowWidth { get; init; } = 1280;
     public int WindowHeight { get; init; } = 720;
     public bool ScaleWindowToDpi { get; init; } = true;
+    public GalgameTheme Theme { get; init; } = new();
     public static GalgameOptions FromProject(string path)
     {
         var project = GameProject.Load(path);

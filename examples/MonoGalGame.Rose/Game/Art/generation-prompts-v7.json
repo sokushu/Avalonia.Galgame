@@ -1,0 +1,129 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.7 sewing action and summer lesson, January leak and repaired room, temporary ironing conflict with nighttime scheduling",
+  "images": [
+    {
+      "file": "bg07-upstairs-january-leak.png",
+      "prompt": "Use case: lighting-weather. Asset type: visual novel story background for 玫瑰与旧婚纱, January 2030 leak before repairs. Edit target is the EXACT reference upstairs room. Preserve exact viewpoint, stairs foreground, dark old wardrobe LEFT with pale garment storage bag and brown wooden keepsake box safely on top, dining table center-left, kitchen back, big window and cleared usable wooden work desk RIGHT. Keep all architecture, furniture proportions, painterly adult anime style and room identity. Change summer sunshine into a cold rainy January overcast daytime. Outside window the same tiled rooftops and woody climbing rose vines now dormant with sparse dry leaves, no pink flowers and no snow. Show a realistic localized roof/window leak on RIGHT only: damp dark water streaks on plaster beside and below the window, blackened small supporting wood near the floor, a couple plain cardboard storage boxes at the far right floor with wet lower edges, a modest wet patch reflecting gray window light. The desk remains in place at this pre-move stage; majority desk surface remains clear as in reference. Local damage only, building intact and ceiling intact, not a disaster, no collapse, no outdoor flood. Wardrobe and old keepsakes safe and dry, no new people. Gray daylight mixed with original small warm pendant and table lamp. Wide 16:9 framing 1672x941. No captions, text, readable writing or watermark.",
+      "references": [
+        "bg07-upstairs-sorted.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "tang-jianyue-handsewing.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent visual novel action sprite for 玫瑰与旧婚纱. Edit target is EXACT Tang Jianyue in reference, 32-year-old Chinese woman. Preserve her recognizable mature warm face, amber-brown eyes, black low loose bun, body proportions, green rolled-sleeve shirt, ivory working apron and neck measuring tape, brown long skirt, brown lace-up shoes, exact full-body size and head placement. Change ONLY expression and arm/hand action: quietly concentrating with eyes lowered toward her work, level closed lips and calm brow. Replace the wooden sewing box entirely with an ordinary small pale blue cotton customer's shirt held at mid torso. One hand supports the folded shirt hem, the other works a tiny fine needle and short thread through that hem, anatomically clear hands and natural easy shoulders. Cloth is cotton shirt, no bridal lace and no brown coat. Cloth/needle completely inside sprite silhouette, not cut off. No floating tabletop, no room, no chair, no sewing machine. Full figure head to shoes with margins, same centered standing pose and canvas 1024x1536. Preserve fine painterly anime rendering and the original neutral light for compositing. Actual transparent alpha background, no painted black backdrop, no glow, no outline, no shadow outside silhouette, no text or watermark.",
+      "references": [
+        "tang-jianyue.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "cg12-sewing-lesson.png",
+      "prompt": "Use case: illustration-story. Asset type: supplemental story CG for adult Chinese visual novel 玫瑰与旧婚纱, exact summer cotton-shirt sewing lesson scene. Reference 1 is Ye Zhao identity and white rolled-sleeve shirt/green trousers, 28-year-old Chinese woman with short asymmetric dark bob. Reference 2 is Tang Jianyue identity and green shirt/ivory apron/brown skirt/loose low bun, 32-year-old Chinese woman; reference 3 is exact shopfront and lane spatial identity only. Wide 16:9 intimate waist-up two-person illustration seated on the two low stools at the little table outside SAME rose-covered wooden bridal shop in reference 3. Early summer evening, still soft warm daylight and long shadows. Ye on LEFT has just accidentally hand-sewn the sleeve of an ordinary pale-blue cotton shirt to its own shirt body; she lifts the garment at chest height with both hands, showing visibly bunched sleeve joined to side seam by a short crooked line of pale stitches. The cloth is an ordinary customer's cotton shirt, no wedding dress, no brown coat. Ye looks at Tang with embarrassed playful smile, not crying. Tang on RIGHT laughs naturally with head gently lowered, warm crescent eyes and modest open smile, shoulders relaxed, hands safely resting near the table; no box in hands. Fine readable hands, no extra limbs. Open small wooden needle box and a spool on table, small portable fan switched off; no electrified sewing machine during power outage. Their camera can rest safely on table far left, do not obstruct garment action. Preserve clear faces and garment detail above bottom 25% which will be covered by dialogue box; lower area can show ordinary table/stools. Painterly anime adult proportions, rich fabric and old wood texture, warm ivory/walnut/moss/dusty rose palette, no UI, no readable writing, no captions, no logos or watermark. No kiss yet; this scene precedes the later summer-night kiss.",
+      "references": [
+        "ye-zhao.png",
+        "tang-jianyue.png",
+        "bg05-alley-day.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg07-upstairs-repaired.png",
+      "prompt": "Use case: precise-object-edit. Asset type: January after-repair visual novel room background for 玫瑰与旧婚纱. Reference 1 is exact sorted-room architecture and furniture layout; reference 2 is the same room's January leak state and winter window view. Depict that SAME room after modest necessary repairs, not renovated decor. Preserve exact camera and stairs, dark old wardrobe LEFT with pale garment storage bag and brown wooden keepsake box STILL preserved, dining table and old mismatched stools center-left, kitchen back and window-side usable wooden desk RIGHT with clear surface, original lamp and folded cloth far right. Winter daytime, same tiled rooftops outside, climbing rose vines dormant with sparse dry brown leaves and absolutely no pink flowers. Fix ONLY the previous localized roof/window leak: dry clean sealed plaster strip around the window and below sill, slightly lighter small repaired patch near lower wall, old dark window frame structurally intact, supporting wood replaced with ordinary sound wood. Floor fully dry, no puddles, no wet boxes, no basins, no rubble, no workers. Keep the room's aged warm wood and familiar ordinary belongings, not a pristine newly furnished apartment, no destruction or removal of old keepsakes. Soft cool winter daylight with original small warm lights, bright enough to read, no rain beyond window. Fine painterly anime textures, adult romantic visual novel background, exact 1672x941 wide framing, no people, no new bed, no text or watermark.",
+      "references": [
+        "bg07-upstairs-sorted.png",
+        "bg07-upstairs-january-leak.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg13-temporary-ironing.png",
+      "prompt": "Use case: illustration-story. Asset type: supplemental story CG for 玫瑰与旧婚纱, exact January temporary shared-workspace ironing conflict. References 1 and 2 are exact two adult women identities/outfits: Ye Zhao 28 Chinese woman short asymmetric dark bob, white rolled-sleeve shirt green trousers with her working camera; Tang Jianyue 32 Chinese woman black low loose bun green shirt ivory apron brown skirt. Reference 3 is the EXACT borrowed photo studio's temporary layout, winter window left, camera equipment desk foreground-left, photography paper backdrop on right and temporary fabric table. Wide 16:9 cinematic illustration from slightly left diagonal so both work zones are clear. LEFT foreground Ye holds her working camera at chest-level, paused mid-session, eyebrows slightly drawn and lips held in restrained professional frustration, not shouting. RIGHT middle ground behind the edge of a hanging neutral cloth divider Tang is actually pressing a plain customer's light beige skirt hem on the temporary padded work table using a real handheld steam iron: hand on iron handle, soleplate flat on cloth, other hand safely away smoothing fabric, thin short steam puff visibly rising. Tang face has tense apologetic concern, no smile and no crying. Their workspaces crowd one another, but no anger caricature. One ordinary adult customer may be implied only by an unobtrusive out-of-focus clothed shoulder at extreme left image edge, no invented identifiable face, no third main character. Keep the original studio architecture and photography lights recognizable; no ballroom, no couple portrait session, no new final shared studio, no bridal dress. Faces and iron/cloth action all ABOVE bottom 25% dialogue region. Professional fabric work, realistic hands and intact iron, fine painterly adult anime palette with cool January windowlight and warm indoor wood. No new plot, no romance pose, no readable schedule/text, UI, logos, watermark.",
+      "references": [
+        "ye-zhao.png",
+        "tang-jianyue.png",
+        "bg06-photo-studio-temporary.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg07-upstairs-repaired-night.png",
+      "prompt": "Use case: lighting-weather. Asset type: after-repair winter night variant for visual novel 玫瑰与旧婚纱. Edit target is EXACT reference after-repair room. Change ONLY time and lighting into late January night. Preserve exact room geometry and camera, stairs, old dark wardrobe and safe pale garment bag/wooden keepsake box LEFT, dining table/bowls and kitchen, clear usable desk RIGHT, fixed window plaster, completely dry floor with no basins or cardboard boxes. Outside window SAME tiled roofs and dormant woody rose vines sparse brown dry leaves, no pink flowers, now dark indigo winter night, no rain. No daylight or sunlight stripes on floor. Warm practical light comes ONLY from existing ceiling pendant and desk lamp, softly illuminating desk and table, deeper shadows at edges, readable painted details. Keep face-free empty room, cozy but ordinary and aged, all furnishings in identical positions, no new romance props, no new window. Exact wide 1672x941 painterly anime background, no people, text, caption, logo or watermark.",
+      "references": [
+        "bg07-upstairs-repaired.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg06-photo-studio-temporary-night.png",
+      "prompt": "Use case: lighting-weather. Asset type: borrowed temporary photo-studio night background for visual novel 玫瑰与旧婚纱. Edit EXACT reference, preserving camera and all geometry and item positions: large winter window on LEFT, working camera/computer desk left foreground, equipment shelf at center-left, photography paper backdrop and standing softbox center-right, temporary cloth table with folded fabric and handheld iron RIGHT. Change ONLY time/lighting to January after closing at night. Through same window dark winter indigo sky and same rooftops, no daytime sunlight and no daytime stripes anywhere, no snow required. Existing small task lamp on desk is ON; softbox may be on very low warm neutral modeling light to make the temporary table readable, subtle warm interior light and shadow edges; monitor can have dim neutral glow with no legible content. Keep fabric and iron safely resting with no steam and no live work happening, no timetable with writing, no new objects or furniture. Adult painterly anime background matching reference textures, old ivory walls and walnut wood. Empty room, no people, no text or watermark, 1672x941 wide frame.",
+      "references": [
+        "bg06-photo-studio-temporary.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "tang-jianyue-shy.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body emotion and empty-hands sprite for adult Chinese visual novel 玫瑰与旧婚纱. Edit EXACT Tang Jianyue in the reference. Preserve her 32-year-old Chinese mature face identity, amber-brown eyes, black loose low bun, natural adult proportions, original head placement and height, moss green rolled-sleeve work shirt, ivory working apron and measuring tape, long brown skirt, brown lace-up shoes, full-body frame and painterly anime textures. Remove the wooden sewing box COMPLETELY, and put away all cloth, needle and tools. Arms and hands are now entirely free: one forearm lowered and hand lightly extended toward image LEFT at waist height with relaxed gently bent fingers, as if just reaching toward someone standing to her left; other empty hand loosely near apron waist, no clenched fists. Both hands anatomically natural, no object in either hand. Change expression into restrained tender self-consciousness just before a first kiss: glance toward image left, very slight blush, lips softly parted a little, small warm nervous smile, no crying, no broad grin, no exaggerated cartoon. Shoulders softer and a touch shy, same body scale and near-identical stance, head to shoes with clear margins. This is a SINGLE woman sprite only, no second person's hand or limb, no room, no furniture, no floor, no cast shadow or colored glow outside silhouette. Canvas 1024x1536, actual transparent alpha background. No text, logo or watermark.",
+      "references": [
+        "tang-jianyue.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    }
+  ]
+}

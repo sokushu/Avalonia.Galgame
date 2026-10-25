@@ -1,0 +1,173 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.5 lead emotions and domestic actions, residency outfit, two night locations and a supplemental CG for the exact A05 hand-drying paragraph",
+  "images": [
+    {
+      "file": "ye-zhao-home-crying.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent visual-novel expression variant. Edit this EXACT adult 28-year-old Ye Zhao at-home sprite. Change ONLY the face to restrained crying after a difficult family dinner: amber eyes wet and slightly red at rims, one thin natural tear down each cheek, brows drawn with raised inner ends, closed lips trembling subtly, vulnerable and exhausted but not exaggerated or hysterical. No grin or wailing mouth. Preserve EXACT short black-brown bob, freckles, mature facial identity, head direction and placement, empty-handed forearm-resting pose, rolled-sleeve ivory shirt, dark green trousers, shoes, adult proportions, painterly rendering and 1024x1536 full-body framing. Truly alpha-transparent background, no new props, no camera, no room, no halo, no words or watermark. Everything outside the face remains the same.",
+      "references": [
+        "ye-zhao-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-jianyue-home-tearful-v2.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body visual novel expression variant. Edit this EXACT 32-year-old adult Tang Jianyue home sprite. Change ONLY facial expression to quiet crying during an honest conversation about grief: dark brown eyes glistening and slightly red, a thin tear trail down the cheeks, brows drawn gently upwards at inner ends, closed unsmiling lips, restrained sadness and tender vulnerability. Not a caricature and not a broad grin. Preserve the exact mature face identity, low black bun and ear wisps, head angle and placement, oatmeal cardigan over ivory top, brown long skirt, shoes, empty relaxed hands, body pose, adult proportions, fine painterly anime style and exact 1024x1536 full-body canvas. Genuine alpha-transparent background, no added halo, furniture, props, writing or watermark. Everything except facial expression stays the same.",
+      "revision": "Use case: identity-preserve. This is Tang Jianyue crying during a painful conversation with her late husband's mother. Correct ONLY the facial expression: remove the remaining smile completely. Both corners of the closed mouth must clearly turn DOWN, lips gently pressed together, eyebrows pulled upward at the inner ends and drawn in, dark eyes wet and red with the SAME thin natural tear trails. She is visibly SAD, trying to hold back sobs; no smiling or smirking, no open wailing mouth. Keep her exact mature 32-year-old identity, low bun, head angle, body pose, cardigan, skirt, empty hands, full-body scale and 1024x1536 placement, and all original painterly details outside the face. Preserve genuine alpha-transparent backdrop with no added halo, room, shadows or text.",
+      "draftReference": "artifacts/rose/v5-art-drafts/tang-jianyue-tearful-initial.png",
+      "references": [
+        "tang-jianyue-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "ye-zhao-washing.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body visual novel action sprite for 玫瑰与旧婚纱. Use exact adult Ye Zhao identity from reference, age 28, short dark bob, amber eyes, freckles, athletic adult proportions. Keep ivory shirt with sleeves rolled above forearms, forest-green straight trousers and brown loafers. Change pose to washing up: both hands visible at lower chest/waist level, one hand supports a small plain ivory ceramic rice bowl and the other holds a small pale sponge against its inner surface, slight dish-soap foam and wet fingers only, anatomically clear hands. No camera, strap or camera bag, no cutlery or knife. Natural slight lean and a small playful closed-mouth smile for the early domestic banter, not a dramatic pose. Same head size and full-body scale on 1024x1536, complete head and shoes with margins, same fine painterly anime rendering and soft light. True transparent alpha background, no sink or faucet floating in the image, no scenery, no halo or cast shadow, no typography or watermark.",
+      "references": [
+        "ye-zhao-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "tang-jianyue-towel.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent visual novel action sprite. Tang Jianyue, same exact mature 32-year-old woman from reference, low black bun with wisps, dark eyes. Keep the exact oatmeal cardigan over ivory top, long brown skirt, dark lace-up shoes, adult body proportions and fine painterly anime rendering. Change hands and forearms: she gently holds one small soft off-white hand towel loosely folded between both hands near waist height, prepared to dry a loved one's hands. Towel is a hand towel, not a scarf or dress; no box, tape, apron, phone or other props. Calm attentive closed-mouth expression, quiet sadness and care, looking slightly toward image-left. No exaggerated tears yet. Same head size and placement, full head-to-shoes framing on 1024x1536 with margins. True alpha-transparent backdrop, clean silhouette without colored halo, no room, no floor shadow, no extra person, no words or watermark.",
+      "references": [
+        "tang-jianyue-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "ye-zhao-residency.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent visual novel wardrobe sprite. Create Ye Zhao's off-duty artist-residency outfit, preserving EXACT mature 28-year-old face, short black-brown bob, amber eyes and subtle freckles from the reference. Replace ONLY ivory shirt with a modest light grey soft crew-neck knitted sweater, slightly loose sleeves pushed back at the wrists. Keep forest-green straight trousers, brown shoes, adult athletic proportions and same head size and body scale. Empty hands relaxed in front, one lightly holds opposite forearm, no camera or strap, no bag, no phone, no bowl. Gentle quiet closed-mouth expression with restrained warmth suitable for daily room conversations. Fine painterly anime rendering, warm natural skin and subtle sweater texture. Full body head to shoes on 1024x1536 with margins and same placement. True transparent alpha background, no room, no halo, no shadow outside silhouette, no writing or watermark.",
+      "references": [
+        "ye-zhao-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg03-boutique-night.png",
+      "prompt": "Use case: lighting-weather. Edit target is exact bridal boutique front room in 玫瑰与旧婚纱. Change ONLY time and illumination to after closing at night. Preserve EXACT camera, room geometry, stairs, display gowns and mannequins, counter, curtains, furniture and all object positions. Every exterior window and doorway view must show dark indigo night with the SAME roofs and a few dim neighborhood lights; remove daytime sky, all direct sunbeams and every hard bright sunlight patch on floor. Illuminate interior with existing modest warm practical lamps and quiet reflected light; display area readable but no bright shop-opening glare. Same delicate painterly anime rendering, ivory gowns, walnut wood and subdued rose colors. No people, no rearranged objects, no new furniture, no extra text or logos, no ghost, no watermark. Same wide 16:9 composition.",
+      "references": [
+        "bg03-boutique.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg04-workroom-night.png",
+      "prompt": "Use case: lighting-weather. Edit the EXACT tailor workroom from 玫瑰与旧婚纱 into a quiet night after work. Preserve EXACT viewpoint, east window placement, cutting table, sewing machine, thread shelves, gowns, chair, ruler and safe flat tools. Through ALL windows is genuine dark indigo night and the SAME nearby tiled roofs dimly lit, never blue daytime sky. Remove every sunbeam and sunlight patch from floor and tabletop. The existing work area is lit by a restrained neutral-white task light, with soft warm light deeper in the room, not horror lighting. Objects and papers remain readable, no rearrangement, no added scissors in hands, no new objects or documents. Match original fine painterly anime rendering and wide 16:9 framing, ivory/walnut/moss palette subdued at night. No people, no words, no logos, no watermark.",
+      "references": [
+        "bg04-workroom.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg11-tears-and-towel-v2.png",
+      "prompt": "Use case: illustration-story. Asset type: wide 16:9 narrative CG for adult Chinese romance visual novel 玫瑰与旧婚纱. References 1 and 2 are exact identities and clothing of the two adult heroines; reference 3 is exact location and night lighting. Depict the source-script moment AFTER the difficult family dinner, AFTER Zhou Suqin has already left: Ye Zhao, age 28, short dark bob, amber eyes, freckles, ivory rolled-sleeve shirt and green trousers, stands LEFT just outside the small upstairs kitchen. She has finished washing dishes and put the bowl down. Tang Jianyue, age 32, low black bun, dark eyes, oatmeal cardigan over ivory top and long brown skirt, stands RIGHT facing her. Ye holds BOTH bare wet hands naturally forward at waist level; Tang gently wraps ONE small off-white hand towel around Ye's hands, carefully drying them, using her own TWO hands. Exactly two adults, exactly four natural hands overall, clear gentle contact and anatomically coherent fingers, no washing gloves. Both women's eyes are wet and red with restrained thin tears, closed lips, tender sadness, neither one obliged to comfort the other first. No broad smiles, no kissing, no violence, no theatrical wailing. Intimate waist-up two-shot with their faces and the towel action clearly visible, quiet space around them; preserve upstairs cabinet on left and window on right in softer depth, dark night outside, warm small lamp. Fine painterly anime style matching existing CGs, grounded adult proportions, ivory, walnut and subdued moss. No mother or aunt, no camera, no sewing box, no flowers inserted between hands, no text, no UI, no logos or watermark. Composition safety for the game: both faces in the upper third, the four hands and towel contact clearly visible in the MIDDLE of the image at 40–60 percent height. Keep the lower quarter mostly room detail so a dialogue box will never cover the important hand action.",
+      "revision": "Use case: identity-preserve and composition refinement. Preserve this exact tender adult CG, both recognizable adult women, their restrained tears, outfits, the SAME four arms/hands and ONE hand towel, the same anatomy and quiet upstairs NIGHT room. Reframe the composition so all the important hand-drying contact is HIGHER and stays visible above a visual-novel dialogue box. Zoom out by about 25 percent and move the two women UP together as one group, keeping their complete heads inside the top margin; continue the SAME room naturally along the bottom of the frame. The towel and ALL FOUR HANDS must be clearly in the MIDDLE of the final image, centered around 50–55 percent image height and entirely ABOVE 64 percent height. The bottom 28 percent should be quiet room/floor detail with no hands or faces. Keep the original wide 16:9 ratio and fine painterly anime finish. Do not add people, objects, duplicates, inset panels, lettering or UI. No anatomy changes, no daylight, no crop of their heads. The only purpose of this edit is to leave the lower part free for the game's dialogue panel.",
+      "draftReference": "artifacts/rose/v5-art-drafts/cg11-original-framing.png",
+      "references": [
+        "ye-zhao-home.png",
+        "tang-jianyue-home.png",
+        "bg07-upstairs-night.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "ye-zhao-residency-thoughtful.png",
+      "prompt": "Use case: identity-preserve. Change ONLY the face of the exact 28-year-old Ye Zhao grey residency sweater sprite to a serious thoughtful expression for difficult phone calls: completely remove the smile, closed level lips, brows slightly drawn with raised inner ends, amber gaze vulnerable and attentive, no tears. Preserve exact face identity, freckles, dark short bob, head orientation, body pose, empty hands, grey knit sweater, green trousers, shoes, proportions, full-body placement on 1024x1536, painterly detail and true alpha-transparent background. No camera or props, no halo or external shadow, no text. Everything outside the expression remains identical.",
+      "references": [
+        "ye-zhao-residency.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "ye-zhao-washing-thoughtful.png",
+      "prompt": "Use case: identity-preserve. Change ONLY the facial expression on this exact adult Ye Zhao dishwashing action sprite. She is worried after a tense family dinner or delaying departure: remove all smile, closed serious lips, subtle tension at brows and vulnerable amber eyes, quiet tired sadness, no flowing tears yet. Preserve exact 28-year-old face identity, freckles, short dark hair, head direction and scale, BOTH hands washing the plain ceramic bowl with the pale sponge, foam, ivory rolled sleeves, dark green trousers, shoes, body pose and all painterly detail. Same full-body 1024x1536 canvas, true transparent alpha background, no added props, no camera, no words, no halo or external shadow. Do not change anything outside the facial expression.",
+      "references": [
+        "ye-zhao-washing.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    }
+  ]
+}

@@ -122,12 +122,13 @@ public sealed class UiPainter : IDisposable
         Text(text, x, y, size, color);
     }
 
-    public void Cover(Texture2D texture, Rectangle bounds, Color color)
+    public void Cover(Texture2D texture, Rectangle bounds, Color color, float verticalFocus = .5f)
     {
         var scale = Math.Max((float)bounds.Width / texture.Width, (float)bounds.Height / texture.Height);
         var width = (int)(bounds.Width / scale);
         var height = (int)(bounds.Height / scale);
-        _batch.Draw(texture, bounds, new Rectangle((texture.Width - width) / 2, (texture.Height - height) / 2, width, height), color);
+        _batch.Draw(texture, bounds, new Rectangle((texture.Width - width) / 2,
+            (int)((texture.Height - height) * Math.Clamp(verticalFocus, 0, 1)), width, height), color);
     }
 
     public void Image(Texture2D texture, Rectangle bounds, Color color) => _batch.Draw(texture, bounds, color);

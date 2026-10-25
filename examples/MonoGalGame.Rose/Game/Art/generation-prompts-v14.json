@@ -1,0 +1,194 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.14 S09 sore wrist and autumn sorting / dry-eyed old photographs then explicit crying, A05 unresolved family dinner and living-together answer, B07a solitary call / charging / apron / unlit room",
+  "images": [
+    {
+      "file": "tang-jianyue-home-sore-wrist.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame action variant for late October2029 S09. Image1 is exact edit target: retain adult32 Tang Jianyue face, low bun, cream cardigan/pale shirt, brown skirt, brown shoes, exact scale/frame. Her wrist aches after carrying a water basin. Change ONLY arms: hold her own LEFT wrist gently in her RIGHT hand at mid-chest height, left hand relaxed and fingers slightly curled. A SINGLE small BEIGE adhesive bandage sits a little crooked on the BACK of that left hand near the wrist. No blood, cast, splint, bruise, big medical dressing or serious injury; a modest everyday strain. Hands and bandage at y350..600 on1024x1536, clearly visible above dialogue. Expression serious, tired, uneasy and reflective, dry eyes, NO crying or cheerful smile. Natural two hands/five fingers, no phone/camera/sewing box/scissors/extra person. Preserve all identity/clothes details and head near top4%, feet visible. Same detailed mature painterly anime VN art, TRUE RGBA transparency, no opaque background/glow/text/UI/watermark.",
+      "references": [
+        "tang-jianyue-home-thoughtful.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "ye-zhao-residency-phone-charging.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame phone action variant for B07a spring2030 late-night call. Image1 exact edit target. Preserve exact28 Ye Zhao short dark bob, amber eyes, gray knitted sweater with rolled sleeves, olive trousers, loafers, full-body framing and proportions. She CONTINUES holding same black smartphone to her RIGHT ear with right hand. Change only other hand/action and expression: LEFT hand holds small USB charging connector with thumb and index and tries to align it with the BOTTOM port of the phone below her cheek; slender pale cable hangs naturally downward toward lower frame. Both hands belong to her, natural elbows and wrists, five fingers each, connector and phone bottom around y170..350 so visible above dialogue. Expression quietly flustered and tenderly distracted, no tears or broad cheerful smile. Actual believable phone orientation: screen toward her cheek, back faces viewer, no transparent phone or impossible cable through hand, no plugged-in wall socket floating in image. Keep age/face/clothes exact. No camera/strap, sewing box, second phone, extra limbs/person or readable screen. Mature painterly anime VN style,1024x1536, genuine transparent RGBA alpha, no backdrop/glow/UI/watermark.",
+      "references": [
+        "ye-zhao-residency-phone.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg07-upstairs-autumn.png",
+      "prompt": "Use case: lighting-weather. Asset type: exact late-OCTOBER daylight variant of Tang's upstairs home, Rose and Old Wedding Dress. Image1 exact edit target. Preserve architecture, camera, LEFT old wardrobe, garment bag/photo boxes, center kitchen/dining table, RIGHT window worktable and all furniture/cloth/tools. This is BEFORE the October sorting: keep existing items on right window table exactly as input, do not prematurely clear it, do not repair walls. Change ONLY outdoors/season/light: late autumn golden/brown sparse leaves on same branches and climbing vine outside, REMOVE all pink blooming roses and lush summer flower clusters, a few dry stems/hips are fine. Same tiled rooftops and town geometry. No snow/frost (October), no rain event. Soft mellow autumn daylight and matching sparse twig shadows; indoor plants and vase flowers remain. No people, reflections, new furniture/garments, writing/UI/watermark. Same refined mature anime VN background, exact1672x941.",
+      "references": [
+        "bg07-upstairs.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg07-upstairs-sorted-autumn.png",
+      "prompt": "Use case: lighting-weather. Asset type: exact late-AUTUMN daylight variant of SORTED upstairs home. Image1 exact edit target. Keep exact architecture/camera, LEFT old wardrobe with stored ivory garment bag and small photo box, center kitchen and small rectangular dining table, RIGHT cleared worktable, lamp and existing modest items; preserve what has been cleared versus stored. No winter wall repair. Change ONLY outdoor season to late October/November: sparse golden-brown leaves and dormant rose stems/hips on SAME branches/vine, NO pink rose blooms or lush green summer foliage. Keep same roofs/town, no snow/frost or storm. Soft autumn daytime light with sparse branch/window shadows, indoor plants/flowers unchanged. Empty room, no human/reflection. Exact same detailed painterly anime VN style,1672x941, no words/UI/watermark.",
+      "references": [
+        "bg07-upstairs-sorted.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg07-upstairs-sorted-lights-out.png",
+      "prompt": "Use case: lighting-weather. Asset type: exact LIGHTS-OFF late-spring night variant for B07a final moment. Image1 exact edit target. Keep all room geometry/camera/objects identical: LEFT closed wardrobe/garment bag/photo box, middle kitchen/table, RIGHT cleared desk/window, curtains, stools. The ceiling bulb and right desk lamp are now BOTH switched OFF: show dark unlit fixtures, NO warm glow from their shades, no extra indoor light source. The room remains subtly readable from weak cold blue night window light and a little amber STREETLIGHT coming from outdoors below, soft dim reflections on floor. Outside same late-spring leafy vine/roses and dark roofs, distant windows, no snow/rain or new view. Do not turn this into winter or autumn. No people/reflections, candle, new lamp, object removal or readable text. Calm ordinary room after a call, not horror. Same mature painterly anime VN art, exact1672x941.",
+      "references": [
+        "bg07-upstairs-sorted-night.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg29-saying-she-is-happy.png",
+      "prompt": "Use case: precise-object-edit. Asset type: exact continuation CG for S09 after Tang says she cannot prove sadness before every happiness. Image1 exact edit target. Preserve TWO women's exact identities/age/hair/clothes/positions, table/album/photographs, room/autumn light/camera and sore LEFT hand's crooked small beige bandage. Change ONLY emotion/quiet action: Tang32 now has visible small TEAR TRACKS from both eyes, lips pressed as she struggles to finish speaking, shoulders slightly drawn in, sadness mixed with resolve, no huge sobbing grimace. Zhou61 keeps a grave, conflicted, listening expression; still unable to understand, NO smile or gesture of blessing. She looks at and gently closes the same small photo album in her OWN hands. They do NOT hold hands, touch knees, embrace or suddenly reconcile; no Ye or ghost. Tang's injured hand stays in her own space, no extra tissues or shopping bag. All faces/hands/album remain in same safe upper layout above y630 with no face behind top-left HUD. Same mature detailed painterly anime Galgame CG,1672x941, no text/UI/watermark.",
+      "references": [
+        "cg28-photos-and-unspoken-days-v2.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1671,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg30-dinner-with-an-extra-bowl.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW Galgame CG for A05 late January2030 tense family dinner. Inputs1,2,3 define exact adult Tang32 low bun cream cardigan/pale top/brown skirt, Ye28 short bob ivory blouse/olive trousers NO camera, and Zhou61 gray hair navy cardigan/white collar blouse/gray trousers NO shopping bag. Input4 exact WINTER NIGHT repaired upstairs home: left old wardrobe/bag/photo box, center kitchen and SMALL RECTANGULAR wooden dining table, right cleared desk with repaired dry wall/window frame, bare winter vine/roofs outside. THREE women sit on ordinary stools around this same table, not a giant banquet table or new dining room. Ye on LEFT foreground is nervously careful with her rice bowl and chopsticks, uncertain where to place her hands; Tang center/right quietly concerned looks between them; Zhou opposite LEFT/center seated, reserved, eating rather than glaring. No one smiles in celebration, cries or gives a blessing. Modest three bowls/three pairs chopsticks, a shared cabbage dish, simple cooked vegetables and soup, everyday late dinner. No wedding clothing, alcohol, new person, romantic handholding or shopping bag. CLOSE MEDIUM composition with ALL THREE distinct recognizable faces at y150..400 and bowl/chopstick hand actions and table eating surface at y420..610 on1672x941. Bottom y675 down is covered by game dialogue; do not place important meal action low. Keep top-left HUD x40..510,y20..130 clear of faces, natural fingers/utensils, each person has only two hands. Original mature painterly anime VN style, amber lamp against blue winter window,16:9, no text/UI/watermark.",
+      "references": [
+        "tang-jianyue-home.png",
+        "ye-zhao-home.png",
+        "zhou-suqin-listening-empty.png",
+        "bg07-upstairs-repaired-night.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg31-we-live-together.png",
+      "prompt": "Use case: precise-object-edit. Asset type: continuation CG for A05 at Tang's answer 'we live together'. Image1 exact edit target. Keep EXACT same THREE women, mature faces/age/clothes/hair, seats, table/dishes/bowls/chopsticks, repaired winter-night room/light/camera. Change only small facial/gaze/hand gestures: Tang32 turns toward Zhou and calmly answers with quiet resolve, one hand sets chopsticks beside her bowl, eyes slightly red but DRY, lips briefly pressed, no tears yet. Ye28 looks at Tang with vulnerable surprise and relief, small quiet look without broad smile or tears; hands stay near her OWN bowl. Zhou61 pauses and looks at Tang, brows faintly furrowed, sober and uncertain, still 'cannot understand', NO grin, approval, blessing or handholding. They stay SEATED, no celebration/hug or extra guest. Keep all 3 faces out of top-left HUD and all key hands/bowls safely above y610 as target. Natural two hands each, original objects do not multiply. Same refined painterly mature anime Galgame CG,1672x941, no writing, subtitles, UI or watermark.",
+      "references": [
+        "cg30-dinner-with-an-extra-bowl.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg32-spring-call-at-bedside.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW Galgame CG for B07a late spring2030 at22:30, after Tang says she misses Ye. Input1 exact adult28 Ye Zhao short dark bob, amber eyes, GRAY knitted sweater/olive trousers, no camera or strap. Input2 exact spring NIGHT residency room, bed on LEFT with ivory linen/dusty rose blanket, window leafy branches/city blue night, center metal camera shelf, right desk with same lamp/cup/calendar. Ye now sits on LEFT bed EDGE, shoulders slightly drawn, holding ONE black smartphone to her RIGHT ear, listening quietly with longing and uncertainty, DRY eyes, no large smile or crying. Her left hand rests loosely on own knee; a charging cable she dropped lies near her foot on floor, not in hand yet. Tang is only a remote voice and must NOT appear as person/ghost/reflection/inset in this room. Camera/small luggage remain where original room keeps them; no new clothes/room/moving home. Use close medium seated view, face in upper middle below top HUD, phone and hand entirely above y580 on1672x941; knees can be cropped, bed edge still clear. Natural anatomy, gentle amber desk lamp and blue spring window, mature detailed painterly anime VN,16:9, no phone UI, text, logos or watermark.",
+      "references": [
+        "ye-zhao-residency-phone.png",
+        "bg09-residency-spring-night.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg28-photos-and-unspoken-days-v2.png",
+      "prompt": "Use case: precise-object-edit. Final Galgame composition correction. Image1 exact target. Preserve BOTH women's exact faces/age/expressions/hair/clothes, seated positions, room/autumn daylight/camera. Tang's bandaged wrist and album sit too LOW and will be hidden by dialogue. Change ONLY both women's forearms/hands and the table/album working area. Raise table top and Zhou's album/forearms UP100px, with album bottom no lower than y610 on1672x941. Tang's injured LEFT hand must now rest horizontally on NEAR TABLE EDGE at y550..610, BACK of left hand faces viewer, one SMALL crooked beige adhesive bandage near wrist plainly visible. Her right hand lightly supports that same left wrist, both hands wholly ABOVE y630. Do not leave a long dangling hand on lap below y675. Natural bent elbows and five fingers each, no added hands or bandages. Keep Zhou's own hands with album/photo, no contact between women, no tears or smiles. Table remains physically attached to legs/floor, no floating table. Critical: bottom y675 down is covered by dialogue, so ALL bandage, fingertip, photo and album cues must be above y630. Exact same mature painterly anime VN art,1672x941, no text/UI/watermark.",
+      "references": [
+        "cg28-photos-and-unspoken-days.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v14-art-drafts/cg28-photos-and-unspoken-days.png",
+          "prompt": "Use case: illustration-story. Asset type: NEW Galgame CG for S09 late October2029 mother-in-law conversation, after Tang takes out old photographs. Input1 exact32 Tang low bun, cream cardigan/pale top/brown skirt, modest crooked BEIGE bandage on BACK of LEFT hand near sore wrist. Input2 exact61 Zhou Suqin gray short hair, navy cardigan over white collar blouse, gray trousers, empty hands/no shopping bag. Input3 exact sorted upstairs room in AUTUMN DAY, left closed wardrobe/bag/photo box, center small rectangular wooden table and kitchen, right cleared desk and sparse autumn window. Only these TWO adult women are physically present; Ye is away and never appears. Both SEATED opposite/at right angle around existing small table. Zhou has a small open photo album and ONE loose old photo in her own hands, looking between photo and Tang with grief and a questioning tired brow, not angry/shouting or smiling approval. Tang sits with injured left hand clearly on HER OWN LAP or near table edge, right hand gently supporting wrist, gaze lowered and uneasy, DRY eyes/no tears yet. She does NOT put her hand on Zhou's knee, and they do NOT touch hands or hug. Old photo faces indistinct, no man/ghost/apparition/inset. CLOSE MEDIUM view of both seated women, faces at y150..420 and album/hands/bandage at y440..610 on1672x941, fully above dialogue y675. Keep ALL faces below y140 if under top-left x40..510 HUD, no hidden background face. Natural anatomy, subdued warm autumn light, detailed mature painterly anime VN art,16:9, no words/logos/UI/watermark.",
+          "references": [
+            "tang-jianyue-home-sore-wrist.png",
+            "zhou-suqin-listening-empty.png",
+            "bg07-upstairs-sorted-autumn.png"
+          ],
+          "reason": "Raised bandaged left wrist and old photographs above the dialogue panel"
+        }
+      ]
+    },
+    {
+      "file": "cg33-folding-the-old-apron-v2.png",
+      "prompt": "Use case: precise-object-edit. Final Galgame action placement correction. Image1 exact target. Preserve Tang's exact32 face, low bun, gentle wistful expression, cream cardigan/brown skirt, room/camera/spring-night window, lights and dark phone position. Move ONLY the complete table working top, folded IVORY APRON with large pocket/ties, her two naturally bent forearms and hands UP100px. On1672x941 the APRON POCKET upper edge, single loose thread and BOTH working fingertips must be within y440..600, apron main fold/pocket no lower than y630, safely ABOVE dialogue starting y675. The pocket seam/thread should be clearly visible; she touches ONE loose thread rather than threading a needle, no needle/scissors or new sewing tool. Keep physically real table connected to legs below, sensible elbows, no floating objects, extra fingers or phone in hands. Face stays unchanged, no image-wide shift/head crop, only ONE woman. Same mature painterly anime Galgame CG,16:9, no writing/UI/watermark.",
+      "references": [
+        "cg33-folding-the-old-apron.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v14-art-drafts/cg33-folding-the-old-apron.png",
+          "prompt": "Use case: illustration-story. Asset type: NEW Galgame CG for B07a same spring night, Tang alone after hanging up. Input1 exact adult32 Tang low bun, cream cardigan/pale top/brown skirt. Input2 exact SORTED upstairs NIGHT room, LEFT closed wardrobe/stored ivory wedding bag/photo box, central kitchen/small table, RIGHT cleared window desk, late-spring leafy rose vine/blue night roofs, NO winter repair or snow. Input3 reference ONLY for familiar IVORY WORK APRON with one large patch pocket and ties; she is NOT wearing work shirt/apron now. Tang sits on ordinary stool at right desk or small table, carefully folds this worn apron and touches a single loose thread at its pocket seam with one fingertip. Phone is set aside dark on the tabletop, not held; her eyes lowered, quietly lonely and thoughtful, NO tears, broad smile or expectation of reunion. Both hands perform folding/feeling thread, no closed sewing box, sharp tool or photo in hand. EXACTLY ONE woman, Ye remains far away; no ghost, double figure, old lover or inset. Close medium framing: face y150..400, folding hands/pocket/thread/working surface y430..610, all above dialogue start y675 on1672x941; keep face outside top-left HUD. Same room objects and warm lamp, natural hands/fingers, mature detailed painterly anime Galgame art,16:9, no words/UI/watermark.",
+          "references": [
+            "tang-jianyue-home.png",
+            "bg07-upstairs-sorted-night.png",
+            "tang-jianyue-empty.png"
+          ],
+          "reason": "Raised the apron pocket, fingers and loose thread above the dialogue panel"
+        }
+      ]
+    }
+  ]
+}

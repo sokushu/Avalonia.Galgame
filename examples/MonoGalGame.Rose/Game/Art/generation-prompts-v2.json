@@ -1,0 +1,162 @@
+{
+  "generator": "Built-in image_gen",
+  "note": "Sixteen new project assets. Original character sprites are identity references. Daytime alley, furnished studio, work outfits and expressions are non-destructive edits of their original images.",
+  "assets": {
+    "cg02-lace-flower.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: premium opaque 16:9 story CG for original Chinese mature romance visual novel Roses and the Worn Wedding Dress, ideally 2560x1440.\nInput image 1 is Ye Zhao identity reference, short dark bob, amber eyes, adult Chinese photographer age28. Input image 2 is Tang Jianyue identity reference, low black bun, warm dark eyes, adult seamstress age32. Match their faces, mature proportions and refined anime painterly style. These are identity references, not edit targets.\nScene: January winter wedding preparation room. Tang, in a practical dark navy winter coat, seated low at RIGHT, carefully stitches a torn small section of lace near the LEFT HEM of a bride's ivory gown into a delicate little lace flower. Ye Zhao at LEFT in a black work shirt and camera strap holds a small professional LED fill light directed at Tang's hands. Bride He Qing, an adult Chinese woman in her late20s, sits at middle rear holding the skirt still with visible relief; her face remains secondary and softly rendered. Three women total. Open walnut sewing box on nearby table, scissors laid flat. Rectangular vanity and ivory curtains, warm indoor winter light, ordinary busy bridal dressing room.\nComposition: medium cinematic view emphasizing hands, small repaired flower, Tang's attentive face and Ye's professional cooperation. All important faces and the little lace flower above bottom 27%, where game dialogue is drawn. No voyeuristic low angle. No other recognizable people.\nStyle: exquisite high budget literary yuri visual novel CG, elegant fine colored linework, luminous restrained adult faces, richly painted lace and soft cloth, warm ivory and walnut, gentle practical intimacy. Fully clothed, no romance pose.\nConstraints: exactly three adult women, coherent hands and tools, no text, no UI, no logos, no watermark, no border, opaque single 16:9 picture."
+    },
+    "cg03a-shoulder-measurement.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: opaque cinematic 16:9 story CG for Chinese literary adult romance visual novel Roses and the Worn Wedding Dress, ideally 2560x1440.\nInput1 Ye Zhao identity reference: Chinese woman age28, short dark bob, amber eyes, ivory rolled sleeve shirt, green trousers. Input2 Tang Jianyue identity reference: Chinese woman age32, black low bun with loose right-ear wisps, moss blouse, ivory apron. Preserve faces and painterly anime style.\nScene: April afternoon in an old walnut dressmaking workroom. Ye stands right foreground in an ivory shirt, shoulders involuntarily stiff, arms naturally down, cheeks faintly pink; her eyes look away, trying to pretend she is not flustered. Tang stands behind and to her left, carefully measuring shoulder width with a cloth tape laid horizontally over the upper BACK, one end held near each shoulder seam. Tape must measure shoulders, never encircle the neck. Tang is focused and quietly affectionate, not posing romantically. Camera on low strap near Ye's hip, wooden cutting table, chalk, thread spools, spring light through a slightly rainy window. No mirror reflections needed.\nComposition: medium upper-body two shot, entire heads and measuring hands above 65% image height. Distinct hands, correct anatomy. Important gesture unobstructed above bottom27% for dialogue overlay. Intimate ordinary working distance and nervous breathing.\nStyle: elegant premium anime visual novel CG, natural mature adult proportions, exquisite colored linework and soft painted light, finely rendered cotton and hair, luminous ivory, moss green, warm walnut, dusty rose accents.\nConstraints: exactly two clothed adult women, no kissing, no wedding gowns worn, no giant tape numbers, no text, no UI, no borders, no watermark. Single 16:9 scene."
+    },
+    "cg03b-kept-measurements.png": {
+      "size": [
+        1672,
+        940
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: opaque cinematic 16:9 story CG, original Chinese mature romance visual novel Roses and the Worn Wedding Dress, ideally 2560x1440.\nInput image is CHARACTER IDENTITY REFERENCE ONLY: Tang Jianyue, 32-year-old Chinese adult seamstress, low black bun with right-ear wisps, dark warm eyes, moss green blouse and ivory apron. Match her face, proportions and refined painterly anime style.\nScene: alone in her quiet old sewing atelier after closing on an April night. Tang sits on right half at the worn walnut cutting table, looking down with a private shy thoughtful expression. Her hand pauses while slipping a single cream measurement sheet under the edge of a dark green cutting mat. The name at the top of the sheet is exactly the TWO Chinese characters \"叶照\"; other measurement marks can remain abstract short strokes. The paper is kept separately, other customers' files inside a closed drawer. Soft amber desk lamp lights her hand, paper and lower cheek, thread spools and chalk left in their working positions. Night blue at small window. No other person present: Ye Zhao has left.\nComposition: angled medium close-up, Tang's complete head in upper right, her hands and the sheet at center above 65% image height so bottom27% can take dialogue. Intimate unspoken affection through small ordinary action, not broad smile.\nStyle: exquisite premium anime visual novel CG, delicate colored linework, natural adult face, fine hand and cotton detail, warm ivory, walnut, moss green and deep muted navy, restrained bittersweet tenderness.\nConstraints: exactly one woman, no ghost or remembered figure, no mirrors with people, no additional lettering beyond \"叶照\", no text overlay, no UI, no logo, no border, no watermark."
+    },
+    "cg05-outside-afternoon.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: opaque cinematic 16:9 story CG for Chinese literary adult romance visual novel Roses and the Worn Wedding Dress, ideally 2560x1440.\nInput image identity reference only: Ye Zhao, age28 Chinese adult female photographer, short dark bob tucked behind left ear, amber eyes, ivory rolled-sleeve cotton shirt, forest green trousers and camera strap. Preserve her face and refined anime painterly style.\nScene: a hot August afternoon outside the old bridal atelier. Ye Zhao is ALONE at right-center, seated on a low stone step by a half-closed wooden glass door, looking toward the doorway with tired hurt patience, no smile. She repeatedly holds a plain clear water bottle with both hands; camera safely zipped inside a brown camera bag at her feet, no photographing or eavesdropping pose. Through the door only the dim interior and a staircase are visible; Tang and an older woman are upstairs OFFSCREEN, never visible through walls. Bright outside light and cooler indoor shadow separate spaces, empty old stone alley recedes on left, faded plaster and green vines.\nComposition: medium-wide quiet shot, complete head and hands around upper45%-65% height, strong feeling of waiting and space between door and woman. Leave lower27% relatively quiet for dialogue.\nStyle: exquisite premium anime visual novel illustration, natural mature adult face, fine emotional eyes, restrained expression, realistic fabric, warm ivory sun, moss green, dusty rose, old walnut, quiet bittersweet summer.\nConstraints: exactly ONE adult woman, no wedding ceremony, no bride, no other people even through glass or reflections, no text, no signage, no UI, no watermark, no border, single full bleed frame."
+    },
+    "cg06-unconfirmed-contract.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: opaque premium 16:9 dramatic story CG, Chinese adult romance visual novel Roses and the Worn Wedding Dress, ideally 2560x1440.\nInput1 Ye Zhao identity reference (28-year-old Chinese woman, short dark bob and amber eyes). Input2 Tang Jianyue identity reference (32-year-old Chinese woman, black low bun, moss green blouse and ivory apron). Match adult faces and refined painted anime style.\nScene: September27 at night in the old walnut sewing workroom. A painful argument over an UNCONFIRMED joint work studio plan. Ye on left beside the cutting table, ivory shirt under an open deep brown coat, a tense vulnerable face and tears gathering, hand pressed on paper edge. Tang on right has risen from a chair, hurt and firm, one hand beside a chosen ivory fabric swatch. Both clearly mature women, about one arm's distance apart, facing each other. Between them is an UNSIGNED plain proposed contract with an EMPTY signature line, no signatures, no cash or deposit; warm beige fabric swatches separated on either side, one fallen thread spool near the edge. Cold white task lamp, dark window, realistic old atelier. No torn paper and no scissors in anyone's hand.\nComposition: medium upper body two-shot with full heads in upper third, their hands and empty signature area around center and above67% height. Bottom27% subdued table for dialogue overlay. Real disagreement without threats or melodramatic violence.\nStyle: exquisite premium literary anime visual novel CG, fine colored linework, subtle mature expressions, realistic hands and cloth, cool ivory light, moss green, walnut and muted brown, restrained emotional intensity.\nConstraints: exactly two women, no kiss, no embrace, no visible written words or signatures, no ghosts, no UI, no watermark, no logo, no border."
+    },
+    "cg07-cabinet-and-desk.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: opaque premium 16:9 narrative CG, Chinese mature romance visual novel Roses and the Worn Wedding Dress, ideally 2560x1440.\nInput image is Tang Jianyue identity reference only: adult Chinese seamstress32, black low bun with wisps, warm dark eyes, softly rounded mature face. Preserve identity and refined anime painterly style. For this home scene she wears a simple soft oatmeal knit cardigan over an ivory blouse, NO work apron.\nScene: late October daytime in the little upstairs room above her atelier. Tang alone seated on a low stool beside an old walnut cupboard at LEFT, gently placing a plain photo storage box into a reachable open shelf. The box is kept accessible, nothing burned, thrown away or locked up. A separate ivory garment storage bag for her old wedding dress remains carefully folded in another shelf, gown not displayed. At RIGHT rear a wooden window with ivory curtain and the ordinary desk beneath it has been freshly cleared and left EMPTY for a new place in life. Her face is calm and sorrowful with a little resolve, no forced smile, hands gentle. Soft autumn daylight, lived-in domestic space with a small dining table.\nComposition: medium-wide scene with Tang and the cupboard at left/middle and newly empty desk clearly visible right, complete head above40% and hands/box above67% height. Bottom27% quiet floor. Her past and present both have room.\nStyle: exquisite hand-painted anime visual novel CG, fine elegant colored linework, mature emotional expression, richly rendered wood, cotton, plain paper, warm ivory, walnut and grey sage, restrained hopeful melancholy.\nConstraints: exactly one woman, no man, no ghost, no inset portrait of a person, no blessing messages, no readable words, no UI, no border, no watermark, no logo."
+    },
+    "cg08-dated-letter.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: opaque premium 16:9 story CG for original Chinese mature romance visual novel Roses and the Worn Wedding Dress, ideally 2560x1440.\nInput image is Ye Zhao identity reference only: Chinese adult woman28, short dark brown-black bob tucked behind left ear, amber eyes, subtle pale freckles, natural adult proportions. Preserve her face and elegant painterly anime style. Change clothing for residency: simple LIGHT GREY knitted sweater.\nScene: November26 afternoon, alone in an ordinary temporary photography residency room in an unnamed city. Ye sits at right beside a wooden desk near a window, reading a cream handwritten letter held carefully with both hands. Her face is thoughtful and vulnerable, eyes softening but not smiling with certainty. Camera and a plain work calendar on desk, phone lying dark at edge, half-packed travel bag against wall. The letter is angled away; only a few abstract handwritten marks, no legible full sentences. Outside ordinary autumn city trees, quiet pale daylight. Tang is NOT physically present, no thought bubble or ghost.\nComposition: medium upper-body three-quarter shot, full head at upper right and letter/hands centered above65% height, window behind left. Bottom27% quiet desk for dialogue overlay. The invitation offers real dates but this moment must support all three future routes, no automatic reunion implication.\nStyle: exquisite mature anime visual novel illustration, fine emotional linework, natural hands, beautifully rendered grey knit, warm ivory paper, walnut, soft autumn grey green, quiet restrained longing.\nConstraints: exactly one woman, no other people in reflections, no readable words, no text overlay, no UI, no border, no logo, no watermark."
+    },
+    "cg09-inner-pocket.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: premium opaque 16:9 story CG focusing on a meaningful object, Chinese literary romance visual novel Roses and the Worn Wedding Dress, ideally 2560x1440.\nScene: December5 evening in an old walnut sewing workroom. A deep chocolate-BROWN adult woman's coat is OPEN on a wooden table with its smooth warm dark-taupe lining visible. On the wearer's RIGHT INNER lining panel there is a small neatly stitched matching fabric pocket just large enough for a round black spare CAMERA LENS CAP. The black cap is partly visible in this inner pocket. One adult woman's hand in an ivory rolled shirt sleeve touches the new pocket seam lightly, pausing with emotion; another adult woman's hand in a cream knit sleeve gently holds the coat open. Only these TWO hands, no faces needed. Shoulder alteration chalk marks are still faintly present at the coat's shoulder; it has NOT finished fitting yet. A small amber bottle with exactly two old dried dark-rose stems sits out of focus at far left, a measuring tape and plain scissors laid flat in distant background.\nComposition: intimate cinematic overhead-oblique close-up. The RIGHT INNER pocket, black lens cap and touching fingertips are the CENTRAL FOCAL POINT positioned at x55%, y43%-56%, safely above lower27% dialogue overlay. Never put the pocket on the external breast or outside. Coat clearly empty and on table, nobody wears it.\nStyle: exquisite refined anime visual novel object CG, painterly fabric and fine strong hand stitching, correct natural fingers, luminous muted winter light, warm ivory, deep brown walnut and faded rose, tender small practical care.\nConstraints: no text or labels, no readable brand on lens cap, no extra hands, no people reflected, no UI, no watermark, no frame, opaque single landscape."
+    },
+    "cg10b-fitting-again.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: premium opaque cinematic16:9 story CG for the distinct B ending of Chinese mature romance visual novel Roses and the Worn Wedding Dress, ideally2560x1440.\nInput1 Ye Zhao identity reference, short dark bob amber eyes Chinese woman28 in original story; now32 in2033. Input2 Tang Jianyue identity reference, black low bun warm dark eyes32 originally; now36. Preserve adult recognizable faces, subtle passage of four years, no dramatic aging.\nScene: winter2033 in Tang's ordinary bridal atelier fitting area. Ye wears a NEW deep charcoal-brown tailored coat over a light knit top, stands at left naturally turning to check fit. Tang in a moss-green blouse without apron stands at RIGHT checking a shoulder seam at normal professional working distance, at least an arm's distance between torsos, one hand lightly adjusts coat shoulder. They exchange small familiar PROFESSIONAL smiles with restrained wistfulness. A plain photography book sits on a nearby table, closed with no readable title. Ivory fitting curtain, rectangular full-length mirror with NO duplicated people in reflection, soft winter daylight and warm old wood. This is a respectful reunion after separation, no romantic embrace or renewed couple promise.\nComposition: medium-wide upper-body two-shot, both full heads in upper third, clear physical space between women, shoulder-checking hands above65% height, bottom27% reserved for dialogue. Ordinary fitting, quiet goodbye.\nStyle: exquisitely refined mature anime visual novel CG, delicate colored linework, detailed natural eyes and hands, painterly cloth, warm ivory, moss green and walnut with cool winter light.\nConstraints: exactly two adult women, NO kiss, NO embrace, no shared tape encircling both people, no wedding dress worn, no text or UI, no ghost, no logo, no watermark, no border."
+    },
+    "cg10c-undelivered-coat.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: illustration-story. Asset type: premium opaque16:9 narrative CG for the distinct C ending of Chinese mature romance visual novel Roses and the Worn Wedding Dress, ideally2560x1440.\nInput image is Tang Jianyue identity reference only: Chinese adult woman, age32 at first meeting, now36 in2033; recognizable low black bun, warm dark eyes and softly rounded face, no exaggerated aging. Preserve elegant painterly anime style.\nScene: winter2033 afternoon in her old sewing workroom. Tang ALONE at table, wearing simple oatmeal cardigan over a moss blouse, looks down with quiet dawning grief at a BLACK SPARE CAMERA LENS CAP resting in her open palm. Her other hand holds open a deep chocolate-BROWN coat on the tabletop. Its right INNER lining pocket has already been neatly sewn but is now EMPTY because she has just taken the cap out. Faint old WHITE TAILOR CHALK marks and unfinished basting remain at SHOULDER of coat: the whole fitting was NEVER completed or delivered. Two old faded DRIED dark-rose stems in an amber bottle sit far back, a small sewing box and ordinary tools. Cold honest afternoon light, no catastrophe, no threat, no romance reunion. Tang's lips still, eyes damp but not theatrical.\nComposition: medium close upper-body and hands; her full head at upper right, open palm with round cap and coat's empty inner pocket are central around y45%-60%, clearly above bottom27% dialogue area. The coat is EMPTY on table, not on another person.\nStyle: exquisite mature anime visual novel object-and-character CG, fine restrained emotional linework, correct hands, beautifully detailed brown wool, grey taupe lining and strong pocket stitching. Warm old walnut mixed with cool winter daylight and faded rose, lived-in bittersweet realism.\nConstraints: exactly ONE woman, Ye Zhao is absent and must NOT appear as ghost, reflection or memory figure; no husband or memorial, no extra hands, no letters or readable writing, no UI, no logo, no border, no watermark."
+    },
+    "bg05-alley-day.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: lighting-weather. Asset type: production16:9 DAYTIME variant of the referenced old atelier alley background for Chinese visual novel Roses and the Worn Wedding Dress.\nInput image is the EDIT TARGET. Preserve the exact composition, perspective and architecture: old narrow Chinese alley recedes on left, wood glass bridal shop door on right with two stone steps, folding table, fan, basket, two stools, neighbor half shutter, vines, paving. Keep same hand-painted premium anime-game environment style.\nChange ONLY time and season lighting to a clear hot August AFTERNOON: bright soft natural sunlight and pale blue sky instead of indigo dusk, sunlit ivy, warm pale plaster and realistic daylight shadows, room behind door softly darker than outdoors. Shop lantern should be unlit. Remove any nighttime glow and sunset colors. Ordinary daytime old neighborhood, no rain. This supports waiting outside a family conversation and later daylight returns, must clearly read as daytime.\nConstraints: no people, no silhouettes or faces in reflections, no new furniture or architecture, no readable writing, no text, no logos, no UI, no border or watermark. Full opaque16:9 landscape. Save as a new variant, do not alter original nighttime design."
+    },
+    "bg08-studio-furnished.png": {
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": null,
+      "prompt": "Use case: precise-object-edit. Asset type: production16:9 FURNISHED variant of the referenced empty studio, original Chinese visual novel Roses and the Worn Wedding Dress.\nInput image is the EDIT TARGET. Preserve exact architecture, view, window positions, partial wall, right-corner washbasin, worn wooden floor and natural warm daylight.\nChange the empty rental into the newly jointly rented WORK STUDIO in spring2030, after both women confirm the agreement. Create TWO DISTINCT practical work areas: LEFT photography area with simple grey cloth backdrop on a portable stand, a folded tripod and small desk with a camera bag; RIGHT sewing area with a substantial worn walnut cutting table, black sewing machine and neatly arranged cloth/thread shelves. Keep each person's tools separate and the central walkway clear. Add simple ivory curtains, a modest amber bottle with two old dried rose stems on a shelf and signs of ordinary work, never a luxury showroom. Furniture must fit the room's perspective naturally. This is a WORKPLACE; their home remains upstairs at the old shop.\nStyle: keep original beautiful hand-painted anime visual novel environment, soft fine edges, detailed wood and cotton, luminous ivory, walnut, subdued moss green and dusty rose.\nConstraints: no people, no faces or silhouettes, NO beds or kitchen, no readable signs or text, no logos or UI, no border or watermark. Fully opaque single16:9 image."
+    },
+    "ye-zhao-work.png": {
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        254
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body outfit VARIANT for an existing visual novel character sprite.\nInput image is the EDIT TARGET, Ye Zhao, Chinese adult woman28. Preserve her exact recognizable face, short dark brown bob, amber eyes, natural mature proportions, height in canvas, full-body pose, hands, camera and camera strap. Keep the same exquisite painterly anime linework and shading and entire figure head-to-shoes framing.\nChange ONLY outfit for working at a winter wedding: replace ivory shirt with a practical BLACK collared shirt with sleeves rolled to forearms; replace green trousers with DARK CHARCOAL straight-leg trousers. Brown practical low shoes stay. Add a small discreet professional black camera accessory pouch at waist. Her hand lightly holds the camera strap; expression attentive with a small restrained friendly smile suitable for calming a bride. No coat needed in heated venue. Camera remains at her hip with coherent strap.\nLighting remains soft neutral warm daylight matching other sprites.\nConstraints: true TRANSPARENT background and clean alpha preserved, no floor shadow, no backdrop, no text, no UI, no border or watermark. One woman only, full hair, hands and shoes inside frame. Preserve identity, anatomy and original pose; do not generate another person."
+    },
+    "tang-jianyue-work.png": {
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        254
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body WINTER WORK outfit variant for existing visual novel character.\nInput image is EDIT TARGET Tang Jianyue, Chinese adult seamstress32. Preserve her exact recognizable face, black low bun, loose right-ear wisps, mature proportions, height in canvas, head-to-shoes framing, body posture and both hands holding the same closed walnut sewing box. Keep original refined painterly anime linework and soft shading.\nChange clothing for arriving to repair a gown at a winter wedding: practical DEEP NAVY wool coat, open at neck over a simple muted grey knit top, dark warm brown long skirt and brown practical shoes. Remove ivory apron and neck measuring tape; those tools are packed in the closed box. Coat sleeves end at wrist but hands and box clearly visible. Expression remains gentle and attentive, slight small smile, no dramatic makeup. Face and hairstyle must match original precisely.\nLighting remains softly warm-neutral to match Ye Zhao black work shirt sprite.\nConstraints: genuinely TRANSPARENT background with clean alpha preserved, no ground shadow or backdrop, no other person, no text or UI, no border, watermark or logo. Entire head, hair, elbows, sewing box, hands and shoes within tall portrait frame."
+    },
+    "ye-zhao-thoughtful.png": {
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        254
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: transparent EXPRESSION VARIANT for existing full-body visual novel sprite.\nInput image is EDIT TARGET Ye Zhao, adult Chinese woman28. Preserve EXACT face identity, short dark bob, amber eyes, freckles, hairstyle, body proportions, original pose and hands, ivory rolled shirt, green trousers, camera strap and camera, shoes, full-body framing and lighting.\nChange ONLY facial expression: a restrained thoughtful vulnerable look for difficult conversations and missing someone. Mouth gently CLOSED with no smile, brows subtly drawn together, amber eyes attentive and a little tired, quiet emotion held in rather than dramatic crying. No grin, no blushy flirting, no angry caricature. She is listening seriously and trying to find words. Keep same recognizable face and natural mature age.\nConstraints: preserve true transparent alpha and clean edges, no background or ground shadow, no other person, no text, no UI, no watermark or border. Preserve every clothing and pose detail. Full head and shoes stay in frame."
+    },
+    "tang-jianyue-thoughtful.png": {
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        254
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: transparent EXPRESSION VARIANT for existing full-body visual novel character.\nInput image is EDIT TARGET Tang Jianyue, Chinese adult seamstress32. Preserve EXACT face identity, black low bun with loose wisps, warm dark eyes, mature proportions, body pose, hands holding the closed walnut sewing box, moss green blouse, ivory apron, brown long skirt, measuring tape, shoes and full framing. Keep original refined painterly anime style and lighting.\nChange ONLY facial expression to gentle but serious, conflicted thoughtfulness for family questions, difficult talks and quiet grief. Mouth gently CLOSED and relaxed, no smile; eyebrows slightly gathered, dark eyes steady and a little weary, quiet warmth without cheerfulness. No exaggerated frown, no theatrical sobbing or anger, no blushy flirting. She is listening carefully and struggling to answer honestly.\nConstraints: genuinely transparent alpha and clean edges preserved, no background or ground shadow, no new props or person, no text, UI, watermark or border. Preserve original pose and every garment detail; entire hair and shoes in frame."
+    }
+  }
+}

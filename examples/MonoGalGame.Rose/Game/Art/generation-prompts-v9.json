@@ -1,0 +1,135 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.9 residency spring/summer day and night, moved residence in 2031 with carried belongings, phone-call action and emotional variants",
+  "images": [
+    {
+      "file": "bg09-residency-spring.png",
+      "prompt": "Use case: lighting-weather. Asset type: spring daytime variant of the EXACT residency-room background in 玫瑰与旧婚纱. Edit reference, preserving exact camera, all room architecture and item positions: LEFT bed/window/case, center camera shelves and equipment bag, RIGHT editing desk/chair/scarf/lamp/papers, same pictures. Change ONLY season and outdoor light from dense golden autumn foliage to March-May SPRING: same city and SAME trees through window with fresh small light green leaves and budding branches, no orange foliage, no snow, no cherry blossom festival, no new buildings. Soft clear pale spring daylight across room, gentle fresh cool warmth, indoor plants remain green. All furniture, linen, objects and modest lived-in feel unchanged. Painterly anime game background, ivory/walnut texture, exact 1672x941 wide framing. No people, new belongings, readable writing, captions, UI or watermark.",
+      "references": [
+        "bg09-residency.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg09-residency-summer.png",
+      "prompt": "Use case: lighting-weather. Asset type: summer daytime variant of the EXACT residency-room background in 玫瑰与旧婚纱. Edit reference, preserve exact camera and architecture, bed/window/suitcase LEFT, camera shelves and equipment bag center, editing desk/chair/scarf/papers/lamp RIGHT and all object positions. Change ONLY outdoor season/light to June-August SUMMER: SAME city and SAME tree positions outside, healthy dense mature green foliage, no golden orange autumn leaves, no snow or spring blossoms. Bright clear diffuse summer daylight, slightly hotter air and high sun but readable natural exposure, gentle indoor shadows; do not add a fan, air conditioner or new props. Indoor greenery remains healthy. Same fine painterly adult anime background, ivory walls and walnut wood, 1672x941 exact wide frame. No people, text, UI, logos or watermark.",
+      "references": [
+        "bg09-residency.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg11-new-home.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW residence background for 玫瑰与旧婚纱 after Ye Zhao moves in spring 2031. Reference supplies painterly style, palette, photographer's ordinary belongings ONLY. This is a clearly DIFFERENT modest rented apartment, NOT an edit of the old residency-room layout. Wide 16:9 eye-level quiet interior: on LEFT a plain practical wooden work desk under a few neutral street-photo prints, camera and laptop safely resting; a small wall shelf holds ONE plain closed photo-storage box, no displayed letter. On RIGHT a different rectangular window covered mostly by thin ivory curtains, cool diffused daylight, outside city only indistinct shapes with no visible season-specific trees. Small plain bed at far right edge with muted gray-blue blanket, a narrow simple bookcase and ordinary camera bag near wall, clear uncluttered floor. Include ONE ordinary ivory insulated thermos with dark lid and a tiny paint chip on desk, carried over from old life. Familiar work continues, not a dramatic empty grief room, not a luxury loft. Architecture, window side and furniture arrangement must visibly differ from reference (old window/bed LEFT and desk RIGHT); do not copy its layout. New residence can serve spring 2031 through winter 2033: no visible flowers, orange leaves, snow, calendar dates or season-specific decoration. No roses, wedding objects, brown coat (still in Yanting), exposed love letters, couple photos, other partner, suitcases for travelling or people. Refined warm ivory/walnut painterly adult anime style, restrained cool-gray accents, 1672x941, no legible writing, UI or watermark.",
+      "references": [
+        "bg09-residency.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "ye-zhao-residency-phone.png",
+      "prompt": "Use case: identity-preserve. Asset type: full-body transparent phone-call action/emotion sprite for 玫瑰与旧婚纱. Edit EXACT Ye Zhao in reference, adult Chinese photographer, short asymmetric dark bob, amber-brown eyes, pale gray knit sweater, green high-waisted trousers, same brown shoes, body proportions, head placement and canvas framing. Change only arm/hand action and expression: one hand naturally holds a plain small dark smartphone at her visible ear on viewer RIGHT, clear anatomically correct fingers and wrist, screen turned away with no text. Other arm rests loosely at waist, no camera or bag and no other props. Expression is quietly attentive and tender with a small restrained closed-lip smile, soft slightly wistful eyes, not crying, not a broad happy grin. Works for a calm call or admitting she misses someone. Look a little toward viewer left as she listens. Preserve mature face identity and neutral sprite lighting, exact 1024x1536 head-to-shoes full body with margins, fine painterly anime texture, no changes to outfit or hairstyle. True transparent alpha, no room/floor, outside shadow/glow/halo, UI, writing or watermark.",
+      "references": [
+        "ye-zhao-residency.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg09-residency-spring-night.png",
+      "prompt": "Use case: lighting-weather. Asset type: spring NIGHT variant of the exact residency room in reference for 玫瑰与旧婚纱. Change ONLY time/light. Preserve exact camera, LEFT bed/window/suitcase, center shelves/bag, RIGHT desk/chair/scarf/lamp/papers and ALL pictures and furnishings from this spring reference, including the images displayed in prints. Through same window show same city and fresh small light-green spring leaves now in deep blue night with sparse warm city windows. No golden autumn leaves, snow or summer-dense foliage. Remove all daylight/sunlight floor stripes. Existing desk lamp casts a soft warm pool on desk and paper; remaining room dim but readable, lived in and ordinary, no extra lights or objects. Fine painterly anime texture, ivory/walnut palette, same 1672x941 wide frame, no people, captions, readable writing, UI, halo or watermark.",
+      "references": [
+        "bg09-residency-spring.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg09-residency-summer-night-v2.png",
+      "prompt": "Use case: precise-object-edit. Asset type: single wall-photo continuity repair in a NIGHT visual-novel background. IMAGE 1 is the EDIT TARGET: correct summer NIGHT residency room, dark blue window and warm desk lamp. IMAGE 2 is a daylight reference ONLY for what is PRINTED in the wall photographs. Correct the LARGE FRAMED PHOTOGRAPH at the UPPER RIGHT of image 1: it must show the SAME daytime canal/street photograph as the upper-right frame in image 2, with its pale daytime sky and ordinary day scene, seen under dim interior light. It is a PAPER PRINT and its depicted time cannot turn into a night photograph just because the room is dark. Keep that frame exactly in position and preserve its dimensions. Preserve all other wall prints' actual image content too. Change NOTHING else in image 1: window remains dark summer NIGHT, mature green leaves and city lights unchanged, no outdoor daylight, desk lamp stays warm, dark interior shadows, every furniture/object/curtain/camera/bed position and texture identical. Do not turn whole room to daytime. One targeted print-content correction only, same 1672x941 painterly anime image, no added people, writing, UI or watermark.",
+      "references": [
+        "../../../../artifacts/rose/v9-art-drafts/bg09-summer-night-v1.png",
+        "bg09-residency-summer.png"
+      ],
+      "transparentBackground": false,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v9-art-drafts/bg09-summer-night-v1.png",
+          "prompt": "Use case: lighting-weather. Asset type: summer NIGHT variant of the exact residency room in reference for 玫瑰与旧婚纱. Change ONLY time/light, preserving exact architecture, camera and all furniture/item positions: bed/window/suitcase LEFT, equipment shelves/bag center, editing desk/chair/scarf/lamp/papers RIGHT and exact same wall pictures. SAME city skyline outside with dense deep green summer foliage now silhouetted against quiet dark indigo sky and a few distant lit windows. No orange autumn leaves, snow, blossoms or daytime light. Remove all sunshine/floor stripes. Existing task lamp provides a low warm light on desk, room shadows soft and readable, appropriate for a quiet or difficult phone call. No new objects or props, no people, readable messages, captions, UI or watermark. Fine painterly adult anime rendering, exact 1672x941 frame.",
+          "references": [
+            "bg09-residency-summer.png"
+          ],
+          "reason": "Large framed paper photograph incorrectly changed into a night image; preserve the daytime print while changing room lighting."
+        }
+      ],
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg11-new-home-night.png",
+      "prompt": "Use case: lighting-weather. Asset type: exact new-home NIGHT variant for 玫瑰与旧婚纱 after Ye Zhao moves in 2031. Edit EXACT reference new apartment. Change ONLY time and light. Preserve all camera and furniture positions: LEFT laptop/camera work desk, ivory dark-lid chipped thermos on desk, closed gray photo box high on shelf, narrow bookcase and camera bag center-left, different window RIGHT with mostly drawn ivory curtains, bed at far right edge with gray-blue bedding, all prints and objects identical. Through the same partly curtained window show only a quiet dark blue indistinct city with a few small lit windows, no visible season-specific trees, no rain painted into the room. Remove all sunlight and daylight stripes from floor/bed. Existing LEFT desk lamp provides a subdued warm pool, rest of apartment dim but legible, ordinary settled home, no new grief symbols or props. No people, brown coat, roses, exposed letter, other partner, readable screen content or text. Fine painterly anime ivory/walnut/cool-gray palette matching reference, 1672x941 exact wide frame, no UI or watermark.",
+      "references": [
+        "bg11-new-home.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "ye-zhao-residency-phone-tense.png",
+      "prompt": "Use case: identity-preserve. Asset type: tense PHONE expression variant for adult Chinese visual novel 玫瑰与旧婚纱. Edit EXACT Ye Zhao phone-call sprite in reference, preserving exact 28-year-old Chinese face identity, short asymmetric dark bob, gray knit sweater, green trousers, shoes, complete body/head placement and phone-at-ear hand pose. Change ONLY facial expression into restrained hurt, tension and fatigue during a difficult call: eyebrows draw slightly DOWN and together, eyes focused and less soft, mouth closed with lips pressed a little, corners no longer lifted, visible serious concern rather than a smile. No tears, shouting, cartoon anger, villain glare or crying. Keep exact hand anatomy, phone at viewer-right ear, other hand at waist, outfit folds, body pose and lighting unchanged. Natural small but clearly readable expression change at waist-up game size. Actual transparent alpha background, 1024x1536 full body with original margins, painterly anime detail, no outside glow/shadow, text, logo or watermark.",
+      "references": [
+        "ye-zhao-residency-phone.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    }
+  ]
+}

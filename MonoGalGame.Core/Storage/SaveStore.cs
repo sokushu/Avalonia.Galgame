@@ -42,6 +42,26 @@ public sealed class SaveStore
         { return new SaveSlotInfo(slot, null, ex.Message); }
     }).ToArray();
 
+    /// <summary>Newest restorable save, including quick save; corrupt or older-story saves are skipped.</summary>
+    public SaveSlotInfo? FindLatest(StoryDocument story)
+    {
+        SaveSlotInfo? latest = null;
+        var validator = new StoryPlayer(story);
+        for (var slot = 0; slot <= ManualSlotCount; slot++)
+        {
+            try
+            {
+                if (!Exists(slot)) continue;
+                var save = Load(slot);
+                validator.Restore(save.Snapshot);
+                if (latest?.Save is null || save.SavedAt > latest.Save.SavedAt)
+                    latest = new(slot, save);
+            }
+            catch (Exception ex) when (ex is IOException or InvalidDataException or JsonException or UnauthorizedAccessException or ArgumentException) { }
+        }
+        return latest;
+    }
+
     // Slot 0 is reserved for quick save.
     private string SlotPath(int slot)
     {

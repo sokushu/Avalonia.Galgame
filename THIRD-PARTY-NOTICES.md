@@ -7,4 +7,4 @@
 - **StbTrueTypeSharp 1.26.13**: MIT or Unlicense, used for glyph rasterization. https://github.com/StbSharp/StbTrueTypeSharp . The framework implements its own glyph atlas, layout, pagination and reveal logic.
 - **Noto Sans SC Regular**: SIL Open Font License 1.1. Source: https://github.com/notofonts/noto-cjk/blob/main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf . The unmodified font and complete license are included in the demo's `Game/Fonts/` directory. The demo font is not embedded in framework packages.
 
-Demo background/character illustrations are procedural example art implemented in `DemoTextureSource.cs`. Demo music is a synthesized waveform; no recorded performance or character voice is included.
+The bundled Spring Letters and Roses and the Worn Wedding Dress PNG illustrations were generated with the built-in image_gen tool. Procedural example artwork remains in `DemoTextureSource.cs` as a fallback. Music is synthesized; no downloaded recording or character voice is included. Both games include the unmodified Noto Sans SC font and its complete OFL license in `Game/Fonts/`.

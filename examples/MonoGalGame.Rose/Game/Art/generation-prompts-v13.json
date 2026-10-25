@@ -1,0 +1,197 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.13 seated aunt after upright iron, A03 midnight editing / paper-lint laundry / old shirt and seated companionship, A05a reciprocal photography and self-timer, winter studio day/night",
+  "images": [
+    {
+      "file": "cg22-parked-iron-answer.png",
+      "prompt": "Use case: precise-object-edit. Asset type: Galgame CG continuation of C05a immediately after Tang Jianyue says she loves her. Image 1 is exact edit target. Keep the TWO adult women's exact faces, age, hair, wardrobe, body proportions, positions and shop architecture, summer lighting, camera and close-medium framing. Aunt Tang Yufen MUST REMAIN SEATED on the same LEFT chair with the same black handbag on her lap, stern and questioning. Tang remains standing RIGHT in green rolled-sleeve shirt, ivory apron and brown skirt. Change ONLY ironing action: put the same gray iron PARKED UPRIGHT on its heel at the far LEFT end of the board, soleplate clearly vertical, no steam. Tang has let go of it and rests BOTH open bare palms flat on the ironing-board edge in front of her, fingertips visible, her face quietly nervous and earnest, no smile and no tears. The modest pale skirt still lies across the board. Hands, iron and board surface remain between y400 and y610 on 1672x941 canvas, all above dialogue starting y675. No new person, phone, box or camera; no standing aunt or triumphant expression. Natural two hands with five fingers each, no extra fingers. Do not move the whole image or change scene layout. Same mature detailed painterly anime Galgame art, 16:9, no text, UI, logos or watermark.",
+      "references": [
+        "cg19-ironing-and-answer-v2.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg24-sitting-beside-wardrobe.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW 16:9 Galgame CG continuation of A03, December 2029 same winter night. Inputs 1 and2 define exact Tang32 low-bun cream cardigan brown skirt and Ye28 bob ivory blouse olive trousers. Input3 exact home architecture and night lighting: LEFT old wardrobe with ivory garment bag/photo box on top, central kitchen, RIGHT cleared desk and bare-branch winter window. One wardrobe lower door remains open; one shelf is now clear. The OLD blue-gray cotton MEN'S shirt with soft collar and frayed cuff is now neatly folded INSIDE its familiar small storage box next to wardrobe, NOT hugged, worn, given away or thrown out. Both women now sit close beside each other ON THE WOODEN FLOOR at wardrobe. Tang sits quietly with hands resting on her own lap, eyes sad but DRY, no crying and no forced cheerful smile. Ye sits beside her at same level and places just ONE reassuring open hand gently ON TANG'S CLOTHED KNEE; her other hand rests on her own thigh. They are NOT embracing, kissing or grabbing each other: the script explicitly says she did not hug her. Quiet patient companionship during a difficult memory, both looking softly toward each other or empty shelf. Only two adult women, no man or ghost. CLOSE MEDIUM low seated-eye view: BOTH faces upper half and the hand-on-knee gesture MUST be at y440..610, fully ABOVE dialogue start y675 on 1672x941. Crop lower legs if needed, natural perspective and anatomy. Same gentle amber room lamp against blue winter window, exact established painterly mature anime Galgame style, no text, UI or watermark. Input4 is the exact preceding CG for shirt, wardrobe furniture and camera-side continuity: preserve its room, faces and clothes, the only change in story is the blue-gray shirt is folded away and Ye now sits beside Tang. A new close medium camera may crop lower legs to keep knee and comforting hand near y550.",
+      "references": [
+        "tang-jianyue-home.png",
+        "ye-zhao-home.png",
+        "bg07-upstairs-sorted-winter-night.png",
+        "cg23-old-shirt-at-wardrobe.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg26-on-the-other-side-of-camera.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW Galgame CG for A05a, late January2030 afternoon at Ye's photo studio. Input1 exact adult Tang32 low bun, green rolled-sleeve collared shirt, ivory apron, brown skirt, neck tape, no box. Input2 exact adult Ye28 short dark bob, ivory blouse and olive trousers, camera strap removed because Tang is using her camera. Input3 exact WINTER daytime studio layout, large LEFT windows with bare branches and cold roofs outside, original wooden computer desk left, narrow metal shelf center, gray fabric studio BACKDROP RIGHT, black softbox and stands. Tang stands LEFT foreground facing RIGHT toward Ye, carefully operating ONE black DSLR with normal short portrait lens; right hand holds camera grip/index on shutter, left hand supports lens. Camera is at EYE LEVEL, lens points physically toward Ye, brown strap hangs safely at Tang's neck; her nervous intent face remains partly visible around camera. Ye sits on a plain stool in front of original GRAY backdrop RIGHT, torso turned toward Tang, shy but spontaneous small smile as she learns to be the photographed person. No camera hanging on Ye, no extra photographer, wedding dress, mirror-copy or inset photograph. Only these two adult women. Close medium two-person framing: both faces, camera and hands entirely above y610 on1672x941; camera viewfinder actually near Tang's eye, no floating camera or impossible wrists. Winter afternoon light and warm room, same detailed painterly mature anime Galgame style, 16:9, no words/logos/UI/watermark.",
+      "references": [
+        "tang-jianyue-empty.png",
+        "ye-zhao-home.png",
+        "bg06-photo-studio-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        940
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg27-ten-second-photo.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW Galgame CG depicting the SECOND self-timer photo in A05a, late January2030. Input1 exact adult Tang32 green rolled shirt, ivory apron with a few small loose thread ends, brown skirt and measuring tape, low bun. Input2 exact adult Ye28 short bob, ivory blouse and olive trousers, NO camera on body; one blouse collar corner slightly folded accidentally. Input3 original winter studio GRAY fabric backdrop and its stands/softbox, real wooden floor. Camera viewpoint IS the fixed self-timer camera: look directly toward the two women on that gray backdrop, do not show another camera floating in frame or a photo within frame. They stand close together, casually imperfect positions, both laughing naturally, shoulders touching. Tang gently holds Ye's sleeve cuff with ONE hand near chest height after stopping her from rushing to reset timer; Ye's arm relaxed and natural, hands empty. Both look toward the physical camera just in front, not at an imagined third person. No wedding clothing, kiss happening now, formal posed wedding photo or flowers; source says they laugh, hand still holding sleeve and a little collar untidy. CLOSE MEDIUM shot from waist up: faces and sleeve-holding gesture entirely within y100..610 on1672x941, above dialogue y675. Keep age28/32 exact, natural anatomy/fingers, only TWO women. Soft winter afternoon light from LEFT, detailed painterly mature anime VN illustration, wide16:9, no border, camera countdown digits, timestamp, text, logo, UI or watermark.",
+      "references": [
+        "tang-jianyue-empty.png",
+        "ye-zhao-home.png",
+        "bg06-photo-studio-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg13-upstairs-winter-balcony.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW empty 16:9 Galgame background, small covered laundry balcony adjoining Tang's upstairs home, A03 December2029 daytime. Input1 is architecture/material/palette reference for SAME old Yanting shop home: aged warm cream plaster, dark wood frames, neighboring traditional gray tiled roofs and bare winter branches outside, soft winter daylight. View from open upstairs doorway along a modest NARROW roofed balcony, old dark wooden railing along LEFT, cream wall with matching wood-framed window on RIGHT, simple roof beams above. A practical washing basin and small wicker laundry basket sit low by wall; a few plain towels hang at far end, no prominent laundry covering the center. Keep center and both upper-middle standing areas uncluttered for two character sprites. Visible roofs outside have only a trace of cold frost, no snow inside, no rain or summer flowers/green leafy vines. This is a domestic laundry nook, not a grand veranda, modern apartment, new city or laundry shop. Empty of people, silhouettes, reflections or pets. Same exact fine painterly adult anime VN art, 1672x941, room perspective realistic, no readable labels, signage, text/UI/watermark.",
+      "references": [
+        "bg07-upstairs-sorted-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "tang-jianyue-laundry.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame action sprite for A03 laundry mishap. Image1 exact edit target. Keep adult Tang32 face, low dark bun, cream cardigan, pale top, long brown skirt, brown lace-up shoes, original proportions and full body frame. Change ONLY arms/action and expression: hold a plain wet WHITE cotton button-down shirt at MID-CHEST height in one hand; with other hand, delicately PINCH off one tiny white paper flake stuck to fabric, several small receipt-paper lint flecks scattered on shirt. Hands, pinch and fabric upper edge around y350..600 on1024x1536 so clearly visible above dialogue. Her face has a mild questioning raised brow and patient exasperation, closed mouth with only a small restrained smile, NOT furious, crying, depressed or scolding. No apron worn, washing machine, basin, camera, phone, box, embroidery needle, blade, readable paper/text, extra fingers or other person. Natural safe two hands with five fingers, loosely draped damp shirt fabric. Exact existing mature painterly anime character, same head position near top4%, feet visible. TRUE transparent RGBA alpha, no background/glow/shadow rectangle, no text/logo/watermark.",
+      "references": [
+        "tang-jianyue-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "ye-zhao-laundry.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame action sprite for A03 laundry mishap. Image1 exact edit target: keep adult Ye28 short dark bob, amber eyes, ivory rolled-sleeve blouse, olive high-waist trousers, brown loafers, full-body proportions and original frame. She has washed Tang's ivory WORK APRON with a forgotten receipt in its large front pocket. In front of chest, one hand supports this damp plain IVORY APRON with simple single patch pocket; other hand pinches a tiny paper-lint fleck away from it, several small receipt-paper bits stuck on fabric. She is sheepishly amused, brows slightly lifted, a small self-conscious smile after admitting she only empties camera cards, not laundry pockets. No tears, anger or large comic grimace. Garment upper edge and BOTH working hands at MIDCHEST y350..600 on1024x1536 so action will not be hidden by dialogue. Do NOT turn the held apron into another person or wear a second apron. No camera/strap, phone, box, needle, readable receipt, extra hands, legs or fingers. Preserve exact age/identity/clothes, same head placement top4%, feet visible. Same refined mature anime VN painting. TRUE transparent RGBA alpha, no backdrop/glow/text/UI/watermark.",
+      "references": [
+        "ye-zhao-home.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "bg06-photo-studio-winter.png",
+      "prompt": "Use case: lighting-weather. Asset type: exact WINTER DAY variant of the established photo studio, Rose and Old Wedding Dress. Image1 is exact edit target. Preserve ALL room architecture, composition, left window bank and curtains, old wooden desk/computer/camera/cup, chair/scarf, middle metal shelving with plant and camera equipment, gray fabric backdrop RIGHT, stands/softbox and garment rail. It is January or February: remove ALL yellow/green outdoor tree foliage and outdoor blooming flowers seen through windows. Same town rooftops with bare dormant branches and pale cold winter sky, tiny trace of distant roof frost. Indoor plants, dried flowers, equipment and photographs remain in exactly same places. Replace leafy shadow pattern with rectangular window light and sparse bare branch shadows, clear soft cold-winter afternoon sun balanced with warm room wood. No snow/wetness indoors, no extra people or furniture, no big falling snow, no redesign of backdrop, no studio moved after January temporary setup. Same detailed painterly anime VN background, exact1672x941 framing, no added text/UI/watermark.",
+      "references": [
+        "bg06-photo-studio.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg06-photo-studio-winter-night.png",
+      "prompt": "Use case: lighting-weather. Asset type: exact WINTER NIGHT variant of the photo studio. Image1 is exact edit target. Keep ALL original camera composition, room architecture, desk/computer/camera/cup, scarf/chair, metal shelf/equipment/plants, gray RIGHT studio backdrop, stands, softbox and garment rail unchanged. Change ONLY lighting/time to deep winter NIGHT: outside LEFT windows same rooftops and dormant bare branches under dark blue night sky, sparse distant warm windows, no daytime blue sky or green/yellow leaves. Room lit gently by the existing desk lamp and practical warm indoor light, realistic soft amber illumination and blue window shadows, readable equipment and gray backdrop. Computer screen may remain dark as original, no invented project content. No added person/reflection, weather event, extra lamps, furniture, text, UI or watermark. Same mature painterly anime Galgame background, exact1672x941.",
+      "references": [
+        "bg06-photo-studio-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "cg25-midnight-photo-editing-v2.png",
+      "prompt": "Use case: precise-object-edit. Asset type: final action placement and laptop correctness edit. Image1 exact target. Preserve BOTH adult women's exact faces, hair, expressions, wardrobe, chairs, room composition and winter night light. Change ONLY laptop/table/working hands height and laptop lid: raise COMPLETE round table top, laptop, ceramic cup and Ye's two naturally bent forearms UP by100px, keeping table physically connected to its stem and floor below. On1672x941 camera laptop keyboard, fingertips and CUP bottom must ALL be ABOVE y610, not y710. Ye seated left uses keyboard naturally, Tang right remains sleepy with cheek resting on palm. Both face positions unchanged. The laptop BACK LID facing viewer must be totally PLAIN MATTE GRAY with NO visible photo grid, thumbnails, UI, logos or transparency. Screen faces Ye and is not visible to viewer; no magical display on back lid. Natural real hinged laptop geometry, no extra hands, avoid image-wide shift/crop. Same painterly mature anime CG, 16:9, no added text or watermark.",
+      "references": [
+        "cg25-midnight-photo-editing.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v13-art-drafts/cg25-midnight-photo-editing.png",
+          "prompt": "Use case: illustration-story. Asset type: NEW Galgame CG for A03 December2029, late NIGHT downstairs after an argument about noisy typing. Input1 exact Ye28 dark bob, ivory rolled blouse and olive trousers, NO camera. Input2 exact Tang32 low dark bun, cream cardigan, pale top and brown skirt, NO apron or sewing box. Input3 exact night boutique, three wedding-dress mannequins LEFT, original round tea table and chairs, old central counter, RIGHT stairs, cold blue winter dark outside, warm practical lamps. Both are SEATED on ordinary chairs beside the SAME round tea table near stairs/counter. Ye is finishing photo editing on a modest open gray LAPTOP on the table; screen angled away from viewer with only indistinct photo thumbnails, no readable content. Tang has pulled a chair beside her and watches sleepily with half-lidded eyes, soft restrained concern after disagreement, not smiling broadly or angry. A single familiar ceramic cup of recently refreshed warm water beside laptop, faint steam; no meal or wine. Ye's hand touches keyboard/trackpad, expression serious but easing as she looks briefly at Tang. Two adult women only, no bridal wear, camera in hands, phones, embraces or tears. Use CLOSE MEDIUM seated view, BOTH faces and laptop/working hands/cup entirely within y100..620, safely ABOVE dialogue y675 on1672x941. Desk must stay real table, sensible bent elbows, natural fingers, no extra hands, no image-wide cropping of heads. Detailed painterly mature anime VN style, 16:9, no text, UI or watermark.",
+          "references": [
+            "ye-zhao-home.png",
+            "tang-jianyue-home.png",
+            "bg03-boutique-night.png"
+          ],
+          "reason": "Corrected laptop lid and raised typing action above dialogue"
+        }
+      ]
+    },
+    {
+      "file": "cg23-old-shirt-at-wardrobe-v2.png",
+      "prompt": "Use case: precise-object-edit. Asset type: final Galgame CG top-HUD composition correction. Image1 is exact target. Preserve Tang Jianyue foreground woman hugging the worn blue-gray shirt, her exact dry-eyed sad face/pose/clothes, wardrobe/storage/shirt details, home room, camera, light and ALL other objects. Change ONLY the background STANDING woman Ye Zhao at the far LEFT: reposition her COMPLETE same full standing figure DOWN about130 pixels in the 1672x941 composition, to stand naturally closer on the wooden floor at the foot of the stairs. Keep same exact face, short bob, white blouse/olive trousers, hand pose and modest original scale, feet still on visible floor. Critical: her head TOP must be at y150 or lower, her recognizable face must be fully within y190..300. The game's chapter UI covers x40..510,y28..130; her face must sit entirely BELOW that area with at least50px clear margin, never hidden by top-left labels. Move the figure as one coherent person, repaint background vacated above her, restore natural floor contact and perspective; do not just warp her head or lengthen neck. Exactly TWO adult women total, no duplicate/ghost. No tears, kiss, smile escalation, text, drawn boxes, UI, watermark or new prop. Same refined painterly mature anime visual novel illustration,1672x941.",
+      "references": [
+        "cg23-old-shirt-at-wardrobe.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "revisions": [
+        {
+          "file": "artifacts/rose/v13-art-drafts/cg23-old-shirt-at-wardrobe.png",
+          "prompt": "Use case: illustration-story. Asset type: NEW 16:9 Galgame CG, A03 December 2029 night, Rose and Old Wedding Dress. Image 1 exact Tang Jianyue age32 low bun, cream knit cardigan over pale shirt and long brown skirt. Image 2 exact Ye Zhao age28 short dark bob, ivory rolled-sleeve blouse and olive trousers. Image 3 exact WINTER NIGHT upstairs home: LEFT old dark wooden wardrobe with stored ivory wedding-dress bag and small photo box on top, central tiny kitchen, RIGHT cleared window desk, bare branches and dark blue rooftops outside. Open only one lower wardrobe door to reveal a shelf being emptied. Tang sits on the WOODEN FLOOR beside this wardrobe, legs folded comfortably under her skirt, quietly hugging ONE old worn blue-gray MEN'S cotton shirt against her chest, soft old collar and frayed cuff visible. It is Chen Mu's old shirt, NOT a wedding dress, coat, apron or lover's new shirt. Her face is exhausted and lost in memory, dry eyes: explicitly NO TEARS, NO CRYING, no smile. Ye has just come upstairs and stands back near doorway/stair entrance on LEFT edge, barefoot or in simple indoor shoes, uncertain and patient, not reaching to hug and not angry. Two adult women ONLY; no man, ghost, portrait face, apparition or death imagery. Warm single room lamp, cold winter window light; quiet ordinary difficult evening. CLOSE MEDIUM camera at Tang's seated eye level so her face, hugging forearms and blue-gray shirt are entirely ABOVE y630 on 1672x941, dialogue covers y675 downward. Ye recognizable in the background, with natural perspective. Keep room architecture and stored objects, no grand new bedroom or sofa, no readable text/UI/watermark. Detailed painterly mature anime visual novel illustration.",
+          "references": [
+            "tang-jianyue-home.png",
+            "ye-zhao-home.png",
+            "bg07-upstairs-sorted-winter-night.png"
+          ],
+          "reason": "Moved standing face below chapter HUD"
+        }
+      ]
+    }
+  ]
+}

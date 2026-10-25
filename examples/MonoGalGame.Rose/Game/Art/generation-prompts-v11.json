@@ -1,0 +1,166 @@
+{
+  "mode": "built-in image_gen",
+  "purpose": "0.11 spring/summer shop and spring repaired home, B07 finished old coat / tearful luggage departure / onboard message, C08 seated grief beside returned camera box",
+  "images": [
+    {
+      "file": "bg03-boutique-spring.png",
+      "prompt": "Use case: lighting-weather. Asset type: SPRING daytime variant of the exact 16:9 boutique interior from Rose and Old Wedding Dress. Image 1 is the edit target. Keep exactly its architecture, framing, wood counter center, THREE wedding dress mannequins left, ornate mirror, original ROUND tea table and two cups at lower left, stairs on right, lace curtains, cupboards and furniture. It is March-May, NOT winter: remove ALL snow or frost visible through left windows and open central door; keep the same neighboring old roofs, masonry and street, with small fresh light-green leaves on the SAME exterior branches and vines. Soft clear spring afternoon daylight, delicate green outside, warm ivory and wood interior. Indoor fresh flowers and the two fresh red roses in the front table vase remain. On the existing rear cabinet top, a modest small amber bottle may hold exactly two faded dried rose stems, preserving the old wedding roses from the story alongside the fresh vase; no prominent extra bouquet. Do not replace the table with the later rectangular 2033 table, do not reinforce or redesign curtains, no new room, no people, no readable text, no logos, UI or watermark. Detailed painterly visual novel background, wide 1672x941 composition.",
+      "references": [
+        "bg03-boutique.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg03-boutique-summer.png",
+      "prompt": "Use case: lighting-weather. Asset type: SUMMER daytime variant of the EXACT boutique interior from Rose and Old Wedding Dress. Image 1 is the edit target. Keep its exact room architecture, camera angle, THREE mannequins, counter, ornate mirror, ROUND tea table and cups, lace curtains, stairs and all indoor flower arrangements and bottle locations unchanged. Change ONLY outdoor season and light to June-August: outside the same windows and open door show the same roofs and walls, no snow or frost, mature dense GREEN foliage on the same trees and vines, natural hot summer afternoon daylight, slightly brighter warm light with coherent shadows. Indoor fresh red roses and old dried stems retain their positions, color and count. Do not add appliances, fan, watermelon or power outage effects (these are paragraph-specific props), no autumn leaves or cherry blossoms, no people or reflections of people. Match exact detailed painterly anime Galgame background and wide 1672x941 framing, no words, logos, UI or watermark.",
+      "references": [
+        "bg03-boutique-spring.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg12-return-journey.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW 16:9 Galgame background for a quiet winter journey after leaving Yanting, Rose and Old Wedding Dress. Empty modest intercity passenger train interior in daytime, calm ordinary travel rather than a dramatic event. Camera at natural seated eye level looking diagonally across a pair of simple blue-gray fabric seats and a large rectangular window on the RIGHT; a narrow aisle recedes on the LEFT, luggage rack high above, a few empty rows visible, soft ivory walls and muted walnut-brown trim harmonize with the game's palette. Winter countryside and bare branches outside the window, slight horizontal motion softness, overcast cool daylight with gentle practical warm lighting, not night, no storm or blizzard. Keep center-right upper-middle space visually quiet for a waist-up character and bottom quarter suitable for a dialogue panel. No passengers, staff, bodies or human reflections, no other protagonist, no romance or reunions. No readable destination names, routes, maps, tickets, advertising, clocks, operator logos, UI, text or watermark. Refined detailed painterly anime visual novel background, wide cinematic 16:9, 1672x941, realistic perspective and seat scale.",
+      "references": [],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "ye-zhao-old-coat.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body character sprite for Rose and Old Wedding Dress, B07 departure February 2030. Image 1 is identity and exact full-body proportions reference: preserve 28-year-old Ye Zhao's short dark bob, face, amber eyes, ivory collared blouse, olive-green trousers and brown loafers. Image 2 is OLD dark coarse-brown overcoat material and shape reference ONLY; do NOT age her to 32 or use its gray sweater. Image 3 defines the same old coat's dense brown wool and lining. She is now WEARING that OLD overcoat, fully FINISHED and comfortable after the B-route fitting, open normally over her ivory blouse. NO unfinished shoulder chalk marks, no white basting stitches or sewing pins anywhere. The spare black camera hangs safely from its repaired brown crossbody strap at her VIEWER LEFT hip, hands empty with one lightly touching strap near chest and other relaxed beside coat. Quiet hurt and resolve: brows slightly drawn, eyes thoughtful and tired, closed lips with NO cheerful smile, no tears yet. The lens cap is INSIDE her right inner pocket, not shown outside and not held. No suitcase yet, no smartphone, no props from four years later. Keep exact image-1 scale and full-body placement, head near top 4% and feet visible; refined painterly adult anime Galgame style. Genuine RGBA alpha transparency, no opaque backdrop or glow, no text or watermark.",
+      "references": [
+        "ye-zhao.png",
+        "ye-zhao-returned-coat-crying-v2.png",
+        "cg09-inner-pocket.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "cg16-box-side-tears.png",
+      "prompt": "Use case: illustration-story. Asset type: NEW 16:9 emotional Galgame CG for C08, Rose and Old Wedding Dress, 2033 winter daytime. Input 1 is exact character identity, wardrobe and right inner pocket reference: Ye Zhao alone, age 32, short dark bob, gray knit sweater, green trousers, OLD dark coarse-brown overcoat with faded unfinished shoulder chalk marks. Input 2 is exact new residence setting: LEFT photographer's wooden desk, laptop, camera and chipped ivory thermos; bookshelf with closed photo box; RIGHT window with ivory curtains and gray-blue bed. Keep that layout and ordinary lived-in life, no other woman or ghost. Show Ye clearly SEATED on the existing simple desk chair, angled three-quarter toward camera, beside ONE open plain cardboard shipping box containing packing paper and a returned spare camera with visibly mended brown strap. The box is not a seat; this is an ordinary package, no labels or letters. She has finally cried, shoulders bent forward, brows knitted in grief, clearly visible small tears flowing from BOTH eyes, no smile. Her RIGHT inner chest pocket is on VIEWER LEFT: right hand draws that lapel open, left hand reaches across and touches the black spare lens cap still INSIDE the small densely stitched pocket. Cap must remain partially in pocket, never floating in palm. Keep exact old-coat construction, the pocket's correct side and gray sweater visible. Compose her face, both hands, pocket opening and upper box/camera above bottom 25%, seated posture and bent knees readable, no standing pose. Quiet diffused winter daylight, gentle warm wood, restrained cinematic painterly adult anime VN style, same face as input 1, wide 16:9. No reunion, partner, death imagery, new letter, dates, dialogue text, logos, watermark or UI.",
+      "references": [
+        "ye-zhao-returned-coat-crying-v2.png",
+        "bg11-new-home.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg07-upstairs-repaired-spring.png",
+      "prompt": "Use case: lighting-weather. Asset type: SPRING late-afternoon Galgame background, the repaired upstairs room of Rose and Old Wedding Dress. Image 1 is the edit target. Preserve exact camera and room architecture, repaired dry ceiling/wall/window, large CLOSED old wooden wardrobe at LEFT with the off-white wedding-dress storage bag safely on top, center small dining table and original two bowls/cups, center narrow kitchen, empty cleared desk by RIGHT window, curtains, stair rails and all object positions. Change ONLY outdoor season/light from winter to March-May SPRING: same roofs and same exterior vine/branches, no snow or frost, fresh small green leaves growing on those branches. Gentle warm late-afternoon sunlight with coherent shadows, spring evening before dark, not night. Keep the room repaired and floor dry: no leaking water, buckets, rain, new damages or remodeling. Keep the empty cleared window desk available, no newly exposed love letters or old photo displays. Quiet ordinary home at the hopeful A-route ending, no people, person reflections, fantasy or bridal apparition. Same detailed painterly anime Galgame style, 1672x941 wide framing, no readable text, logos, UI or watermark.",
+      "references": [
+        "bg07-upstairs-repaired.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "ye-zhao-old-coat-message.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent full-body Galgame sprite immediately after B07 boarding, Rose and Old Wedding Dress. Image 1 is the edit target. Preserve this exact 28-year-old Ye Zhao face, short bob, ivory blouse, green trousers, loafers, fully FINISHED old coarse dark-brown overcoat without chalk or basting marks, and black spare camera hanging safely from repaired brown crossbody strap at VIEWER LEFT hip. Change both hands to holding ONE plain dark smartphone at MID CHEST, looking down at it while writing the short arrival message; screen content is not visible or legible. No tissue or suitcase in her hands: luggage has been put away. Her eyes are slightly red and damp after crying, tears wiped away, quiet exhausted sadness and closed lips without a smile, no fresh flowing tears. This is 2030, do not use the 2033 gray sweater or different new coat. Keep same full-body proportions and head placement as input for stage continuity, face and phone readable above lower dialogue UI. Genuine RGBA transparent background, no seat/room, no opaque glow, no floating cap or bag, no words, symbols or watermark.",
+      "references": [
+        "ye-zhao-old-coat.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "ye-zhao-old-coat-departing-v2.png",
+      "prompt": "Use case: precise-object-edit. Asset type: transparent full-body Galgame sprite. Image 1 is the edit target. Keep the EXACT crying face, BOTH cheek tears, tissue at cheek, camera and repaired crossbody strap, finished old brown coat, ivory blouse, green trousers, body proportions, head and feet placement, painterly rendering unchanged. Correct ONLY the suitcase and the hand holding its handle: use one TALL upright black checked rolling suitcase beside her VIEWER RIGHT leg, with wheels resting at the same floor height as her loafers. Its hard-shell BODY must begin at her UPPER HIP around y650 of this 1536px canvas and extend down to wheels around y1450. Make the case taller, not floating. Give it a SHORT/retracted telescopic pull handle directly above the top of the case, not the current long exposed rods; her LEFT forearm bends gently so gripping hand is higher, at waist around y540-580. The whole suitcase body from its top corners down must be visible in the original full image, and its top 100 pixels will remain visible above a lower dialogue panel. Preserve a natural arm angle, two hands only, other hand still wipes tears, camera stays on opposite VIEWER LEFT hip. Absolutely do not change face, emotion, overcoat or camera. No additional case, no bag in the air. Exact full-body framing with feet and wheels visible, clean real RGBA alpha transparency, no opaque background, glow, text or watermark.",
+      "references": [
+        "ye-zhao-old-coat-departing.png"
+      ],
+      "transparentBackground": true,
+      "actualDimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "revisions": [
+        {
+          "file": "artifacts/rose/v11-art-drafts/ye-zhao-old-coat-departing.png",
+          "prompt": "Use case: identity-preserve. Asset type: transparent full-body B07 winter departure and crying action sprite for Rose and Old Wedding Dress. Image 1 is the exact edit target. Preserve 28-year-old Ye Zhao's face, short dark bob, ivory collared blouse, green trousers, brown loafers, FINISHED old coarse dark-brown overcoat, black spare camera on repaired brown crossbody strap at VIEWER LEFT hip, full-body height and head location. Change facial expression to unmistakable quiet CRYING after leaving her lover: eyes damp and red, visible tears on BOTH cheeks, eyebrows drawn upward near middle, mouth pressed with sadness, absolutely NO smile. Her RIGHT hand (VIEWER LEFT) holds a small plain white tissue at lower cheek, wiping a tear without covering the eyes. Her LEFT hand (VIEWER RIGHT) grips the extended handle of ONE small compact black rolling suitcase close beside her body. Crucially place gripping hand around UPPER WAIST and suitcase top around high hip (roughly y650 on a 1536px canvas) so the handle and upper case remain visible above a game dialogue box; do not leave the entire suitcase below knee height. Camera hangs freely on the opposite side, does not overlap suitcase or tissue. Natural arm anatomy, subtle forward weight as about to walk away. Lens cap stays hidden inside her right inner coat pocket; no chalk marks, no loose cap, no phone, no extra luggage or hands. Keep painterly adult anime VN style and original framing. Actual transparent RGBA background with clean edges, no room, shadow/glow backdrop, words or watermark.",
+          "references": [
+            "ye-zhao-old-coat.png"
+          ],
+          "reason": "Raised suitcase body and shortened telescopic handle so its top remains above the dialogue panel, while wheels stay on the floor."
+        }
+      ]
+    },
+    {
+      "file": "bg07-upstairs-sorted-winter.png",
+      "prompt": "Use case: lighting-weather. Asset type: WINTER daytime variant of the sorted upstairs home in Rose and Old Wedding Dress. Image 1 is the exact edit target. Preserve exact layout, all furniture, old CLOSED wooden wardrobe on LEFT, off-white safely closed wedding-dress storage bag on top of it, center dining table and bowls/cups, kitchen in back, stairs, curtains, dry floor, cleared EMPTY desktop by RIGHT window and all object locations. This room is the shared domestic space after October sorting, not the January A-route repaired room; do not add renovation, tools or change walls/ceiling. Change ONLY outdoor season/light to December-February WINTER: through the same right windows, the same roofs and SAME vines/branches now dormant and mostly bare, a few brown leaves allowed. Remove EVERY pink/red bloom and lush green exterior leaf, no flowering roses outdoors. Cool pale winter sky, a light trace of snow on distant tiled roofs is acceptable, no storm or snow indoors. Keep interior houseplants and modest table flowers unchanged and believable indoors, retain natural warm daylight on old wood with cool window shadows. No water basins or leaks, no new framed photos, no exposed letters, no people or reflections of people. Keep the empty desk actually empty and old belongings stored. Same detailed painterly anime Galgame background, 1672x941 wide framing, no text, logos, UI or watermark.",
+      "references": [
+        "bg07-upstairs-sorted.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    },
+    {
+      "file": "bg07-upstairs-sorted-winter-night.png",
+      "prompt": "Use case: lighting-weather. Asset type: WINTER NIGHT variant of the exact sorted upstairs room in Rose and Old Wedding Dress. Image 1 is the exact edit target. Preserve every item and furniture position, SAME closed wardrobe and wedding-dress storage bag top LEFT, dining table, dishes, kitchen, curtains, empty cleared window desktop RIGHT, dry floor and walls. Change ONLY day to winter night: same bare dormant exterior vines with NO flower blooms or green summer foliage, dark blue sky and same tiled roofs outside. Warm practical light from the existing pendant above the dining table illuminates the room softly; keep the cleared RIGHT desktop completely empty, with no new lamp or objects; cool window light, no direct sun, no daytime stripes on floor or table. Interior houseplants, flowers and old belongings remain identical in color and count. No new arrangements, exposed letters, displayed old photos, rain, puddles, leaks, people, ghosts or human reflections. Do not mix in the repaired A-route room layout. Refined detailed painterly VN background, exact wide composition 1672x941, no words, logos, UI or watermark.",
+      "references": [
+        "bg07-upstairs-sorted-winter.png"
+      ],
+      "transparentBackground": false,
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alphaRange": null
+    }
+  ]
+}
