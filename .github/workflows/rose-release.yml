@@ -1,0 +1,223 @@
+name: Rose releases
+
+on:
+  push:
+    tags:
+      - 'rose-v*'
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag; leave empty to use rose-v + the project version'
+        required: false
+        type: string
+      prerelease:
+        description: 'Mark this release as a prerelease'
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rose-release-${{ github.ref }}-${{ inputs.tag }}
+  cancel-in-progress: false
+
+env:
+  DOTNET_NOLOGO: 'true'
+  DOTNET_CLI_TELEMETRY_OPTOUT: 'true'
+
+jobs:
+  prepare:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    outputs:
+      tag: ${{ steps.release.outputs.tag }}
+      version: ${{ steps.release.outputs.version }}
+      sha: ${{ steps.release.outputs.sha }}
+      prerelease: ${{ steps.release.outputs.prerelease }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+      - name: Resolve and check the release version
+        id: release
+        shell: bash
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+          INPUT_PRERELEASE: ${{ inputs.prerelease }}
+        run: |
+          python3 - <<'PY'
+          import os, re, subprocess
+          version = subprocess.check_output([
+              'dotnet', 'msbuild', 'examples/MonoGalGame.Rose/MonoGalGame.Rose.csproj',
+              '-getProperty:Version', '-p:Configuration=Release', '-nologo'
+          ], text=True).strip()
+          ref = os.environ['GITHUB_REF']
+          tag = ref.removeprefix('refs/tags/') if ref.startswith('refs/tags/') else os.environ.get('INPUT_TAG') or f'rose-v{version}'
+          match = re.fullmatch(r'(?:rose-)?v(\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?)', tag)
+          if not match or match[1] != version:
+              raise SystemExit(f'Tag {tag!r} must match project version {version!r}.')
+          sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          exists = subprocess.run(['git', 'show-ref', '--verify', '--quiet', f'refs/tags/{tag}']).returncode == 0
+          if exists:
+              tagged_sha = subprocess.check_output(['git', 'rev-parse', f'refs/tags/{tag}^{{commit}}'], text=True).strip()
+              if tagged_sha != sha:
+                  raise SystemExit('The release tag already points to a different commit. Use a new version.')
+          prerelease = os.environ.get('INPUT_PRERELEASE') == 'true' or '-' in version
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+              output.write(f'tag={tag}\nversion={version}\nsha={sha}\nprerelease={str(prerelease).lower()}\n')
+          PY
+      - name: Check release packaging and the authoritative story
+        shell: bash
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_package_rose.py' -v
+          python3 scripts/build_rose_story.py --check
+
+  build:
+    needs: prepare
+    name: Native AOT (${{ matrix.rid }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            rid: win-x64
+          - os: macos-15
+            rid: osx-arm64
+          - os: macos-15-intel
+            rid: osx-x64
+          - os: ubuntu-22.04
+            rid: linux-x64
+          - os: ubuntu-22.04-arm
+            rid: linux-arm64
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.prepare.outputs.sha }}
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+      - name: Install Linux compiler and desktop dependencies
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes clang zlib1g-dev libsdl2-2.0-0 libopenal1 libicu70
+      - name: Test the story, saves, fonts and transitions
+        run: >-
+          dotnet test MonoGalGame.Tests/MonoGalGame.Tests.csproj
+          --configuration Release -m:1
+          --logger 'trx;LogFileName=rose.trx'
+          --results-directory artifacts/test-results/${{ matrix.rid }}
+      - name: Publish Rose with Native AOT
+        run: |
+          $publishOptions = @(
+            'examples/MonoGalGame.Rose/MonoGalGame.Rose.csproj',
+            '--configuration', 'Release', '--runtime', '${{ matrix.rid }}',
+            '--self-contained', 'true', '-p:PublishAot=true',
+            '-p:ContinuousIntegrationBuild=true', '-m:1',
+            '--output', 'artifacts/publish/${{ matrix.rid }}'
+          )
+          if ($IsMacOS) { $publishOptions += '-p:AppleMinOSVersion=14.0' }
+          dotnet publish @publishOptions
+      - name: Package and verify the extracted native game
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+          RELEASE_RID: ${{ matrix.rid }}
+        run: |
+          $python = if ($IsWindows) { 'python' } else { 'python3' }
+          & $python scripts/package_rose.py `
+            --publish "artifacts/publish/$env:RELEASE_RID" `
+            --rid $env:RELEASE_RID --version $env:RELEASE_VERSION `
+            --output artifacts/release
+      - name: Upload release package
+        uses: actions/upload-artifact@v7
+        with:
+          name: rose-package-${{ matrix.rid }}
+          path: |
+            artifacts/release/*.zip
+            artifacts/release/*.tar.gz
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: rose-tests-${{ matrix.rid }}
+          path: artifacts/test-results/${{ matrix.rid }}
+          if-no-files-found: ignore
+          retention-days: 7
+
+  release:
+    name: Publish all five packages to Releases
+    needs: [prepare, build]
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.prepare.outputs.sha }}
+          persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: rose-package-*
+          path: artifacts/downloads
+      - name: Collect packages and create SHA-256 checksums
+        shell: bash
+        env:
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, os, shutil
+          from pathlib import Path
+          output = Path('artifacts/release')
+          output.mkdir(parents=True)
+          version = os.environ['RELEASE_VERSION']
+          rids = ('win-x64', 'osx-arm64', 'osx-x64', 'linux-x64', 'linux-arm64')
+          with (output / 'SHA256SUMS.txt').open('w', encoding='utf-8', newline='\n') as checksums:
+              for rid in rids:
+                  extension = '.tar.gz' if rid.startswith('linux-') else '.zip'
+                  name = f'RoseAndOldWeddingDress-v{version}-{rid}{extension}'
+                  source = Path('artifacts/downloads') / f'rose-package-{rid}' / name
+                  shutil.copy2(source, output / name)
+                  digest = hashlib.sha256()
+                  with source.open('rb') as stream:
+                      for chunk in iter(lambda: stream.read(1024 * 1024), b''):
+                          digest.update(chunk)
+                  checksums.write(f'{digest.hexdigest()}  {name}\n')
+          PY
+      - name: Upload packages, then publish the release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ needs.prepare.outputs.tag }}
+          RELEASE_SHA: ${{ needs.prepare.outputs.sha }}
+          RELEASE_VERSION: ${{ needs.prepare.outputs.version }}
+          PRERELEASE: ${{ needs.prepare.outputs.prerelease }}
+        run: |
+          set -euo pipefail
+          # Recheck the tag immediately before publishing; never move an existing tag.
+          if tag_sha=$(gh api "repos/$GH_REPO/commits/$RELEASE_TAG" --jq .sha 2>/dev/null); then
+            test "$tag_sha" = "$RELEASE_SHA" || { echo 'Release tag points to another commit.' >&2; exit 1; }
+          fi
+          if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" --target "$RELEASE_SHA" --draft \
+              --title "玫瑰与旧婚纱 v$RELEASE_VERSION" --notes-file docs/rose-release-notes.md
+          fi
+          gh release upload "$RELEASE_TAG" artifacts/release/* --clobber
+          gh release edit "$RELEASE_TAG" --draft=false --prerelease="$PRERELEASE"

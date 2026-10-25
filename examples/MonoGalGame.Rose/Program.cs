@@ -12,7 +12,11 @@ try
             throw new ArgumentException($"{name} needs a value.");
         return args[index + 1];
     }
-    var options = GalgameOptions.FromProject(Option("--game") ?? Path.Combine(AppContext.BaseDirectory, "Game", "game.json"))
+    // macOS bundles keep assets in Contents/Resources, beside Contents/MacOS.
+    var bundledProject = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "Resources", "Game", "game.json"));
+    var defaultProject = OperatingSystem.IsMacOS() && File.Exists(bundledProject)
+        ? bundledProject : Path.Combine(AppContext.BaseDirectory, "Game", "game.json");
+    var options = GalgameOptions.FromProject(Option("--game") ?? defaultProject)
         with { DataDirectory = Option("--data-dir"), Theme = RoseTheme.Create(), WindowWidth = 1440, WindowHeight = 810 };
     if (args.Contains("--require-aot") && System.Runtime.CompilerServices.RuntimeFeature.IsDynamicCodeSupported)
         throw new InvalidOperationException("This check requires the Native AOT executable.");
