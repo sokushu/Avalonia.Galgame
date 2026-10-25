@@ -9,6 +9,7 @@ import tempfile
 import unittest
 
 from package_rose import APP, NATIVE_LIBRARIES, archive_package, binary_architectures, check_payload, stage_package
+from build_rose_story import source_sha256
 
 
 def native_header(platform, architecture):
@@ -121,6 +122,20 @@ class ReleasePackagingTests(unittest.TestCase):
         path = self.root / "universal.dylib"
         path.write_bytes(universal)
         self.assertEqual(binary_architectures(path), {"x64", "arm64"})
+
+    def test_story_hash_ignores_checkout_line_endings(self):
+        source = self.root / "story.txt"
+        source.write_bytes("玫瑰\n旧婚纱\n".encode("utf-8"))
+        expected = source_sha256(source)
+        source.write_bytes("玫瑰\r\n旧婚纱\r\n".encode("utf-8"))
+        self.assertEqual(source_sha256(source), expected)
+
+    def test_story_hash_still_detects_content_changes(self):
+        source = self.root / "story.txt"
+        source.write_text("玫瑰\n旧婚纱\n", encoding="utf-8")
+        before = source_sha256(source)
+        source.write_text("玫瑰\n新婚纱\n", encoding="utf-8")
+        self.assertNotEqual(source_sha256(source), before)
 
 
 if __name__ == "__main__":

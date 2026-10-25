@@ -315,19 +315,24 @@ class Compiler:
         return dict(id="rose-and-old-wedding-dress-v1", title="玫瑰与旧婚纱", start="纱S01", nodes=self.nodes)
 
 
+def source_sha256(path):
+    # Git checkouts use CRLF on Windows and LF on Linux/macOS. Hash the same text.
+    return hashlib.sha256(path.read_text(encoding="utf-8").encode("utf-8")).hexdigest()
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Check that committed content matches the source scripts")
     args = parser.parse_args()
     compiler = Compiler()
     story = compiler.build()
-    manifest = dict(sources={name: hashlib.sha256((SOURCE / name).read_bytes()).hexdigest() for name in SCRIPTS},
+    manifest = dict(sourceHashFormat="utf8-lf", sources={name: source_sha256(SOURCE / name) for name in SCRIPTS},
                     dialogueLines=len(compiler.source_lines), nodes=len(story["nodes"]),
                     choices=["q1", "q2", "q3"], endings=["ending-a", "ending-b", "ending-c"],
-                    stagingSha256=hashlib.sha256((ROOT / "scripts/rose_staging.py").read_bytes()).hexdigest(),
+                    stagingSha256=source_sha256(ROOT / "scripts/rose_staging.py"),
                     stagingCues=len(CUES), storyIllustrations=len(CG),
                     scriptStoryIllustrations=len(SCRIPT_CG), supplementalStoryIllustrations=len(SUPPLEMENTAL_CG),
-                    compilerSha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+                    compilerSha256=source_sha256(Path(__file__)))
     outputs = {GAME / "Stories/main.json": story, GAME / "Stories/source-manifest.json": manifest,
                GAME / "Stories/staging-manifest.json": compiler.audit}
     for path, value in outputs.items():
@@ -337,7 +342,7 @@ def main():
                 raise SystemExit(f"Outdated: {path.relative_to(ROOT)}")
         else:
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(text, encoding="utf-8")
+            path.write_text(text, encoding="utf-8", newline="\n")
     print(f"Rose scripts: {len(story['nodes'])} nodes, {len(compiler.source_lines)} dialogue lines, 3 choices, 3 endings.")
 
 

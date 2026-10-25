@@ -28,3 +28,5 @@ macOS 的布局是 `Contents/MacOS` 放原生可执行文件、`Contents/Framewo
 Linux 使用 Ubuntu 22.04 构建，支持 x64、ARM64 的 glibc 桌面系统；发行版、驱动和系统库的要求详见随 Release 发布的 [说明](rose-release-notes.md)。macOS 最低版本设置为 14.0。发布验证覆盖剧情、字体、资源和原生依赖加载；图形窗口、显卡兼容和真实音频仍需在实际设备上验收。
 
 打包逻辑的检查：`python -m unittest discover -s scripts -p 'test_package_rose.py' -v`。原有 `Desktop framework` 工作流继续负责框架与《春日来信》Demo，不受这个发布流程影响。
+
+剧本清单的 `sourceHashFormat: utf8-lf` 表示对统一为 LF 换行的 UTF-8 文本计算 SHA-256，防止 Windows、Linux 和 macOS 的 Git 换行转换产生不同的清单。剧情正文发生变化仍会被检测到。

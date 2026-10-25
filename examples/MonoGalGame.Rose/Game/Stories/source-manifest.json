@@ -1,9 +1,10 @@
 {
+  "sourceHashFormat": "utf8-lf",
   "sources": {
-    "01_共通剧情.txt": "93420820a8a06fbea257fe3c48416cbf556cc3b2da4b495fbb72a1b93097b7fe",
-    "03_分支A_两人的尺寸.txt": "50de731fb5b503f133384a7e344ed438e7eee0b7084aeca99b26d44fe0795aeb",
-    "04_分支B_合身的告别.txt": "a6876b7e0de439516b7fc3d9545ed7701d5ab889ca16ac8cbfe2a62dc5ab32b2",
-    "05_分支C_没有日期的以后.txt": "9d1bbb31b9aaed6daed3e3194b045c20aa021467b094baad10fcbcaf71c3c89c"
+    "01_共通剧情.txt": "d259f57a48e2308dc34b4220a955f214f661e28993c15e9fc4f0cfa3a96316e0",
+    "03_分支A_两人的尺寸.txt": "9abd69ac260cef33d5419439f7438d7a77decaeecb9ea20bfb7c47f750db4b4d",
+    "04_分支B_合身的告别.txt": "89cc5e453b0518f3f4080da318f5296d95347a8e05ff8c621cb12c6d135b8ca9",
+    "05_分支C_没有日期的以后.txt": "42153a4c9b9e96d0355f208e0cea95e5e4e440597931ff65a34f9922430b9e37"
   },
   "dialogueLines": 1085,
   "nodes": 1171,
@@ -22,5 +23,5 @@
   "storyIllustrations": 36,
   "scriptStoryIllustrations": 13,
   "supplementalStoryIllustrations": 23,
-  "compilerSha256": "d7189eec9335a8c95ead64e5ec524956ad4a5926ffddef2da49652986735381b"
+  "compilerSha256": "a37e310ac9fe8e92509b32f7cd41bb56efd37ddf4f468b81ae800dd784e34135"
 }
